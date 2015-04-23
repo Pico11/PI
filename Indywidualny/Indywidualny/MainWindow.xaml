@@ -1,0 +1,25 @@
+﻿<Window x:Class="Indywidualny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:indywidualny="clr-namespace:Indywidualny"
+        Title="MainWindow" Height="350" Width="525" >
+    <Grid DataContext="{Binding RelativeSource={RelativeSource AncestorType=indywidualny:MainWindow}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button Click="Record_Click" IsEnabled="{Binding Path=NotRecording}">Rec</Button>
+            <Button Click="StopSave_Click" IsEnabled="{Binding Path=Recording}">Save</Button>
+            <Button Click="Play_Click" IsEnabled="{Binding Path=NotRecording}">Play</Button>
+            <Button Click="Filter_Click" IsEnabled="{Binding Path=NotRecording}">Filter</Button>
+            <Button Click="Rst_status">RST</Button>
+
+            <Slider Minimum="0" Maximum="10000" SmallChange="500" LargeChange="1000" TickPlacement="BottomRight" TickFrequency="500" Value="{Binding Path=Frequency, Mode=TwoWay, FallbackValue=5000 }"/>
+            <Button Content="Test filters" Click="TestFilter_Click"/>
+
+
+        </StackPanel>
+        <TextBox x:Name="StatusText" Grid.Column="1" />
+    </Grid>
+</Window>
