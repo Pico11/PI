@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagrywanie", "Nagrywanie\Na
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spektrum", "Spektrum\Spektrum.csproj", "{0CA5AB52-7385-4017-902D-7AB5C3AB249C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{229FE3DD-DBF4-44F9-B003-04486AF94C39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{0CA5AB52-7385-4017-902D-7AB5C3AB249C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CA5AB52-7385-4017-902D-7AB5C3AB249C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CA5AB52-7385-4017-902D-7AB5C3AB249C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{229FE3DD-DBF4-44F9-B003-04486AF94C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{229FE3DD-DBF4-44F9-B003-04486AF94C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{229FE3DD-DBF4-44F9-B003-04486AF94C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{229FE3DD-DBF4-44F9-B003-04486AF94C39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

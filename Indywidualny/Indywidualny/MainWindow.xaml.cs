@@ -142,5 +142,25 @@ namespace Indywidualny
             //    }
             //}
         }
+
+        private void Freq_Click(object sender, RoutedEventArgs e)
+        {
+            const int transformSize=1024;
+            if (!_openFileDialog.ShowDialog().GetValueOrDefault(false)) return;
+            var waveFile = new NAudio.Wave.WaveFileReader(_openFileDialog.FileName);
+            var freqW = new FrequenciesWindow();
+            var frame = new List<float>(transformSize);
+            while (waveFile.CurrentTime < waveFile.TotalTime)
+            {
+                frame.AddRange(waveFile.ReadNextSampleFrame());
+                if (frame.Count >= transformSize)
+                {
+                    freqW.ShowFrequencies(frame.ToArray());
+                    frame.Clear();
+                }
+            }
+
+
+        }
     }
 }

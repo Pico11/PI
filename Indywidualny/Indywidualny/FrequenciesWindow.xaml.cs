@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using NAudioWpfDemo;
 
 namespace Indywidualny
 {
@@ -23,7 +22,15 @@ namespace Indywidualny
         public FrequenciesWindow()
         {
             InitializeComponent();
-            DataContext = new SpectrumAnalyser(Polyline1.Points);
+        }
+
+        public void ShowFrequencies(float[] samples)
+        {
+            var values = new double[samples.Length];
+            var max = samples.Select(v=>Math.Abs(v)).Max();
+            var equalized = samples.Select(v => v / max).ToArray();
+            //TODO set values 
+
         }
     }
 }
