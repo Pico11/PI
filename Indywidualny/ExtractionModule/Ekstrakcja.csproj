@@ -30,11 +30,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.3.7.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio">
-      <HintPath>..\lib\NAudio.dll</HintPath>
+      <HintPath>..\..\..\Projekt Indywidualny\naudio\NAudio-Release\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WindowsMediaFormat">
+      <HintPath>..\lib\NAudio.WindowsMediaFormat.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +61,13 @@
       <Project>{32AE761D-F51B-4C3A-8A46-903D3F279617}</Project>
       <Name>PrzygotowanieDanych</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Spektrum\Spektrum.csproj">
+      <Project>{0ca5ab52-7385-4017-902d-7ab5c3ab249c}</Project>
+      <Name>Spektrum</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

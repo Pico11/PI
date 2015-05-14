@@ -39,6 +39,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\MathNet.Numerics.3.7.0\lib\net40\MathNet.Numerics.dll</HintPath>
     </Reference>
+    <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Projekt Indywidualny\naudio\NAudio-Release\NAudio.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -61,11 +65,24 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ExtractorTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ExtractionModule\Ekstrakcja.csproj">
+      <Project>{bce17bee-dd28-4c06-b685-4103828ba1fe}</Project>
+      <Name>Ekstrakcja</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Indywidualny\Indywidualny.csproj">
       <Project>{8A79D5D1-49BE-449E-B0D0-9B75385AC9E7}</Project>
       <Name>Indywidualny</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nagrywanie\Nagrywanie.csproj">
+      <Project>{c0bdd97c-f075-4a2e-9c2e-a1d705a6432e}</Project>
+      <Name>Nagrywanie</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrzygotowanieDanych\PrzygotowanieDanych.csproj">
+      <Project>{32ae761d-f51b-4c3a-8a46-903d3f279617}</Project>
+      <Name>PrzygotowanieDanych</Name>
     </ProjectReference>
     <ProjectReference Include="..\Spektrum\Spektrum.csproj">
       <Project>{0ca5ab52-7385-4017-902d-7ab5c3ab249c}</Project>

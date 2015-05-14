@@ -5,7 +5,7 @@ namespace PrzygotowanieDanych
 {
     public class SilenceDetector
     {
-        private const float SilenceTreshold = 0.01f;
+        private const float SilenceTreshold = 0.0001f;
         public bool[] DetectSilence(float[] samples, int windowLength, int minDuration = 128)
         {
             var silence = new bool[samples.Length];

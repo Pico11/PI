@@ -46,7 +46,8 @@ namespace Indywidualny
             _timer.Elapsed += _timer_Elapsed;
         }
 
-        private float[] _speakerData;
+        //private float[] _speakerData;
+        private short[] _speakerData;
 
         void _timer_Elapsed(object sender, ElapsedEventArgs e)
         {
@@ -71,11 +72,8 @@ namespace Indywidualny
         void Recorder_SamplesReady(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             if(!e.PropertyName.Equals("Samples"))return;
-
             _speakerData = _recorder.Samples;//get samples
             _recorder.PropertyChanged -= Recorder_SamplesReady;//unsubscribe event
-
-
         }
 
         private float[] GetSamples(Stream stream)
@@ -89,6 +87,7 @@ namespace Indywidualny
             }
             return samples.ToArray();
         }
+
         //static void RecordTimeout(object stateObject)
         //{
         //    var auth = stateObject as Record;
@@ -107,7 +106,6 @@ namespace Indywidualny
         //        return;
         //    }
         //    PerformFiltering(auth._recorder.Path);
-
         //    auth.Button.IsEnabled = true;
         //}
 
@@ -149,11 +147,7 @@ namespace Indywidualny
                     {
                         SetMessage(Properties.Resources.Record_RecordingError);
                     }
-
-
-
                     break;
-
                 default:
                     throw new ArgumentOutOfRangeException();
             }

@@ -16,6 +16,7 @@ namespace PrzygotowanieDanych
         public static float[] NormalizeSamples(float[] samples)
         {
             var average = samples.Average();
+            var maxSample = samples.Max();
             var maxDiff = samples.Max(sample => sample - average);
             return samples.Select(sample=>(sample-average)/maxDiff).ToArray();
         }

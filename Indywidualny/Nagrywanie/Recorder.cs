@@ -49,9 +49,21 @@ namespace Nagrywanie
         private WaveFileReader _waveFileReader;
         private MemoryStream _memoryStream;
         private static readonly WaveFormat WaveFormat = new WaveFormat(44100, 1);
-        private float[] _samples;
+        //private float[] _samples;
 
-        public float[] Samples
+        //public float[] Samples
+        //{
+        //    get { return _samples; }
+        //    private set
+        //    {
+        //        if (Equals(value, _samples)) return;
+        //        _samples = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
+
+        private short[] _samples;
+        public short[] Samples
         {
             get { return _samples; }
             private set
@@ -75,30 +87,30 @@ namespace Nagrywanie
         {
             _waveSource = new WaveIn { WaveFormat = Format };
 
-            _waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
-            _waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped);
+            _waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_MemoryDataAvailable);
+            _waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_MemoryRecordingStopped);
             _memoryStream = new MemoryStream();
             _waveFileWriter = new WaveFileWriter(_memoryStream, _waveSource.WaveFormat);
 
             _waveSource.StartRecording();
             Status = "OK\nRecording";
         }
-        /// <summary>
-        /// Start recording to given file
-        /// </summary>
-        /// <param name="file"></param>
-        public void StartRecording(string file)
-        {
-            _waveSource = new WaveIn { WaveFormat = Format };
+        ///// <summary>
+        ///// Start recording to given file
+        ///// </summary>
+        ///// <param name="file"></param>
+        //public void StartRecording(string file)
+        //{
+        //    _waveSource = new WaveIn { WaveFormat = Format };
 
-            _waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
-            _waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped);
+        //    _waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
+        //    _waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped);
 
-            _waveFileWriter = new WaveFileWriter(file, _waveSource.WaveFormat);
+        //    _waveFileWriter = new WaveFileWriter(file, _waveSource.WaveFormat);
 
-            _waveSource.StartRecording();
-            Status = "OK\nRecording";
-        }
+        //    _waveSource.StartRecording();
+        //    Status = "OK\nRecording";
+        //}
         /// <summary>
         /// Stop recording
         /// </summary>
@@ -116,7 +128,7 @@ namespace Nagrywanie
         /// <returns></returns>
         public void StopRecordingPrepareSamples()
         {
-            if (_waveSource == null) return ;
+            if (_waveSource == null) return;
             GetSamples = true;
             _waveSource.StopRecording();
             Status = "OK\nStopped";
@@ -142,7 +154,58 @@ namespace Nagrywanie
             _waveFileWriter.Flush();
         }
 
-        void waveSource_RecordingStopped(object sender, StoppedEventArgs e)
+        void waveSource_MemoryDataAvailable(object sender, WaveInEventArgs e)
+        {
+            if (_memoryStream == null) return;
+            _memoryStream.Write(e.Buffer, 0, e.BytesRecorded);
+        }
+
+        //void waveSource_RecordingStopped(object sender, StoppedEventArgs e)
+        //{
+        //    if (_waveSource != null)
+        //    {
+        //        try
+        //        {
+        //            _waveSource.Dispose();
+        //            _waveSource = null;
+        //        }
+        //        catch (Exception)
+        //        {
+        //            _waveSource = null;
+        //        }
+        //    }
+
+        //    if (_waveFileWriter != null)
+        //    {
+        //        try
+        //        {
+        //            _waveFileWriter.Flush();
+        //            if (GetSamples && _memoryStream != null && _memoryStream.CanRead)
+        //            {
+        //                _memoryStream.Position = 0;
+                        
+        //                //var reader = new WaveFileReader(_memoryStream);
+        //                //var sampleList=new List<float>();
+        //                //float[] frame;
+                        
+        //                //while ((frame = reader.ReadNextSampleFrame()) != null && frame.Length > 0)
+        //                //{
+        //                //    sampleList.AddRange(frame);
+        //                //}
+        //                //Samples = sampleList.ToArray();
+
+        //            }
+        //            _waveFileWriter.Dispose();
+        //            _waveFileWriter = null;
+        //        }
+        //        catch (Exception)
+        //        {
+        //            _waveFileWriter = null;
+        //        }
+        //    }
+        //}
+
+        void waveSource_MemoryRecordingStopped(object sender, StoppedEventArgs e)
         {
             if (_waveSource != null)
             {
@@ -156,26 +219,19 @@ namespace Nagrywanie
                     _waveSource = null;
                 }
             }
-
-            if (_waveFileWriter != null)
+            if (_memoryStream != null)
             {
                 try
                 {
-                    _waveFileWriter.Flush();
                     if (GetSamples && _memoryStream != null && _memoryStream.CanRead)
                     {
-                        _memoryStream.Position = 0;
-                        var reader = new WaveFileReader(_memoryStream);
-                        var sampleList=new List<float>();
-                        float[] frame;
-                        while ((frame = reader.ReadNextSampleFrame()) != null && frame.Length > 0)
-                        {
-                            sampleList.AddRange(frame);
-                        }
-                        Samples = sampleList.ToArray();
+                        var src=_memoryStream.GetBuffer();
+                        var shortSamples=new short[(src.Length+1)/sizeof(short)];
+
+                        Buffer.BlockCopy(src, 0, shortSamples, 0, src.Length);
                     }
-                    _waveFileWriter.Dispose();
-                    _waveFileWriter = null;
+                    _memoryStream.Dispose();
+                    _memoryStream = null;
                 }
                 catch (Exception)
                 {
@@ -183,7 +239,6 @@ namespace Nagrywanie
                 }
             }
         }
-
 
 
         public event PropertyChangedEventHandler PropertyChanged;

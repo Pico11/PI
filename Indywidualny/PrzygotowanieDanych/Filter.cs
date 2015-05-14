@@ -77,6 +77,7 @@ namespace PrzygotowanieDanych
                 ranges[i] = step;
             }
         }
+        
         //public float[] FrequencyFilter(float[] frequencies, float[] centerFrequencies, float[] ranges)
         //{
         //    if(frequencies==null) throw new ArgumentNullException();
@@ -84,7 +85,6 @@ namespace PrzygotowanieDanych
         //    if (ranges == null) throw new ArgumentNullException();
         //    if(centerFrequencies.Length!=ranges.Length) throw new ArgumentException();
         //    var results = new float[frequencies.Length];
-
         //}
     }
 }
