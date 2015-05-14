@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indywidualny", "Indywidualny\Indywidualny.csproj", "{8A79D5D1-49BE-449E-B0D0-9B75385AC9E7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C0BDD97C-F075-4A2E-9C2E-A1D705A6432E} = {C0BDD97C-F075-4A2E-9C2E-A1D705A6432E}
@@ -11,6 +13,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spektrum", "Spektrum\Spektrum.csproj", "{0CA5AB52-7385-4017-902D-7AB5C3AB249C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{229FE3DD-DBF4-44F9-B003-04486AF94C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrzygotowanieDanych", "PrzygotowanieDanych\PrzygotowanieDanych.csproj", "{32AE761D-F51B-4C3A-8A46-903D3F279617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ekstrakcja", "ExtractionModule\Ekstrakcja.csproj", "{BCE17BEE-DD28-4C06-B685-4103828BA1FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +40,14 @@ Global
 		{229FE3DD-DBF4-44F9-B003-04486AF94C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{229FE3DD-DBF4-44F9-B003-04486AF94C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{229FE3DD-DBF4-44F9-B003-04486AF94C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32AE761D-F51B-4C3A-8A46-903D3F279617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AE761D-F51B-4C3A-8A46-903D3F279617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AE761D-F51B-4C3A-8A46-903D3F279617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AE761D-F51B-4C3A-8A46-903D3F279617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE17BEE-DD28-4C06-B685-4103828BA1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE17BEE-DD28-4C06-B685-4103828BA1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE17BEE-DD28-4C06-B685-4103828BA1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE17BEE-DD28-4C06-B685-4103828BA1FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

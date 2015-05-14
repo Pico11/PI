@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Runtime.CompilerServices;
@@ -13,7 +14,7 @@ using NAudio.Wave;
 
 namespace Nagrywanie
 {
-    public class Recorder:INotifyPropertyChanged
+    public class Recorder : INotifyPropertyChanged
     {
         private string _status;
         //private NAudio.Wave.WaveIn source;
@@ -27,7 +28,7 @@ namespace Nagrywanie
         public string Status
         {
             get { return _status; }
-            set
+            private set
             {
                 if (value == _status) return;
                 _status = value;
@@ -35,141 +36,155 @@ namespace Nagrywanie
             }
         }
 
+
+
         public Recorder()
         {
             Status = string.Empty;
-
-            PropertyChanged += Recorder_PropertyChanged;
         }
 
-        void Recorder_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        private WaveIn _waveSource;
+        private WaveOut _waveOut;
+        private WaveFileWriter _waveFileWriter;
+        private WaveFileReader _waveFileReader;
+        private MemoryStream _memoryStream;
+        private static readonly WaveFormat WaveFormat = new WaveFormat(44100, 1);
+        private float[] _samples;
+
+        public float[] Samples
         {
-            if (String.IsNullOrEmpty(Status))
+            get { return _samples; }
+            private set
             {
-                Status = "hello!";
+                if (Equals(value, _samples)) return;
+                _samples = value;
+                OnPropertyChanged();
             }
-            //Status += "\no";
         }
 
+        private bool GetSamples { get; set; }
 
-        #region copyPaste
-        public WaveIn waveSource = null;
-        public WaveOut WaveOut = null;
-        public WaveFileWriter WaveFileWriter = null;
-        public WaveFileReader WaveFileReader = null;
-        public void StartBtn_Click()
+        public static WaveFormat Format
         {
-            waveSource = new WaveIn();
-            waveSource.WaveFormat = new WaveFormat(44100, 1);
+            get { return WaveFormat; }
+        }
+        /// <summary>
+        /// Start recording from defoult sound device 
+        /// </summary>
+        public void StartRecording()
+        {
+            _waveSource = new WaveIn { WaveFormat = Format };
 
-            waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
-            waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped);
+            _waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
+            _waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped);
+            _memoryStream = new MemoryStream();
+            _waveFileWriter = new WaveFileWriter(_memoryStream, _waveSource.WaveFormat);
 
-            WaveFileWriter = new WaveFileWriter(Path, waveSource.WaveFormat);
-
-            waveSource.StartRecording();
+            _waveSource.StartRecording();
             Status = "OK\nRecording";
         }
-
-        public void StopBtn_Click()
+        /// <summary>
+        /// Start recording to given file
+        /// </summary>
+        /// <param name="file"></param>
+        public void StartRecording(string file)
         {
-            waveSource.StopRecording();
-            Status = "OK\nStopped";
-            waveSource.Dispose();
+            _waveSource = new WaveIn { WaveFormat = Format };
+
+            _waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
+            _waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped);
+
+            _waveFileWriter = new WaveFileWriter(file, _waveSource.WaveFormat);
+
+            _waveSource.StartRecording();
+            Status = "OK\nRecording";
         }
-
-        public void PlayBtn_Click(string path)
+        /// <summary>
+        /// Stop recording
+        /// </summary>
+        public void StopRecording()
         {
-            WaveOut=new WaveOut();
-            WaveFileReader = new WaveFileReader(path);
-            WaveOut.Init(WaveFileReader);
-            WaveOut.Play();
+            if (_waveSource == null) return;
+
+            _waveSource.StopRecording();
+            Status = "OK\nStopped";
+            _waveSource.Dispose();
+        }
+        /// <summary>
+        /// Stop recording and get recorded samples in an array
+        /// </summary>
+        /// <returns></returns>
+        public void StopRecordingPrepareSamples()
+        {
+            if (_waveSource == null) return ;
+            GetSamples = true;
+            _waveSource.StopRecording();
+            Status = "OK\nStopped";
+            _waveSource.Dispose();
+        }
+        /// <summary>
+        /// Play an audio file
+        /// </summary>
+        /// <param name="path">path to .wav file</param>
+        public void Play(string path)
+        {
+            _waveOut = new WaveOut();
+            _waveFileReader = new WaveFileReader(path);
+            _waveOut.Init(_waveFileReader);
+            _waveOut.Play();
         }
 
 
         void waveSource_DataAvailable(object sender, WaveInEventArgs e)
         {
-            if (WaveFileWriter != null)
-            {
-                WaveFileWriter.Write(e.Buffer, 0, e.BytesRecorded);
-                WaveFileWriter.Flush();
-            }
+            if (_waveFileWriter == null) return;
+            _waveFileWriter.Write(e.Buffer, 0, e.BytesRecorded);
+            _waveFileWriter.Flush();
         }
 
         void waveSource_RecordingStopped(object sender, StoppedEventArgs e)
         {
-            if (waveSource != null)
+            if (_waveSource != null)
             {
-                waveSource.Dispose();
-                waveSource = null;
+                try
+                {
+                    _waveSource.Dispose();
+                    _waveSource = null;
+                }
+                catch (Exception)
+                {
+                    _waveSource = null;
+                }
             }
 
-            if (WaveFileWriter != null)
+            if (_waveFileWriter != null)
             {
-                WaveFileWriter.Dispose();
-                WaveFileWriter = null;
+                try
+                {
+                    _waveFileWriter.Flush();
+                    if (GetSamples && _memoryStream != null && _memoryStream.CanRead)
+                    {
+                        _memoryStream.Position = 0;
+                        var reader = new WaveFileReader(_memoryStream);
+                        var sampleList=new List<float>();
+                        float[] frame;
+                        while ((frame = reader.ReadNextSampleFrame()) != null && frame.Length > 0)
+                        {
+                            sampleList.AddRange(frame);
+                        }
+                        Samples = sampleList.ToArray();
+                    }
+                    _waveFileWriter.Dispose();
+                    _waveFileWriter = null;
+                }
+                catch (Exception)
+                {
+                    _waveFileWriter = null;
+                }
             }
-        } 
-        #endregion
+        }
 
-        #region mine
-        //public void StartRecording()
-        //{
-        //    if (string.IsNullOrWhiteSpace(Path))
-        //    {
-        //        Status = "Path not specified"; 
-        //        return;
-        //    }
-        //    StartRecording(Path);
-        //}
 
-        //public void StartRecording(string path)
-        //{
-        //    int deviceNumber = sourceList.SelectedItems[0].Index;
-
-        //    sourceStream = new NAudio.Wave.WaveIn();
-        //    sourceStream.DeviceNumber = deviceNumber;
-        //    sourceStream.WaveFormat = new NAudio.Wave.WaveFormat(44100, NAudio.Wave.WaveIn.GetCapabilities(deviceNumber).Channels);
-
-        //    NAudio.Wave.WaveInProvider waveIn = new NAudio.Wave.WaveInProvider(sourceStream);
-
-        //    waveOut = new NAudio.Wave.DirectSoundOut();
-        //    waveOut.Init(waveIn);
-
-        //    sourceStream.StartRecording();
-        //    waveOut.Play();
-
-        //    recordButton.Visible = false;
-        //    stopRecord.Visible = true;
-        //    Status = "OK\nRecording";
-        //}
-        //public void StopAndSave(string path)
-        //{
-
-        //    Status = "OK\nSaved";
-        //}
-
-        //public void Play(string path)
-        //{
-        //    //Computer computer = new Computer();
-        //    //computer.Audio.Play("c:\\record.wav", AudioPlayMode.Background);
-        //    var player = new SoundPlayer(path);
-        //    try
-        //    {
-        //        player.Load();
-        //        player.Play();
-        //        Status = "OK";
-        //    }
-        //    catch (ApplicationException e)
-        //    {
-        //        Status = "AppException:\n" + e.Message;
-        //    }
-        //    catch
-        //    {
-        //        Status = "Unknown Exception";
-        //    }
-        //} 
-        #endregion
 
         public event PropertyChangedEventHandler PropertyChanged;
 

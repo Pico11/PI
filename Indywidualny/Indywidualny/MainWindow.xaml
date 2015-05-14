@@ -15,11 +15,9 @@
             <Button Click="Filter_Click" IsEnabled="{Binding Path=NotRecording}">Filter</Button>
             <Button Click="Rst_status">RST</Button>
 
-            <Slider Minimum="0" Maximum="10000" SmallChange="500" LargeChange="1000" TickPlacement="BottomRight" TickFrequency="500" Value="{Binding Path=Frequency, Mode=TwoWay, FallbackValue=5000 }"/>
-            <Button Content="Test filters" Click="TestFilter_Click"/>
             <Button Content="Frequencies" Click="Freq_Click"/>
 
-
+            <Button Click="Login_Click">Login</Button>
         </StackPanel>
         <TextBox x:Name="StatusText" Grid.Column="1" />
     </Grid>

@@ -1,22 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Microsoft.Win32;
 using Nagrywanie;
 using Nagrywanie.Annotations;
+using NAudio.Wave;
+using PrzygotowanieDanych;
+using Spektrum;
+using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
+using SaveFileDialog = Microsoft.Win32.SaveFileDialog;
 
 namespace Indywidualny
 {
@@ -45,12 +38,12 @@ namespace Indywidualny
         public bool Recording
         {
             get { return _recording; }
-            set { if (value == _recording)return; _recording = value; OnPropertyChanged("Recording"); OnPropertyChanged("NotRecording"); }
+            set { if (value == _recording)return; _recording = value; OnPropertyChanged(); OnPropertyChanged("NotRecording"); }
         }
         public float Frequency
         {
             get { return _frequency; }
-            set { if (value == _frequency)return; _frequency = value; OnPropertyChanged("Frequency"); }
+            set { if (value == _frequency)return; _frequency = value; OnPropertyChanged(); }
         }
         public string Status
         {
@@ -87,21 +80,21 @@ namespace Indywidualny
             _currentFile = _saveFileDialog.FileName;
             _recorder.Path = _currentFile;
             Recording = true;
-            _recorder.StartBtn_Click();
+            _recorder.StartRecording();
         }
 
         private void StopSave_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(_currentFile)) return;
 
-            _recorder.StopBtn_Click();
+            _recorder.StopRecording();
             NotRecording = true;
         }
 
         private void Play_Click(object sender, RoutedEventArgs e)
         {
             if (!_openFileDialog.ShowDialog().GetValueOrDefault(false)) return;
-            _recorder.PlayBtn_Click(_openFileDialog.FileName);
+            _recorder.Play(_openFileDialog.FileName);
         }
 
         private void Rst_status(object sender, RoutedEventArgs e)
@@ -126,41 +119,33 @@ namespace Indywidualny
             _filter.LowPass(_openFileDialog.FileName, _saveFileDialog.FileName, Frequency);
         }
 
-        private void TestFilter_Click(object sender, RoutedEventArgs e)
-        {
-            var fbd = new System.Windows.Forms.FolderBrowserDialog();
-            if (fbd.ShowDialog() != System.Windows.Forms.DialogResult.OK) return;
-            var tester = new FilterTester();
-            var dir = fbd.SelectedPath;
-            tester.Convert(dir);
-            //foreach (var file in System.IO.Directory.EnumerateFiles(dir, "*.wav"))
-            //{
-            //    for (int i = 1; i <= 10; i++)
-            //    {
-            //        var newFile = file.Remove(file.IndexOf(".wav")) + "_" + i.ToString();
-            //        _filter.LowPass(file, newFile, i * 1000);
-            //    }
-            //}
-        }
 
+        readonly FourierTransformer _transformer=new FourierTransformer();
         private void Freq_Click(object sender, RoutedEventArgs e)
         {
             const int transformSize=1024;
             if (!_openFileDialog.ShowDialog().GetValueOrDefault(false)) return;
-            var waveFile = new NAudio.Wave.WaveFileReader(_openFileDialog.FileName);
+            var waveFile = new WaveFileReader(_openFileDialog.FileName);
             var freqW = new FrequenciesWindow();
+            freqW.Show();
             var frame = new List<float>(transformSize);
             while (waveFile.CurrentTime < waveFile.TotalTime)
             {
                 frame.AddRange(waveFile.ReadNextSampleFrame());
                 if (frame.Count >= transformSize)
                 {
-                    freqW.ShowFrequencies(frame.ToArray());
+                    var frequencies = _transformer.ApplyDFT(frame.ToArray());
+                    freqW.ShowFrequencies(frequencies);
                     frame.Clear();
                 }
             }
-
-
         }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            var loginWindow=new Record();
+            loginWindow.Show();
+        }
+
     }
 }

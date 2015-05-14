@@ -35,6 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
+    <Reference Include="MathNet.Numerics, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MathNet.Numerics.3.7.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\NAudio.dll</HintPath>
@@ -44,6 +48,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Printing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -65,6 +70,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Record.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FrequenciesWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -77,7 +86,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="FilterTester.cs" />
+    <Compile Include="Record.xaml.cs">
+      <DependentUpon>Record.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FrequenciesWindow.xaml.cs">
       <DependentUpon>FrequenciesWindow.xaml</DependentUpon>
     </Compile>
@@ -104,6 +115,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -117,6 +129,10 @@
     <ProjectReference Include="..\Nagrywanie\Nagrywanie.csproj">
       <Project>{c0bdd97c-f075-4a2e-9c2e-a1d705a6432e}</Project>
       <Name>Nagrywanie</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrzygotowanieDanych\PrzygotowanieDanych.csproj">
+      <Project>{32AE761D-F51B-4C3A-8A46-903D3F279617}</Project>
+      <Name>PrzygotowanieDanych</Name>
     </ProjectReference>
     <ProjectReference Include="..\Spektrum\Spektrum.csproj">
       <Project>{0CA5AB52-7385-4017-902D-7AB5C3AB249C}</Project>
