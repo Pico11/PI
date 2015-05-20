@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NAudio">
-      <HintPath>..\..\..\..\..\KOD\Indywidualny\Nagrywanie\NAudio.dll</HintPath>
+      <HintPath>..\..\..\Projekt Indywidualny\naudio\NAudio-Release\NAudio.dll</HintPath>
     </Reference>
     <Reference Include="NAudio.WindowsMediaFormat">
-      <HintPath>..\..\..\..\..\KOD\Indywidualny\Nagrywanie\NAudio.WindowsMediaFormat.dll</HintPath>
+      <HintPath>..\lib\NAudio.WindowsMediaFormat.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

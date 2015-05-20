@@ -6,6 +6,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Nagrywanie;
 using PrzygotowanieDanych;
+using Spektrum;
+using System.Numerics;
 
 namespace ExtractionModule
 {
@@ -39,7 +41,15 @@ namespace ExtractionModule
             return _recordingTimeElapsed && _recorder.Samples != null;
         }
 
-        public float[] GetRecordedSamples()
+        //public float[] GetRecordedSamples()
+        //{
+        //    if (!AreSamplesReady()) return null;
+
+        //    var samples = _recorder.Samples;
+        //    _recorder = null;
+        //    return samples;
+        //}
+        public short[] GetRecordedSamples()
         {
             if (!AreSamplesReady()) return null;
 
@@ -48,6 +58,23 @@ namespace ExtractionModule
             return samples;
         }
 
+        const int TransformedWindowLength = 8192;
+        const int MaxDFTFreq = TransformedWindowLength/2;
+        const int WindowExtractionPeriod = 256;
+
+        public float[] ExtendWindowForDFT(float[] samples)
+        {
+            var leftLen = (TransformedWindowLength - samples.Length) / 2;
+            var rightLen = TransformedWindowLength - leftLen - samples.Length;
+            var resultList = new List<float>(TransformedWindowLength);
+            for (int i = 0; i < leftLen; i++)
+                resultList.Add(0);
+            resultList.AddRange(samples);
+            for (int i = 0; i < rightLen; i++)
+                resultList.Add(0);
+
+            return resultList.ToArray();
+        }
 
         public float[] ProcessSamples(float[] samples)
         {
@@ -55,10 +82,32 @@ namespace ExtractionModule
             var filter = new Filter();
             var detector = new SilenceDetector();
             var filtered = filter.LowPass(samples, Recorder.Format.SampleRate, cutoffFrequency);
-            var voice = detector.CutSilence(filtered, 256);
-
-            return voice;
+            var norm1 = SampleNormarisation.NormalizeSamples(filtered);
+            var voice = detector.CutSilence(norm1, 256);
+            var normalised = SampleNormarisation.NormalizeSamples(voice);
+            return normalised;
         }
+
+        public IEnumerable<float[]> ExtractWindows(float[] samples, int extractionPeriod = WindowExtractionPeriod)
+        {
+            var frameExtractor = new FrameExtractor();
+            var frames = frameExtractor.ExtractFrames(samples, extractionPeriod).Select(frame => ExtendWindowForDFT(Preemphasis.ApplyPreemphasis(frame)));
+
+            return frames;
+        }
+        public IEnumerable<float[]> GetFrequencies(IEnumerable<float[]> frames)
+        {
+            var fourier=new FourierTransformer();
+            var frequencies=frames.Select(frame => fourier.ApplyDFT(frame.Select(f => new Complex(f, 0)).ToArray()).Select(c => (float)c.Real).ToArray());
+
+            return frequencies;
+        }
+        public IEnumerable<float[]> CalculateDFT(float[] samples)
+        {
+            return GetFrequencies(ExtractWindows(samples));
+        }
+
+
 
 
     }
