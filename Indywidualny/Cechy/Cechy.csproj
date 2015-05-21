@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BCE17BEE-DD28-4C06-B685-4103828BA1FE}</ProjectGuid>
+    <ProjectGuid>{625D445B-58A8-446B-B4E2-EAC0A0E64DE5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtractionModule</RootNamespace>
-    <AssemblyName>ExtractionModule</AssemblyName>
+    <RootNamespace>Cechy</RootNamespace>
+    <AssemblyName>Cechy</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,18 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MathNet.Numerics">
-      <HintPath>..\packages\MathNet.Numerics.3.7.0\lib\net40\MathNet.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio">
-      <HintPath>..\..\..\Projekt Indywidualny\naudio\NAudio-Release\NAudio.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio.WindowsMediaFormat">
-      <HintPath>..\lib\NAudio.WindowsMediaFormat.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,29 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extractor.cs" />
+    <Compile Include="FrequencyFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Cechy\Cechy.csproj">
-      <Project>{625D445B-58A8-446B-B4E2-EAC0A0E64DE5}</Project>
-      <Name>Cechy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nagrywanie\Nagrywanie.csproj">
-      <Project>{C0BDD97C-F075-4A2E-9C2E-A1D705A6432E}</Project>
-      <Name>Nagrywanie</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PrzygotowanieDanych\PrzygotowanieDanych.csproj">
-      <Project>{32AE761D-F51B-4C3A-8A46-903D3F279617}</Project>
-      <Name>PrzygotowanieDanych</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Spektrum\Spektrum.csproj">
-      <Project>{0ca5ab52-7385-4017-902d-7ab5c3ab249c}</Project>
-      <Name>Spektrum</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -126,6 +126,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ExtractionModule\Ekstrakcja.csproj">
+      <Project>{BCE17BEE-DD28-4C06-B685-4103828BA1FE}</Project>
+      <Name>Ekstrakcja</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Nagrywanie\Nagrywanie.csproj">
       <Project>{c0bdd97c-f075-4a2e-9c2e-a1d705a6432e}</Project>
       <Name>Nagrywanie</Name>

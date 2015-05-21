@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrzygotowanieDanych", "Przy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ekstrakcja", "ExtractionModule\Ekstrakcja.csproj", "{BCE17BEE-DD28-4C06-B685-4103828BA1FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cechy", "Cechy\Cechy.csproj", "{625D445B-58A8-446B-B4E2-EAC0A0E64DE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{BCE17BEE-DD28-4C06-B685-4103828BA1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE17BEE-DD28-4C06-B685-4103828BA1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE17BEE-DD28-4C06-B685-4103828BA1FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625D445B-58A8-446B-B4E2-EAC0A0E64DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625D445B-58A8-446B-B4E2-EAC0A0E64DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625D445B-58A8-446B-B4E2-EAC0A0E64DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625D445B-58A8-446B-B4E2-EAC0A0E64DE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

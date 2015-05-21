@@ -1,4 +1,6 @@
-﻿using System;
+﻿#define FloatSamples
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -48,20 +50,23 @@ namespace Nagrywanie
         private WaveFileWriter _waveFileWriter;
         private WaveFileReader _waveFileReader;
         private MemoryStream _memoryStream;
-        private static readonly WaveFormat WaveFormat = new WaveFormat(44100, 1);
-        //private float[] _samples;
+        public static readonly WaveFormat WaveFormat = new WaveFormat(44100, 1);
+#if FloatSamples
+        private float[] _samples;
 
-        //public float[] Samples
-        //{
-        //    get { return _samples; }
-        //    private set
-        //    {
-        //        if (Equals(value, _samples)) return;
-        //        _samples = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
+        public float[] Samples
+        {
+            get { return _samples; }
+            private set
+            {
+                if (Equals(value, _samples)) return;
+                _samples = value;
+                OnPropertyChanged();
+            }
+        }  
+#endif
 
+#if ShortSamples
         private short[] _samples;
         public short[] Samples
         {
@@ -72,7 +77,8 @@ namespace Nagrywanie
                 _samples = value;
                 OnPropertyChanged();
             }
-        }
+        } 
+#endif
 
         private bool GetSamples { get; set; }
 
@@ -86,7 +92,7 @@ namespace Nagrywanie
         public void StartRecording()
         {
             _waveSource = new WaveIn { WaveFormat = Format };
-
+            
             _waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_MemoryDataAvailable);
             _waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_MemoryRecordingStopped);
             _memoryStream = new MemoryStream();
@@ -132,7 +138,8 @@ namespace Nagrywanie
             GetSamples = true;
             _waveSource.StopRecording();
             Status = "OK\nStopped";
-            _waveSource.Dispose();
+
+            //_waveSource.Dispose();
         }
         /// <summary>
         /// Play an audio file
@@ -225,10 +232,7 @@ namespace Nagrywanie
                 {
                     if (GetSamples && _memoryStream != null && _memoryStream.CanRead)
                     {
-                        var src=_memoryStream.GetBuffer();
-                        var shortSamples=new short[(src.Length+1)/sizeof(short)];
-
-                        Buffer.BlockCopy(src, 0, shortSamples, 0, src.Length);
+                        ForceGetSamples();
                     }
                     _memoryStream.Dispose();
                     _memoryStream = null;
@@ -238,6 +242,23 @@ namespace Nagrywanie
                     _waveFileWriter = null;
                 }
             }
+        }
+
+        public void ForceGetSamples()
+        {
+            var src = _memoryStream.GetBuffer();
+            //var shortSamples=new short[(src.Length+1)/sizeof(short)];
+
+            //Buffer.BlockCopy(src, 0, shortSamples, 0, src.Length);
+            const int fsize = sizeof (float);
+            const int ssize = sizeof (short);
+            var samples = new float[src.Length/fsize];
+            int j = 0;
+            for (int i = 0; i < src.Length; i += ssize)
+            {
+                samples[j++] = (BitConverter.ToInt16(src, i))/((float) short.MaxValue);
+            }
+            Samples = samples;
         }
 
 

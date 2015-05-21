@@ -8,7 +8,6 @@ namespace PrzygotowanieDanych
 {
     public class Filter
     {
-
         const float Q = 1.0f;
         public void LowPass(string pathIn, string pathOut, float maxFreq)
         {
@@ -65,19 +64,8 @@ namespace PrzygotowanieDanych
             return samples.Select(sample => filter.Transform(sample)).ToArray();
         }
 
-        private void CreateFrequencyFilters(int filterCount, out float[] centerFrequencies, out float[] ranges)
-        {
-            centerFrequencies=new float[filterCount];
-            ranges = new float[filterCount];
-            const int borderFrequency = 6000;
-            var step = borderFrequency/filterCount;
-            for (int i = 0; i < filterCount; i++)
-            {
-                centerFrequencies[i] = step*(i + 1);
-                ranges[i] = step;
-            }
-        }
-        
+
+
         //public float[] FrequencyFilter(float[] frequencies, float[] centerFrequencies, float[] ranges)
         //{
         //    if(frequencies==null) throw new ArgumentNullException();
@@ -86,5 +74,7 @@ namespace PrzygotowanieDanych
         //    if(centerFrequencies.Length!=ranges.Length) throw new ArgumentException();
         //    var results = new float[frequencies.Length];
         //}
+
+
     }
 }

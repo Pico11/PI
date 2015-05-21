@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Filter.cs" />
+    <Compile Include="OverflowRemover.cs" />
     <Compile Include="Preemphasis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleNormarisation.cs" />

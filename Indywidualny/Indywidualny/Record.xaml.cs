@@ -1,4 +1,10 @@
-﻿using System;
+﻿#define FloatSamples
+
+#if !FloatSamples
+#define ShortSamples
+#endif
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,12 +12,9 @@ using System.Text;
 using System.Timers;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+using ExtractionModule;
 using Nagrywanie;
 using NAudio.Wave;
 using PrzygotowanieDanych;
@@ -46,9 +49,14 @@ namespace Indywidualny
             _timer.Elapsed += _timer_Elapsed;
         }
 
-        //private float[] _speakerData;
+#if FloatSamples
+        private float[] _speakerData; 
+#endif
+
+#if ShortSamples
         private short[] _speakerData;
 
+#endif
         void _timer_Elapsed(object sender, ElapsedEventArgs e)
         {
             try
@@ -71,7 +79,7 @@ namespace Indywidualny
 
         void Recorder_SamplesReady(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if(!e.PropertyName.Equals("Samples"))return;
+            if (!e.PropertyName.Equals("Samples")) return;
             _speakerData = _recorder.Samples;//get samples
             _recorder.PropertyChanged -= Recorder_SamplesReady;//unsubscribe event
         }
@@ -108,50 +116,71 @@ namespace Indywidualny
         //    PerformFiltering(auth._recorder.Path);
         //    auth.Button.IsEnabled = true;
         //}
+        public void TryLogin(string username)
+        {
+            try
+            {
+                var extractor = new Extractor();
+                var traitsFile = extractor.CreateUserTraitsFile(username);
+            }
+            catch (Exception)
+            {
+                UserCommand.Text = "Errors occured";
+            }
+            UserCommand.Text = "User data collected";
+        }
 
         private void Button_OnClick(object sender, RoutedEventArgs e)
         {
-            switch (_state)
+            if (string.IsNullOrWhiteSpace(Username.Text))
             {
-                case SystemState.Busy:
-                    return;
-                case SystemState.Error:
-                    if (GeneralError != UserCommand.Text)
-                        SetMessage();
-                    else
-                    {
-                        UserCommand.Text = string.Empty;
-                        _state = SystemState.Idle;
-                    }
-                    return;
-                case SystemState.Results:
-                case SystemState.Idle:
-                case SystemState.AwaitingInput:
-                    if (string.IsNullOrWhiteSpace(Username.Text))
-                    { SetMessage(Properties.Resources.Record_Invalid_user_name); _state = SystemState.AwaitingInput; return; }
-                    _state = SystemState.Busy;
-                    
-                    Button.IsEnabled = false;
-
-                    var path = Path.ChangeExtension(Path.GetRandomFileName(), "wav");
-                    path = Path.Combine(_tempDir, path);
-                    _recorder.Path = path;
-                    try
-                    {
-                        _recorder.StartRecording();
-                        SetMessage(Properties.Resources.Record_RecordingInProgress);
-                        //_timer.Change(RecordingTime, Timeout.Infinite);
-                        _timer.Start();
-                    }
-                    catch (Exception)
-                    {
-                        SetMessage(Properties.Resources.Record_RecordingError);
-                    }
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
+                UserCommand.Text = "Incorrect login"; return;
             }
+            TryLogin(Username.Text);
         }
+        //private void Button_OnClick(object sender, RoutedEventArgs e)
+        //{
+        //    switch (_state)
+        //    {
+        //        case SystemState.Busy:
+        //            return;
+        //        case SystemState.Error:
+        //            if (GeneralError != UserCommand.Text)
+        //                SetMessage();
+        //            else
+        //            {
+        //                UserCommand.Text = string.Empty;
+        //                _state = SystemState.Idle;
+        //            }
+        //            return;
+        //        case SystemState.Results:
+        //        case SystemState.Idle:
+        //        case SystemState.AwaitingInput:
+        //            if (string.IsNullOrWhiteSpace(Username.Text))
+        //            { SetMessage(Properties.Resources.Record_Invalid_user_name); _state = SystemState.AwaitingInput; return; }
+        //            _state = SystemState.Busy;
+
+        //            Button.IsEnabled = false;
+
+        //            var path = Path.ChangeExtension(Path.GetRandomFileName(), "wav");
+        //            path = Path.Combine(_tempDir, path);
+        //            _recorder.Path = path;
+        //            try
+        //            {
+        //                _recorder.StartRecording();
+        //                SetMessage(Properties.Resources.Record_RecordingInProgress);
+        //                //_timer.Change(RecordingTime, Timeout.Infinite);
+        //                _timer.Start();
+        //            }
+        //            catch (Exception)
+        //            {
+        //                SetMessage(Properties.Resources.Record_RecordingError);
+        //            }
+        //            break;
+        //        default:
+        //            throw new ArgumentOutOfRangeException();
+        //    }
+        //}
 
 
 
