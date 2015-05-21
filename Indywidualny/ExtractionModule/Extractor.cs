@@ -156,11 +156,14 @@ namespace ExtractionModule
         public string CreateUserTraitsFile(string user)
         {
             if (string.IsNullOrWhiteSpace(user)) throw new ArgumentException("User name");
-            if (!Directory.Exists(DataDirectory))
+            var current=Directory.GetCurrentDirectory();
+            var dir=current+ DataDirectory;
+            if (!Directory.Exists(dir))
             {
-                Directory.CreateDirectory(DataDirectory);
+                Directory.CreateDirectory(dir);
             }
-            var fileName = string.Format("{0}\\{1}_{2:yyMMdd_hhmm}.spk", DataDirectory, user, DateTime.Now);
+            var fileName = string.Format("{0}_{1:yyMMdd_hhmm}.spk", user, DateTime.Now);
+            var filePath=Path.Combine(dir,fileName);
             StartRecordingSamples(TimeSpan.FromSeconds(5));
             var tryCount = 20;
             var tryN=0;
@@ -175,7 +178,7 @@ namespace ExtractionModule
             var processed = ProcessSamples(samples);
             var frequencies = CalculateDFT(processed).ToArray();
             var energies = frequencies.Select(GetRangesEnergy).ToArray();
-            using (var file = new StreamWriter(fileName))
+            using (var file = new StreamWriter(filePath))
             {
                 file.WriteLine("SpeakerData");
                 file.WriteLine("Login: {0}", user);

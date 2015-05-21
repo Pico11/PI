@@ -118,16 +118,20 @@ namespace Indywidualny
         //}
         public void TryLogin(string username)
         {
-            try
+            UserCommand.Text = string.Empty;
+            string traitsFile=string.Empty;
+            //try
             {
                 var extractor = new Extractor();
-                var traitsFile = extractor.CreateUserTraitsFile(username);
+                traitsFile = extractor.CreateUserTraitsFile(username);
+
+
+            UserCommand.Text = "User data collected at"+traitsFile;
             }
-            catch (Exception)
-            {
-                UserCommand.Text = "Errors occured";
-            }
-            UserCommand.Text = "User data collected";
+            //catch (Exception e)
+            //{
+            //    UserCommand.Text = "Errors occured "+e;
+            //}
         }
 
         private void Button_OnClick(object sender, RoutedEventArgs e)

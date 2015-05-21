@@ -8,7 +8,7 @@ namespace PrzygotowanieDanych
             cleaned[0] = samples[0];
             var upper = 1 - treshold;
             var lower = treshold - 1;
-            for (var i = 0; i < samples.Length; i++)
+            for (var i = 1; i < samples.Length; i++)
             {
                 //var difference = samples[i] - samples[i - 1];
                 cleaned[i] = samples[i];

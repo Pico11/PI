@@ -18,8 +18,7 @@ namespace Cechy
             var step = borderFrequency / filterCount;
             for (var i = 0; i < filterCount; i++)
             {
-                filters[i].Center = step * (i + 1);
-                filters[i].Range = step;
+                filters[i]=new FrequencyFilter{Center=step * (i + 1),Range=step};
             }
 
             return filters;

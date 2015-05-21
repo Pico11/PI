@@ -63,7 +63,7 @@ namespace Nagrywanie
                 _samples = value;
                 OnPropertyChanged();
             }
-        }  
+        }
 #endif
 
 #if ShortSamples
@@ -92,7 +92,7 @@ namespace Nagrywanie
         public void StartRecording()
         {
             _waveSource = new WaveIn { WaveFormat = Format };
-            
+
             _waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_MemoryDataAvailable);
             _waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_MemoryRecordingStopped);
             _memoryStream = new MemoryStream();
@@ -190,11 +190,11 @@ namespace Nagrywanie
         //            if (GetSamples && _memoryStream != null && _memoryStream.CanRead)
         //            {
         //                _memoryStream.Position = 0;
-                        
+
         //                //var reader = new WaveFileReader(_memoryStream);
         //                //var sampleList=new List<float>();
         //                //float[] frame;
-                        
+
         //                //while ((frame = reader.ReadNextSampleFrame()) != null && frame.Length > 0)
         //                //{
         //                //    sampleList.AddRange(frame);
@@ -250,14 +250,17 @@ namespace Nagrywanie
             //var shortSamples=new short[(src.Length+1)/sizeof(short)];
 
             //Buffer.BlockCopy(src, 0, shortSamples, 0, src.Length);
-            const int fsize = sizeof (float);
-            const int ssize = sizeof (short);
-            var samples = new float[src.Length/fsize];
-            int j = 0;
-            for (int i = 0; i < src.Length; i += ssize)
+            const int fsize = sizeof(float);
+            const int ssize = sizeof(short);
+            var samples = new float[src.Length * ssize / fsize];
+            int j = 0, i = 0;
+
+            for (i = 0; i < src.Length - 1; i += ssize)
             {
-                samples[j++] = (BitConverter.ToInt16(src, i))/((float) short.MaxValue);
+                samples[j++] = (BitConverter.ToInt16(src, i)) / ((float)short.MaxValue);
             }
+
+
             Samples = samples;
         }
 
