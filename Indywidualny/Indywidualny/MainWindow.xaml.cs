@@ -147,5 +147,11 @@ namespace Indywidualny
             loginWindow.Show();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var vectorWindow = new ShowVectors();
+            vectorWindow.Show();
+        }
+
     }
 }

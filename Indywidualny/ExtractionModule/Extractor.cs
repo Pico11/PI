@@ -1,4 +1,5 @@
-﻿#define FloatSamples
+﻿#define WriteDebugFiles
+#define FloatSamples
 
 #if !FloatSamples
 #define ShortSamples
@@ -16,6 +17,7 @@ using PrzygotowanieDanych;
 using Spektrum;
 using System.Numerics;
 using Cechy;
+using System.Xml.Serialization;
 
 namespace ExtractionModule
 {
@@ -124,7 +126,7 @@ namespace ExtractionModule
             var frameExtractor = new FrameExtractor();
 
             var frames = frameExtractor.ExtractFrames(samples, extractionPeriod).ToArray();
-            var extended=frames.Select(frame => ExtendWindowForDFT(Preemphasis.ApplyPreemphasis(frame)));
+            var extended = frames.Select(frame => ExtendWindowForDFT(Preemphasis.ApplyPreemphasis(frame)));
 
             return extended;
         }
@@ -171,6 +173,7 @@ namespace ExtractionModule
             }
             var fileName = string.Format("{0}_{1:yyMMdd_hhmm}.spk", user, DateTime.Now);
             var filePath = Path.Combine(dir, fileName);
+
             StartRecordingSamples(TimeSpan.FromSeconds(5));
 
             var samples = GetRecordedSamples();
@@ -186,7 +189,7 @@ namespace ExtractionModule
                         writer.Write(sample);
                     }
                 }
-            } 
+            }
 #endif
             var processed = ProcessSamples(samples);
 #if WriteDebugFiles
@@ -199,28 +202,129 @@ namespace ExtractionModule
                         writer.Write(sample);
                     }
                 }
-            } 
+            }
 #endif
 
             var frequencies = CalculateDFT(processed).ToArray();
-            var energies=frequencies.Select(GetRangesEnergy).ToArray();
+            var energies = frequencies.Select(GetRangesEnergy).ToArray();
             var energies2 = frequencies.Select(fT => GetRangesEnergy(fT.Take(fT.Length / 2).ToArray())).ToArray();
+            var clustering = KMeans.Cluster(energies2, 16);
             using (var file = new StreamWriter(filePath))
             {
                 file.WriteLine("SpeakerData");
                 file.WriteLine("Login: {0}", user);
                 file.WriteLine("Trait Vectors");
-                foreach (var energy in energies)
+                for (int i = 0; i < energies2.Length; i++)
                 {
-                    file.Write(energy[0]);
-                    for (int i = 1; i < energy.Length; i++)
+                    var energy = energies2[i];
+                    for (int j = 0; j < energy.Length; j++)
                     {
-                        file.Write(" {0}", energy[i]);
+                        file.Write("{0} ", energy[j]);
                     }
-                    file.WriteLine();
+                    file.WriteLine(clustering[i]);
                 }
+                //foreach (var energy in energies)
+                //{
+                //    file.Write(energy[0]);
+                //    for (int i = 1; i < energy.Length; i++)
+                //    {
+                //        file.Write(" {0}", energy[i]);
+                //    }
+                //    file.WriteLine();
+                //}
+
             }
             return fileName;
+        }
+        public string CreateUserTraitsFile(string user, Action<string> setStatusAction)
+        {
+            if (string.IsNullOrWhiteSpace(user)) throw new ArgumentException("User name");
+            var current = Directory.GetCurrentDirectory();
+            var dir = current + DataDirectory;
+            if (!Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+            }
+            var fileName = string.Format("{0}_{1:yyMMdd_hhmm}.spk", user, DateTime.Now);
+            var filePath = Path.Combine(dir, fileName);
+
+            setStatusAction("Please speak");
+            StartRecordingSamples(TimeSpan.FromSeconds(5));
+            setStatusAction("Thank you\nNow processing");
+
+            var samples = GetRecordedSamples();
+            samples = samples ?? ForceGetRecordedSamples();
+#if WriteDebugFiles
+            var tmpFile = System.IO.Path.GetRandomFileName();
+            using (var fileStream = new FileStream(System.IO.Path.ChangeExtension(tmpFile, "rav"), FileMode.Create))
+            {
+                using (var writer = new BinaryWriter(fileStream))
+                {
+                    foreach (var sample in samples)
+                    {
+                        writer.Write(sample);
+                    }
+                }
+            }
+#endif
+            var processed = ProcessSamples(samples);
+#if WriteDebugFiles
+            using (var fileStream = new FileStream(System.IO.Path.ChangeExtension(tmpFile, "proc"), FileMode.Create))
+            {
+                using (var writer = new BinaryWriter(fileStream))
+                {
+                    foreach (var sample in processed)
+                    {
+                        writer.Write(sample);
+                    }
+                }
+            }
+#endif
+
+            var frequencies = CalculateDFT(processed).ToArray();
+            var energies = frequencies.Select(GetRangesEnergy).ToArray();
+            var energies2 = frequencies.Select(fT => GetRangesEnergy(fT.Take(fT.Length / 2).ToArray())).ToArray();
+            var clustering = KMeans.Cluster(energies2, 16);
+            var frameList = new List<Frame>();
+            using (var file = new StreamWriter(filePath))
+            {
+                file.WriteLine("SpeakerData");
+                file.WriteLine("Login: {0}", user);
+                file.WriteLine("Trait Vectors");
+                for (int i = 0; i < energies2.Length; i++)
+                {
+                    var energy = energies2[i];
+                    for (int j = 0; j < energy.Length; j++)
+                    {
+                        file.Write("{0} ", energy[j]);
+                    }
+                    file.WriteLine(clustering[i]);
+                    frameList.Add(new Frame { TraitVector = energy, Cluster = clustering[i] });
+                }
+
+                //foreach (var energy in energies)
+                //{
+                //    file.Write(energy[0]);
+                //    for (int i = 1; i < energy.Length; i++)
+                //    {
+                //        file.Write(" {0}", energy[i]);
+                //    }
+                //    file.WriteLine();
+                //}
+
+
+            }
+            var serializer = new XmlSerializer(typeof(List<Frame>));
+            serializer.Serialize(new FileStream(fileName.Replace(".spk", ".xml"), FileMode.Create), frameList);
+
+            setStatusAction("Verification complete\nResult: ");
+            return fileName;
+        }
+
+        public class Frame
+        {
+            public float[] TraitVector { get; set; }
+            public int Cluster { get; set; }
         }
     }
 

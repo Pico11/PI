@@ -18,7 +18,11 @@ namespace PrzygotowanieDanych
             var average = samples.Average();
             var maxSample = samples.Max(s=>Math.Abs(s));
             //var maxDiff = samples.Max(sample => sample - average);
-            return samples.Select(sample=>(sample-average)/maxSample).ToArray();
+            var normalized=samples.Select(sample=>sample/maxSample).ToArray();
+            var newMax = normalized.Max();
+            var newMin = normalized.Min();
+            var newAvg = normalized.Average();
+            return normalized;
         }
     }
 }

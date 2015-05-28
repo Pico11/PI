@@ -45,11 +45,11 @@ namespace Cechy
                 }
                 if (freq <= Center)
                 {
-                    filtered[i] = freq / Range + 1 - filterCr;
+                    filtered[i] =frequencies[i]* freq / Range + 1 - filterCr;
                 }
                 else
                 {
-                    filtered[i] = -freq / Range + 1 + filterCr;
+                    filtered[i] = frequencies[i] * (-freq) / Range + 1 + filterCr;
                 }
             }
             return filtered;

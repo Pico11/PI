@@ -122,15 +122,17 @@ namespace Indywidualny
             //try
             {
                 var extractor = new Extractor();
-                var traitsFile = extractor.CreateUserTraitsFile(username);
+                var traitsFile = extractor.CreateUserTraitsFile(username, (message) => { UserCommand.Text = message; });
 
 
-                UserCommand.Text = "User data collected at " + traitsFile;
+                //UserCommand.Text = "User data collected at " + traitsFile;
+
             }
             //catch (Exception e)
             //{
-            //    UserCommand.Text = "Errors occured "+e;
+            //    UserCommand.Text = "Errors occured " + e;
             //}
+            //finally{Username.Text=string.Empty;}
         }
 
         private void Button_OnClick(object sender, RoutedEventArgs e)

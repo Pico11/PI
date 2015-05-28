@@ -16,7 +16,7 @@
             <Button Click="Rst_status">RST</Button>
 
             <Button Content="Frequencies" Click="Freq_Click"/>
-
+            <Button Content="Vectors" Click="Button_Click"/>
             <Button Click="Login_Click">Login</Button>
         </StackPanel>
         <TextBox x:Name="StatusText" Grid.Column="1" />
