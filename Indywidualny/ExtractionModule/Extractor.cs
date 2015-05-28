@@ -175,6 +175,7 @@ namespace ExtractionModule
 
             var samples = GetRecordedSamples();
             samples = samples ?? ForceGetRecordedSamples();
+#if WriteDebugFiles
             var tmpFile = System.IO.Path.GetRandomFileName();
             using (var fileStream = new FileStream(System.IO.Path.ChangeExtension(tmpFile, "rav"), FileMode.Create))
             {
@@ -185,8 +186,10 @@ namespace ExtractionModule
                         writer.Write(sample);
                     }
                 }
-            }
+            } 
+#endif
             var processed = ProcessSamples(samples);
+#if WriteDebugFiles
             using (var fileStream = new FileStream(System.IO.Path.ChangeExtension(tmpFile, "proc"), FileMode.Create))
             {
                 using (var writer = new BinaryWriter(fileStream))
@@ -196,10 +199,11 @@ namespace ExtractionModule
                         writer.Write(sample);
                     }
                 }
-            }
+            } 
+#endif
 
             var frequencies = CalculateDFT(processed).ToArray();
-            var energies=frequencies.Select(fT => GetRangesEnergy(fT.Take(fT.Length / 2).ToArray())).ToArray();
+            var energies=frequencies.Select(GetRangesEnergy).ToArray();
             var energies2 = frequencies.Select(fT => GetRangesEnergy(fT.Take(fT.Length / 2).ToArray())).ToArray();
             using (var file = new StreamWriter(filePath))
             {
