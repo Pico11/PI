@@ -179,13 +179,15 @@ namespace PrzygotowanieDanych
         /// <returns>array of samples without silence</returns>
         public float[] CutSilence(float[] samples, int windowLength, out float speechRatio)
         {
-            var times = SilenceTimes(samples, windowLength);
-            var speech = times.Sum(time => time < 0 ? -time : 0);
-            var silence = times.Sum(time => time > 0 ? time : 0);
-            var trailing = times[0] + (times.Last() > 0 ? times.Last() : 0);
-            var total = silence + speech - trailing;
+            var times = DetectSilence(samples,SilenceTresholdShort, windowLength);
+            var speech = times.Count(t => !t);//not silence
+            var silence = times.Count(t => t);
+            var silenceStart = times.TakeWhile(t => t).Count();
+            var silenceEnd = times.Reverse().TakeWhile(t => t).Count();
+            var total = samples.Length - silenceStart - silenceEnd;
+            var cut = samples.Skip(silenceStart).Take(total).ToArray();
+
             speechRatio = speech / (float)total;
-            var cut = samples.Skip(times[0]).Take(total).ToArray();
 
             return cut;
         }
@@ -197,12 +199,13 @@ namespace PrzygotowanieDanych
         /// <returns>array of samples without silence</returns>
         public float[] CutSilence(float[] samples, int windowLength)
         {
-            var times = SilenceTimes(samples, windowLength);
-            var speech = times.Sum(time => time < 0 ? -time : 0);
-            var silence = times.Sum(time => time > 0 ? time : 0);
-            var trailing = times[0] + (times.Last() > 0 ? times.Last() : 0);
-            var total = silence + speech - trailing;
-            var cut = samples.Skip(times[0]).Take(total).ToArray();
+            var times = DetectSilence(samples,SilenceTresholdShort, windowLength);
+            //var speech = times.Count(t=>!t);//not silence
+            //var silence = times.Count(t => t);
+            var silenceStart = times.TakeWhile(t => t).Count();
+            var silenceEnd = times.Reverse().TakeWhile(t=>t).Count();
+            var total = samples.Length-silenceStart - silenceEnd;
+            var cut = samples.Skip(silenceStart).Take(total).ToArray();
 
             return cut;
         }

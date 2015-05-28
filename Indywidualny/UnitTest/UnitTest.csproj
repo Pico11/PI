@@ -64,11 +64,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="SampleGenerator.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="SpactrumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ExtractorTests.cs" />
-    <Compile Include="UnitTest2.cs" />
-    <Compile Include="UnitTest3.cs" />
+    <Compile Include="PreparationTests.cs" />
+    <Compile Include="SampleProcessingTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExtractionModule\Ekstrakcja.csproj">

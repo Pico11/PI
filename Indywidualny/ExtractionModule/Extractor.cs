@@ -30,13 +30,15 @@ namespace ExtractionModule
             if (_recorder != null) return;//Recording in progress
             _recorder = new Recorder();
             RecordingTimeElapsed = false;
-            _recorder.StartRecording();
+            _recorder.StartRecording((int)(44100 * recordingTime.TotalSeconds));
+            var thisThread = Thread.CurrentThread;
             Task.Run(() =>
             {
                 Thread.Sleep(recordingTime);
                 RecordingTimeElapsed = true;
-
-            }).Wait();
+            });
+            while (!RecordingTimeElapsed)
+                ;//Thread.Sleep(5);
             _recorder.StopRecordingPrepareSamples();
         }
 
@@ -90,10 +92,10 @@ namespace ExtractionModule
             var detector = new SilenceDetector();
 
             samples = OverflowRemover.RemoveOverflows(samples);
-            var filtered = filter.LowPass(samples, Recorder.Format.SampleRate, cutoffFrequency);
-            var norm1 = SampleNormarisation.NormalizeSamples(filtered);
-            var voice = detector.CutSilence(norm1, 256);
-            var normalised = SampleNormarisation.NormalizeSamples(voice);
+            var voice = detector.CutSilence(samples, 256);
+            var filtered = filter.LowPass(voice, Recorder.Format.SampleRate, cutoffFrequency);
+
+            var normalised = SampleNormarisation.NormalizeSamples(filtered);
             return normalised;
         }
 
@@ -120,16 +122,21 @@ namespace ExtractionModule
         public IEnumerable<float[]> ExtractWindows(float[] samples, int extractionPeriod = WindowExtractionPeriod)
         {
             var frameExtractor = new FrameExtractor();
-            var frames = frameExtractor.ExtractFrames(samples, extractionPeriod).Select(frame => ExtendWindowForDFT(Preemphasis.ApplyPreemphasis(frame)));
 
-            return frames;
+            var frames = frameExtractor.ExtractFrames(samples, extractionPeriod).ToArray();
+            var extended=frames.Select(frame => ExtendWindowForDFT(Preemphasis.ApplyPreemphasis(frame)));
+
+            return extended;
+        }
+
+        private static float[] GetFrequencies(float[] frame)
+        {
+            var fourier = new FourierTransformer();
+            return fourier.ApplyFFT(frame.Select(f => new Complex(f, 0)).ToArray()).Select(c => (float)c.Magnitude).ToArray();
         }
         public IEnumerable<float[]> GetFrequencies(IEnumerable<float[]> frames)
         {
-            var fourier = new FourierTransformer();
-            var frequencies = frames.Select(frame => fourier.ApplyDFT(frame.Select(f => new Complex(f, 0)).ToArray()).Select(c => (float)c.Real).ToArray());
-
-            return frequencies;
+            return frames.Select(GetFrequencies);
         }
         public IEnumerable<float[]> CalculateDFT(float[] samples)
         {
@@ -156,28 +163,44 @@ namespace ExtractionModule
         public string CreateUserTraitsFile(string user)
         {
             if (string.IsNullOrWhiteSpace(user)) throw new ArgumentException("User name");
-            var current=Directory.GetCurrentDirectory();
-            var dir=current+ DataDirectory;
+            var current = Directory.GetCurrentDirectory();
+            var dir = current + DataDirectory;
             if (!Directory.Exists(dir))
             {
                 Directory.CreateDirectory(dir);
             }
             var fileName = string.Format("{0}_{1:yyMMdd_hhmm}.spk", user, DateTime.Now);
-            var filePath=Path.Combine(dir,fileName);
+            var filePath = Path.Combine(dir, fileName);
             StartRecordingSamples(TimeSpan.FromSeconds(5));
-            var tryCount = 20;
-            var tryN=0;
-            while (!AreSamplesReady()&&tryN<tryCount)
-            {
-                Thread.Sleep(10);
-                tryN++;
-            }
-            
+
             var samples = GetRecordedSamples();
             samples = samples ?? ForceGetRecordedSamples();
+            var tmpFile = System.IO.Path.GetRandomFileName();
+            using (var fileStream = new FileStream(System.IO.Path.ChangeExtension(tmpFile, "rav"), FileMode.Create))
+            {
+                using (var writer = new BinaryWriter(fileStream))
+                {
+                    foreach (var sample in samples)
+                    {
+                        writer.Write(sample);
+                    }
+                }
+            }
             var processed = ProcessSamples(samples);
+            using (var fileStream = new FileStream(System.IO.Path.ChangeExtension(tmpFile, "proc"), FileMode.Create))
+            {
+                using (var writer = new BinaryWriter(fileStream))
+                {
+                    foreach (var sample in processed)
+                    {
+                        writer.Write(sample);
+                    }
+                }
+            }
+
             var frequencies = CalculateDFT(processed).ToArray();
-            var energies = frequencies.Select(GetRangesEnergy).ToArray();
+            var energies=frequencies.Select(fT => GetRangesEnergy(fT.Take(fT.Length / 2).ToArray())).ToArray();
+            var energies2 = frequencies.Select(fT => GetRangesEnergy(fT.Take(fT.Length / 2).ToArray())).ToArray();
             using (var file = new StreamWriter(filePath))
             {
                 file.WriteLine("SpeakerData");

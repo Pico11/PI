@@ -27,7 +27,7 @@ namespace Spektrum
             var end = samples.Length - offset >= window.Length ? extracted.Length : samples.Length - offset;
             //jeśli w pozostałej części tablicy próbek zmieści się ramka weźmiemy jej długość
             //w przeciwnym wypadku bierzemy tyle, ile jest próbek
-            for (int i = 0, j = 0; i < end; i++, j++)
+            for (int i = 0, j = offset; i < end; i++, j++)
             {
                 extracted[i] = samples[j] * window[i];
             }
@@ -43,7 +43,7 @@ namespace Spektrum
         /// <returns>sequence of extracted frames</returns>
         public IEnumerable<float[]> ExtractFrames(float[] window, float[] samples, int windowPeriod)
         {
-            for (int i = 0; i < samples.Length; i+=windowPeriod)
+            for (var i = 0; i < samples.Length; i+=windowPeriod)
             {
                 yield return ExtractOneFrame(window, samples, i);
             }
@@ -61,7 +61,7 @@ namespace Spektrum
             //{
             //    yield return ExtractOneFrame(window, samples, i);
             //}
-            return ExtractFrames(window, samples, windowPeriod);
+            return ExtractFrames(window,samples,windowPeriod);
         }
     }
 }

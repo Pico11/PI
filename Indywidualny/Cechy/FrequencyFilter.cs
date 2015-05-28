@@ -11,20 +11,20 @@ namespace Cechy
     {
         public float Center { get; private set; }
         public float Range { get; private set; }
-        public static FrequencyFilter[] CreateFrequencyFilters(int filterCount,int borderFrequency=4096)
+        public static FrequencyFilter[] CreateFrequencyFilters(int filterCount, int borderFrequency = 4096)
         {
             var filters = new FrequencyFilter[filterCount];
 
             var step = borderFrequency / filterCount;
             for (var i = 0; i < filterCount; i++)
             {
-                filters[i]=new FrequencyFilter{Center=step * (i + 1),Range=step};
+                filters[i] = new FrequencyFilter { Center = step * (i + 1), Range = step };
             }
 
             return filters;
         }
 
-        public float RealFrequency(int index, float ratio)
+        private static float RealFrequency(int index, float ratio)
         {
             return ratio * index;
         }
@@ -37,12 +37,12 @@ namespace Cechy
             var filtered = new float[frequencies.Length];
             for (var i = 0; i < frequencies.Length; i++)
             {
-                if (frequencies[i] <= left || frequencies[i] >= right)
+                var freq = RealFrequency(i, ratio);
+                if (freq <= left || freq >= right)
                 {
                     filtered[i] = 0;
                     continue;
                 }
-                var freq = RealFrequency(i, ratio);
                 if (freq <= Center)
                 {
                     filtered[i] = freq / Range + 1 - filterCr;
@@ -52,7 +52,6 @@ namespace Cechy
                     filtered[i] = -freq / Range + 1 + filterCr;
                 }
             }
-
             return filtered;
         }
         public static float[][] ApplyFilters(float[] frequencies, float ratio, FrequencyFilter[] filters)
@@ -67,7 +66,7 @@ namespace Cechy
 
         public static float[] GetMeans(float[][] filteredFrequencies)
         {
-            return filteredFrequencies.Select(frequency=>frequency.Average()).ToArray();
+            return filteredFrequencies.Select(frequency => frequency.Average()).ToArray();
         }
     }
 }

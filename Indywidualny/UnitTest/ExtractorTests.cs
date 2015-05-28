@@ -70,39 +70,6 @@ namespace UnitTest
 
         }
 
-        public float[] Generate(int samplesCount)
-        {
-            var samples = new float[samplesCount];
-            var timeStep = 1 / 2048f;
-            var current = 0.0;
-            for (int i = 0; i < samplesCount; i++)
-            {
-                var s1 = Math.Sin(current * 123) * 4;
-                var s2 = Math.Sin(current * 17);
-                var c1 = Math.Cos(current * 43);
-                var c2 = Math.Cos(current * 75) * 2;
-                samples[i] = (float)(s1 + s2 + c1 + c2);
-                switch (i % 4)
-                {
-                    case 0:
-                        samples[i] += 0;
-                        break;
-                    case 1:
-                        samples[i] += 3;
-                        break;
-                    case 2:
-                        samples[i] += 0;
-                        break;
-                    case 3:
-                        samples[i] += -3;
-                        break;
-                }
-                current += timeStep;
-            }
-
-            return samples;
-        }
-
         void waveOut_PlaybackStopped(object sender, StoppedEventArgs e)
         {
             stopped = true;

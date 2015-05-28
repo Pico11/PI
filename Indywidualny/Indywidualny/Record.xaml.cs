@@ -50,7 +50,7 @@ namespace Indywidualny
         }
 
 #if FloatSamples
-        private float[] _speakerData; 
+        private float[] _speakerData;
 #endif
 
 #if ShortSamples
@@ -119,14 +119,13 @@ namespace Indywidualny
         public void TryLogin(string username)
         {
             UserCommand.Text = string.Empty;
-            string traitsFile=string.Empty;
             //try
             {
                 var extractor = new Extractor();
-                traitsFile = extractor.CreateUserTraitsFile(username);
+                var traitsFile = extractor.CreateUserTraitsFile(username);
 
 
-            UserCommand.Text = "User data collected at"+traitsFile;
+                UserCommand.Text = "User data collected at " + traitsFile;
             }
             //catch (Exception e)
             //{

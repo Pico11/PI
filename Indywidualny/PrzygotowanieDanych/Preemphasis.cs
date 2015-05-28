@@ -1,3 +1,5 @@
+using System;
+
 namespace PrzygotowanieDanych
 {
     public class Preemphasis
@@ -5,8 +7,10 @@ namespace PrzygotowanieDanych
 
         public static float[] ApplyPreemphasis(float[] samples,float alpha=0.95f)
         {
+            if (samples == null) throw new ArgumentNullException("samples");
             var floats = new float[samples.Length];
-            for (int i = 1; i < samples.Length; i++)
+            floats[0] = samples[0];
+            for (var i = 1; i < samples.Length; i++)
             {
                 floats[i] = samples[i] - alpha*samples[i - 1];
             }

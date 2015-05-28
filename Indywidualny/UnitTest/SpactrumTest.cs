@@ -20,7 +20,7 @@ namespace UnitTest
         public void TransformTest()
         {
             var transformer = new FourierTransformer();
-            var samples = SampleGenerator.Generate(1024);
+            var samples = SampleGenerator.GenerateRelativeFrequencies(1024);
             var complexSamples = samples.Select(s => new Complex(s, 0)).ToArray();
             var transformed = transformer.ApplyDFT(complexSamples, FourierOptions.Default);
             var inverse =
