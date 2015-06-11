@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-06-11T07:56:37" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '5c573a69-6d14-41ec-baf9-da3497b4c415' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum' -  (Package)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor' -  (Class)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::DefaultWindowWidth' -  (Property)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::ExtractFrames' -  (Operation)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::ExtractFrames::samples' -  (Parameter)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::ExtractFrames::window' -  (Parameter)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::ExtractFrames::windowPeriod' -  (Parameter)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::ExtractOneFrame' -  (Operation)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::ExtractOneFrame::offset' -  (Parameter)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::ExtractOneFrame::samples' -  (Parameter)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::ExtractOneFrame::window' -  (Parameter)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::FrameExtractor' -  (Operation)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::GetHammingWindow' -  (Operation)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Spektrum::FrameExtractor::GetHammingWindow::width' -  (Parameter)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections' -  (Package)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::IEnumerable' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::IEnumerable&lt;Single‎[]‎&gt;' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Single' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="High" Text="(3) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-06-11T07:56:38" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

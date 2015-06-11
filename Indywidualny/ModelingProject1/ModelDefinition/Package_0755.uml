@@ -1,0 +1,2335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="90006069-e1a1-444b-8f40-5c10625474f1"
+  name="Spektrum"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d3e78a03-1dce-416f-b134-3063f5e03c4f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSpektrum"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="30272848-ae93-4b5e-aaf4-1f70389a96a6">
+      <profileInstance
+        Id="e8f3b50b-49e9-4eee-9c8a-2af5f124d9d0"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="45b8dbad-e90b-4d04-b855-84bf2f06e1ca"
+        name="FourierTransformer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1f519cf7-395b-43a2-88bb-e6a72ad22637"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d3e12b7d-496b-4dfd-8c51-0a7b33478097"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af204edc-5276-430a-ab73-0fb3acbcafe1">
+                <propertyInstance
+                  Id="04c48de3-88fb-476e-a8d6-17028909fa26"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e636ff7d-9663-49f5-a7a4-c5ea5ef13835">
+                <propertyInstance
+                  Id="f7a7f40e-da5d-4623-9d9f-c4331af12e70"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9be3ad29-4d5b-4b94-8bf2-0065af7f9d8e">
+                <propertyInstance
+                  Id="bf7576db-d680-49b1-b410-367d66e0b295"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af4cf125-0d8e-4505-9042-6cef84d5a599">
+                <propertyInstance
+                  Id="5e926216-e8ac-4590-87bf-a38bf1c71196"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f975d0bb-1bc9-41b3-bfae-a3369376fa30">
+                <propertyInstance
+                  Id="bab2cdd4-633f-4414-9869-657b56f306b9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f8bab03d-32e8-4419-8c85-70fde18bc63f"
+            name="ApplyDFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a8fc6374-531c-47fb-a181-93b8a0557f35"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b11337f0-44aa-4f57-adf2-1ed7401ea052"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3437756-e95e-404a-ba6e-50a8e656484c">
+                    <propertyInstance
+                      Id="8ddc0bf9-5a16-426c-8302-2b44cd9510cb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09c1d5c2-a48a-4b02-9e59-3bc95dac332d">
+                    <propertyInstance
+                      Id="829eddbf-63e3-49b7-840f-2b2a30a57941"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d70c806f-2539-4ddf-8bd0-08bee86529b7">
+                    <propertyInstance
+                      Id="f1e10d71-0fe3-46b7-95c1-958d0ce62e4b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="247a75bc-3cd0-42bf-ab51-922eb6e7e7d5">
+                    <propertyInstance
+                      Id="85f57a56-fa69-4019-804d-b12b4e525381"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3482cd44-8730-4567-88a8-0d15415da2bc">
+                    <propertyInstance
+                      Id="936e62e1-37f8-4d77-aefe-bce68e0be6a7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fe22a77-5469-421d-b7a0-a6190c103559">
+                    <propertyInstance
+                      Id="ff3f164a-6a5d-47b8-87b9-2c3ec1da60be"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eae7887c-829b-4a37-b985-24894f589e5a"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4c8b88ba-d8a6-4dbc-af5c-3dae7c88d5af"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5af2425d-a3b6-472b-98bd-cf4d5dd5c23f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4bb1f012-253b-4088-9665-ffc58a6653c7"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="6d4f85a0-f255-4da4-bdde-7e78819822ee"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="81d3deff-fa88-4996-a25d-11b75d807487"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="55e62727-cebf-4b1c-841e-ad4c33121e87"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c79b5020-f0cd-4c5a-bd72-22ca3038d0cf"
+                  name="options"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cebfe5c9-d184-4f7b-a55f-b1bb29a447b2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)]) ParameterIdentifier%3Doptions"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="024ce0d1-bb9a-4b5b-82ae-b3825a8f6db8"
+                      LastKnownName="FourierOptions"
+                      LastKnownLocation="Package5_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="858108b1-d931-4c98-b22b-8d1e102d96f8"
+            name="ApplyDFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e1fb6a2d-d8eb-48ec-8555-f2029c262b1e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="29ebc06c-7242-4f12-bc2f-46ac6e72869c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4bf0e73-3585-4ebc-bbdc-af9ebbc21df8">
+                    <propertyInstance
+                      Id="a227f3df-83ca-450c-b2b1-40be7aa0b5c7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3288d0e5-f272-443e-8d6c-ca0ce5709269">
+                    <propertyInstance
+                      Id="211cf4c9-feed-478f-a623-74ab06d21328"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2438dc19-2513-4c7d-ba22-5397b67e9d78">
+                    <propertyInstance
+                      Id="e3c70c88-1d33-4ff2-b0aa-90d0184c58b6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8eddcb97-ae22-4d6e-8f33-8c569d1e582e">
+                    <propertyInstance
+                      Id="c076d37b-0f0f-4d63-83ae-fe8b129a2592"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1774eb56-2292-4114-a5a1-41deb0b1c273">
+                    <propertyInstance
+                      Id="84d2095c-1cd2-4e73-92e8-a375f51d23a2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b494fbbd-77ae-4fe5-b2ec-ed3c41b973cd">
+                    <propertyInstance
+                      Id="07ae436c-7520-4a71-be21-6bfa27927720"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="170e2ed3-8e62-4160-8ec7-e1e622ff1769"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2d3c7bb6-234b-40d8-ab7e-ab98d957172e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f902be03-38d9-46b7-b24c-662fd3e22fe4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="41f2a2ff-1e51-4fd4-8fb5-0bdada50ce8c"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="ad792d63-f133-4494-9aa0-e9abd8489bbd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e3276d1d-7a4b-481c-a174-55d186811c23"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="66cda7a2-d599-43a9-ae74-fd3d733103ac"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="132f7147-33b8-4652-a81b-32f854794301"
+            name="ApplyDFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c302a628-47a1-4b37-ac87-16fc8e66c815"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e9da40af-40f6-463c-a0b8-15bd33fdcac5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35b43931-fbf5-4114-853d-07747a5279e2">
+                    <propertyInstance
+                      Id="f9676a0b-9a7c-4e26-ad3e-b3a36aa17a08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad69da64-38b9-42c7-b4f2-c6c132d5b506">
+                    <propertyInstance
+                      Id="3aeb8d7a-0b01-4fb0-b72e-d40df684a211"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bbafa96-d3f7-49d1-ab8b-54d846105f2d">
+                    <propertyInstance
+                      Id="e769eace-5a28-452b-8184-e7b12aab826c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a61bd91e-3f24-4a9d-827c-5532ac1cb059">
+                    <propertyInstance
+                      Id="cb1cb705-a8c7-4613-91df-09fa7d712d7a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3958884b-40a8-43cd-a566-7f33acaec37b">
+                    <propertyInstance
+                      Id="c9bd602c-4d58-4062-b7d9-7e24b1cbc53d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a636cc7f-2503-434a-854e-477f37c7c60d">
+                    <propertyInstance
+                      Id="6b803b3a-2756-48d2-9a2e-714d1f21bf74"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1bf96a52-ae98-4495-a52d-d7aa181e92d0"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="10aee16a-9b7b-4e34-a8eb-aa79df7175ea"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ea9ee5c5-0025-468f-baa9-60045d5617bb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee23066f-f8c7-4644-a63e-a47a9b5a36a2"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="35f5f23f-fbfe-4240-ac2d-3c1abe93d174"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="593cd8e9-cc62-4f2a-95c4-1b334b096f89"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="af1ed5e9-4714-485d-aac0-57370a4ed76c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="15a8dd4f-f5fd-4b2a-97d1-57ba8f2de408"
+            name="ApplyDFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="00a131f6-579d-4109-a673-69fbc5648173"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="22f924f1-0952-48dd-b3c5-360a741cbbd1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e87b253d-8587-40db-8fff-e5a9cc2ca8a4">
+                    <propertyInstance
+                      Id="7651d65b-310d-4cc7-b4c1-ff1ee1b985a2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f310d889-01b4-487a-857d-e59f89374c59">
+                    <propertyInstance
+                      Id="b4c5f7b9-8ef9-498a-855b-3fce338e88fd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c261657c-f756-41d2-8a13-8553d8f0bfff">
+                    <propertyInstance
+                      Id="8ceef5aa-ceff-46c2-bf96-6043444c417b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd8958b7-6bd5-42ff-8b6d-07896fdeb95c">
+                    <propertyInstance
+                      Id="14a7cb82-6771-43f1-a3cd-2dcae4baffbd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3485ecb4-749b-4020-b1ce-58001f5e19be">
+                    <propertyInstance
+                      Id="48684ad0-72e1-48ca-8d30-029e67ebdb20"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b492a7ff-0aae-4ff9-951f-064b558e05bd">
+                    <propertyInstance
+                      Id="8836810a-30f4-4fab-9962-e9ee34879347"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24d4968f-99db-4687-be9b-5bbcfccda35e"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="167dd980-48c0-4e9e-83e2-f0e2401b7c80"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6e9972c0-44b6-4e89-b0a4-62c5d14955cd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="09eb9f80-20da-43b8-8c83-c457f9e2ff93"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="85abc1f6-9f01-494f-9ec3-2a5642a04f01"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8dd4d3a0-eefc-4871-8c7f-abc039465726"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="02332119-2efb-44ed-a7e8-172438cfebef"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8bfb9f59-a7c6-455c-ae04-cb5f9916d1a5"
+            name="ApplyFFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="15be93d0-0ad4-4389-ab48-66b24142e6d4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0fb277f8-0798-44e1-aa0c-d52dd94882e5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd10f8b5-aec7-4f66-8e4b-460de86417cb">
+                    <propertyInstance
+                      Id="6303da40-1602-40c7-afc4-99ad6567f971"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b193d77c-3bab-4ead-aebe-7cdcfa7ae6dd">
+                    <propertyInstance
+                      Id="283a32fa-5e67-4b4a-8bd9-333b9a430613"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d49c9750-01a1-43cb-9f44-702a9e317bfe">
+                    <propertyInstance
+                      Id="edaadd61-de9a-44cd-8a67-bc1003f94654"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8b16e09-8a54-4e0b-8e5e-07e74dece33e">
+                    <propertyInstance
+                      Id="33471fef-eb86-4fc6-8802-63df44359b28"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58a2d60f-df9e-4189-88bc-40dd36f9fa2e">
+                    <propertyInstance
+                      Id="73d989bf-946f-4de2-86ca-bd115a4b8d77"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9331026-5894-48d3-adec-984f408610a4">
+                    <propertyInstance
+                      Id="2825bd41-5425-4f72-bdc0-c47b82c0e019"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6ccef07-6323-4eef-be65-78ef5ae571f9"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="28454d80-46b4-4635-89fc-69ba45869fd8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="99d9cb52-7e74-4289-bb69-4cc5b8325a08"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c3e933b3-ddd8-441c-9aa9-e7782daaf4f3"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="7013bfc4-ca2f-412d-bf3d-ace850fe3d16"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8384a65f-f7d4-49df-8d39-d1f050ad654a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="68281af5-6dfc-44b4-81fb-ab627c2fc60c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a5e61ddd-6dc4-4990-ae76-de869d311a11"
+            name="ApplyFFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="193f7cd9-e0b5-4cfe-8ac7-b884225b3e60"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e8f8fa7b-7b6a-4b43-a679-272c34c65edb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c6ba82b-38bf-4ed4-bc32-2ca8e1c7c2b4">
+                    <propertyInstance
+                      Id="7ce018cc-2602-429b-8804-1dd2bbe1e07d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa4da0de-1159-47b6-a877-62c9a181204a">
+                    <propertyInstance
+                      Id="dcf77891-c7ec-40de-89ae-02fd6c8b21b0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="084b49f3-e98d-4ef4-9c99-4d107505cff3">
+                    <propertyInstance
+                      Id="ca263cda-492e-4108-aab2-79efcb75e155"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9565ab07-3968-4fbc-8a90-96b4f4aa7835">
+                    <propertyInstance
+                      Id="65202521-bd02-4fe5-9b8f-4d3c5f075ecd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a720b438-e541-4fbc-9678-6a0fb3fdb76f">
+                    <propertyInstance
+                      Id="5c345ca9-ebe9-48c3-9872-9d887fe28397"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70d34a9e-fcc5-4826-85cc-e53e0455ec0c">
+                    <propertyInstance
+                      Id="5ed32f5d-5266-4fbb-aaea-ce0b25e87b2c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b6f3ff5b-bd9b-4ab0-85c5-ce0a3b5b2d83"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7aa9a73e-d49a-4c73-a4ac-a1a5dc5bb172"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fbebc847-6d79-466f-9548-e0d45d004a45"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c117c3a-8fa9-4141-b421-0976a859ea4c"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="856f7957-241d-44ac-9afa-7370b2f1f61d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e85395ab-097f-4ab5-a810-d15aaf24fa4a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="69be71d6-cc4e-41eb-b0da-4bfde818c7c6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a6d017c8-96f1-4d79-a620-73c7a5284cea"
+            name="ApplyFFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4cc99305-6bf1-40f1-a955-d54717bd8bc0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="87d71fa6-109b-4a88-9b7d-ca9b26ae0e67"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ab477d8-d403-4dfc-9e1b-d60ebf6977af">
+                    <propertyInstance
+                      Id="29afecc0-9dc4-47e2-9c27-df0032301f0a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2780d9ef-8790-46b8-9c45-dfc4f945ad36">
+                    <propertyInstance
+                      Id="7487f43a-b8dc-40c8-846d-4d3514522458"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09bd6c89-7e57-4e51-8a98-6652674984cd">
+                    <propertyInstance
+                      Id="23adcb28-b60c-4a50-951f-6e5334410170"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88a9f189-64e1-4845-90e6-75232c3ff6ef">
+                    <propertyInstance
+                      Id="8546d75a-6669-4ce6-a3dd-35a37b649fec"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cb6af51-0944-4c96-88cd-0218fcb8f37e">
+                    <propertyInstance
+                      Id="23cc52e4-7901-43ed-a0a3-35a4fcc19d21"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="980e7c7d-4d90-4069-8d57-494120372944">
+                    <propertyInstance
+                      Id="5a5bb29b-44fd-47f7-9f11-1ea34be25cb5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e99b2708-71dc-42ec-be00-716b7b93e4c0"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="25d58cc4-4940-4445-ada6-aa78a38395a8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2f64cf2e-c79c-40ab-b8dc-3f5ee067de94"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="68b1047b-7c19-45e0-a7c7-0052a77699a3"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="705f9975-139a-498d-b91b-83d87769a160"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="77c6c2a8-1ef9-4d5c-83a1-5627a7b96102"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b2e6ab19-0c96-4b93-8461-02a41463b537"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="582d241b-ff24-4293-abf5-749ce504430d"
+            name="ApplyiDFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3e3a4208-3d99-444a-9f47-d4a539e480d6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8d77a91e-f646-4e0e-8b4e-7f4d41844272"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f1b2423-55b5-4a7a-bad4-87ab48487f4c">
+                    <propertyInstance
+                      Id="c0cffaa3-f89b-445e-a906-4f9ed4ff87aa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="836780d4-d456-40df-b714-395c8083691a">
+                    <propertyInstance
+                      Id="ac99527c-5775-46a0-baa9-8f87f2dc343a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c98d2ef4-4d45-4693-b666-e95d1daeeeda">
+                    <propertyInstance
+                      Id="5431f43f-457a-4b34-86c0-47c9977c6097"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c170c90-be1a-4d87-a842-29369b953d5a">
+                    <propertyInstance
+                      Id="28b88488-d66a-44c5-91dd-cb9491928c2c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9e83053-deac-4ded-9248-c6df34e48d29">
+                    <propertyInstance
+                      Id="8a25df3b-235e-4cb6-99d0-2bd1aaa25137"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a20d6e08-f4b5-4499-967b-59c2c5055dbd">
+                    <propertyInstance
+                      Id="adf10925-de12-4161-9315-6d9fc3aca33d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="768ed63d-2cfc-4a7c-922e-e59a9ecc55ca"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0a38d732-7e0d-4163-b839-61315b0c5cde"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3b28ae68-bbd8-4884-8d8c-c03c49e5a82b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="36f23823-2a13-4e6f-b872-c59dc0fca8ee"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="f14ed655-7c0d-49ad-9aa0-ea6aed47ef8c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="666d7e3d-e972-4c84-b54e-5724c248526e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cd1dca70-2cfd-484b-b747-f5fac37295c5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71c0a576-c4a5-459f-be2e-ecb4bc29a08d"
+                  name="options"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="669662d1-e6b0-4bb7-90a4-ec3ecf0372c2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)]) ParameterIdentifier%3Doptions"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="024ce0d1-bb9a-4b5b-82ae-b3825a8f6db8"
+                      LastKnownName="FourierOptions"
+                      LastKnownLocation="Package5_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="20b06258-8b90-4d5e-86a5-1f68db08f77e"
+            name="ApplyiDFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5201dc2a-32b8-46cc-a295-42c8429816bb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9e565f9b-5d71-4f52-9f99-c72a9d380584"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c974a3ef-860d-4ec0-96a6-060f897ac06a">
+                    <propertyInstance
+                      Id="00245127-390d-4a41-b7ac-8182d4a6b553"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff14f069-1744-4011-8e8e-cb61f4939d9e">
+                    <propertyInstance
+                      Id="e7dfa3cc-d5fa-4ed2-8e44-a4ac518cc5b7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0f18230-fa06-4a6d-90f1-b1ace08752a2">
+                    <propertyInstance
+                      Id="043a030c-2453-441e-917a-881e7f74296f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73dc44e5-47b1-4180-a586-ba49457b75ee">
+                    <propertyInstance
+                      Id="7046c688-b30a-495a-8afe-8c3959d63a4d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acc775e8-a4ea-4bb1-ad70-f91bb015d414">
+                    <propertyInstance
+                      Id="87b6d24a-a071-4b7e-8e18-7b115a05e751"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6193fb9e-98a0-4072-8170-1a3bd999c5bc">
+                    <propertyInstance
+                      Id="0e3f844f-6be5-47a0-98c1-844b477012ac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8e6c0fa-fcd3-4bbe-b3a4-38bd2a97519e"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9576bb89-82c5-420e-9e6f-62cc2c65c884"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="12e0cd40-8aa4-4b34-8115-bdc1ce182da6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e97a0695-dc52-43a4-a286-425149cfebca"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="ab1a40c3-a795-4a98-827e-2bb0fdb781f0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b41aa581-ae78-43d2-8afa-dee17fafa284"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="16389b21-b5ad-4502-9029-a8667c430ed7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ebebad27-b90b-4ee0-8bd3-516c5f20e296"
+            name="ApplyiFFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="61e85c39-cede-4a73-be92-9e56237613eb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d0de70a8-b4b8-41c3-828b-d20d1c1dff10"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab174534-bea5-4f4e-a6d2-bd44e13030a5">
+                    <propertyInstance
+                      Id="3f614dd7-128f-4250-801a-62e9d9a18860"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5eabba30-b10d-48e9-b9fc-a02a9d562b09">
+                    <propertyInstance
+                      Id="0ae97b42-ad8c-4a5f-9e4f-e0beb32d2b30"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c53e95b-c1ad-415c-9388-13e93ff2241a">
+                    <propertyInstance
+                      Id="aba98c9e-e3c5-48f8-8251-7d9eb9f15145"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5306d32-dace-4d3b-9b30-4e736e86d443">
+                    <propertyInstance
+                      Id="f600c031-fbbc-4a61-907b-f7bd62783dff"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63034d52-9526-4dc8-9ead-0f452c123714">
+                    <propertyInstance
+                      Id="14c4a227-dae2-4549-a9dd-17e2249f993f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc7ee488-65b7-45a3-95d1-0e3101c36926">
+                    <propertyInstance
+                      Id="cd8aed10-3877-4106-8828-39d8070e7993"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44e11727-bfb0-4903-8d02-5606995ee61b"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d313f575-80ca-4b6e-bc48-5e356f420233"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1d2e303e-c156-42e6-b68b-db1a807d7029"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f2c3b829-b9e1-4f53-adae-a64e5b74cdcf"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="9fe15d7e-0649-47d5-ae38-e7c519c17a8a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="179daeb7-a380-479e-b031-ef71a270e348"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="249bd241-0ca6-4132-af2e-9734058eacd3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3e83e442-3610-492b-9a45-0ae8967a079e"
+                  name="options"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="39324d23-3e65-4b99-9af2-2e821b2989c4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions)]) ParameterIdentifier%3Doptions"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="024ce0d1-bb9a-4b5b-82ae-b3825a8f6db8"
+                      LastKnownName="FourierOptions"
+                      LastKnownLocation="Package5_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="094a01b7-d10d-42c3-8230-b64c0d2a271e"
+            name="ApplyiFFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4b772b8f-ee26-45da-ae36-fc5f29e29e30"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="393cd35b-eafb-4106-8344-050d7c4766f0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e33f4fa-8daf-4745-b84c-7caf1043171c">
+                    <propertyInstance
+                      Id="dd14b8ad-2acf-4e98-967c-ac7f5d405472"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3513ea39-92c1-4f4e-895a-4433c5af4f1d">
+                    <propertyInstance
+                      Id="63f1edbc-fb5f-4a3e-bda1-45a0c8a6aa7d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54fb07a8-71e8-4450-91c2-f13494eef654">
+                    <propertyInstance
+                      Id="9d651f12-d80e-4bb6-b492-8ed18780c077"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7870b488-b02e-4290-a1e6-7691dbf35d4c">
+                    <propertyInstance
+                      Id="b4024581-47df-46e6-88e3-34d6aaedc5be"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea8ce0bf-7b5c-4f4e-b9f4-f1b6240c0930">
+                    <propertyInstance
+                      Id="384479cd-fdbe-468d-b215-2876b725a890"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41fb8438-db4d-4d25-8428-678fab9b5102">
+                    <propertyInstance
+                      Id="bb1ce07f-8a0e-465e-babe-526298817ab0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0e68a0f2-f1bf-4316-9994-8d6d74e79b18"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="83323a16-3a57-424f-b03a-f7159407f1ee"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="addefe9f-eb4c-4ce3-9d8c-0c47b4890560"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="496af7a7-13cf-4672-b949-148d55d1e175"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="0ca5cc40-c025-4217-be2d-bad4e1df7dcf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D(Name%3DApplyiFFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="350b86bb-2882-4545-9f60-be2d3109e9a9"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="831879bc-3d30-46b8-ac1a-0c78a6158470"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+                      LastKnownName="Complex"
+                      LastKnownLocation="Package2_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b15bb749-a244-494a-b7fb-28d1958f7ea9"
+            name="FourierTransformer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3e3c02ff-542c-4043-bc44-115413e4e56a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFourierTransformer Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a454cbed-3ed8-433f-ae6a-587b8965616f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32660e08-26ca-45df-8da4-57521cbe0fba">
+                    <propertyInstance
+                      Id="4e4e7a86-1229-4c1d-895e-4c825a4370d6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2d0abef-2565-4132-8a26-f56124df0af4">
+                    <propertyInstance
+                      Id="ed537c02-96b0-4f94-a312-06c2f272f0d6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43620960-2ec0-43cc-83be-a20465526a50">
+                    <propertyInstance
+                      Id="241aa018-8fa7-4e33-a3a9-e6680a288c22"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ea98918-71ed-4321-a56f-ee9af95ae10a">
+                    <propertyInstance
+                      Id="c1e927f3-91dd-42a5-8682-20dd79d1488b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1745be8-a3e0-4912-b484-612a2d74d26a">
+                    <propertyInstance
+                      Id="a3c16039-61ca-4078-8dfc-8b33ade59eb1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc5660fa-17a1-4119-a01a-e65141c17699">
+                    <propertyInstance
+                      Id="0d715b1d-c019-48ca-8c01-adb3a4999d9e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9052547d-8b36-4009-b71a-d9c9d5ceed22"
+        name="FrameExtractor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="06a855c8-2696-42c6-8ff8-1c5ad14c0f29"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ed14c565-6e55-4501-8fba-73549e8de50f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e361cde-6bdf-4d30-b049-b6b85a1a01ae">
+                <propertyInstance
+                  Id="297b33a0-04d8-4f1c-b32a-c8ecc757019d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7aa85724-89c1-4cbc-a2a9-d255fe183bc4">
+                <propertyInstance
+                  Id="e32a42e5-049d-4597-93de-ab9fe61298ef"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7ce78545-57c8-415f-a468-068433124318">
+                <propertyInstance
+                  Id="1d9f010f-d2b2-43a6-be6d-b4016e148d0b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9627a8cb-c64f-432c-9512-e0fb2ba9c4f7">
+                <propertyInstance
+                  Id="1e092dc5-0b38-4c0c-afbc-4e00dd995c63"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b2909fc-eca7-41ac-ab9a-5b422f621ad7">
+                <propertyInstance
+                  Id="7e8c6f4d-2967-46c6-a421-667c5f8c6aaf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="7a6ee48c-b618-4027-8d28-9f071e5a1695"
+            name="DefaultWindowWidth"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="077edeec-fc17-4153-a43c-444731cce713"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3DDefaultWindowWidth"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4f88c5b9-b883-4fe8-ab70-1f4a42e9eeff"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f43d7bb-5060-48e7-b805-d460d668a699">
+                    <propertyInstance
+                      Id="8104deae-5bd1-4d48-a95d-a84b02f2a5ae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15aa2620-ac37-4a39-80ce-4c20ac1bb20c">
+                    <propertyInstance
+                      Id="16a438e9-e3d7-4ef1-bca4-47b89c61f6df"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdcb98fa-f812-459b-8511-51078b8fde67">
+                    <propertyInstance
+                      Id="200e053f-abe2-4ddc-a547-5c1c0e5c6ed1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15757bfa-bb01-4f0d-9b52-e32173da9bdb">
+                    <propertyInstance
+                      Id="c0965a33-df09-4244-ba79-bfb66d337f0c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d129ec62-61b5-4931-b6bc-f99805620011">
+                    <propertyInstance
+                      Id="1e6f1b75-0fdd-4797-85ef-4baad1a5e73d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0e7f0c17-8482-4ae2-aa3c-4e85c09c88fe"
+            name="GetHammingWindow"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e9336e0b-53be-4f59-b7e0-05cad821ac48"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DGetHammingWindow OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c07c31b8-769c-4e6f-b5dc-b1b9b3ed6d66"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce2da4ee-9982-4eee-b7e3-e74d318edac4">
+                    <propertyInstance
+                      Id="d8b060c4-18d2-430b-a649-6003ea2c8cb9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0e3af72-5e28-441b-b7b7-5cd64ed24afa">
+                    <propertyInstance
+                      Id="3bc6e898-4b79-4dc6-abde-7054aba3cb63"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f6b7826-1094-4270-8d8a-582ea4050a8d">
+                    <propertyInstance
+                      Id="b795c244-518e-477a-afb1-6990357afa2e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e253adf6-0544-4cf4-90fd-458d61b28291">
+                    <propertyInstance
+                      Id="823c41ee-7817-49bb-a00e-f4cbb3da63c4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b37af23f-34d8-4ac5-bb6f-012c78048ef9">
+                    <propertyInstance
+                      Id="8dc1e9bf-a2d3-4efa-a2e7-6f13322457e2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f196a07-af98-4a4e-b748-55006108face">
+                    <propertyInstance
+                      Id="1a48a8a7-e570-4ba1-af15-2880a168b75d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b4a64ea8-3743-4733-9901-abebb8abfb6b"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e564f58e-4cd0-40a9-9429-be715f2f7246"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1c2b4b50-3599-420e-8430-1125d6a0d26a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ea4cdf7-bfc0-41e1-a161-a4d59b7ff6af"
+                  name="width"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="93498c56-7516-44d7-b079-9af231174250"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DGetHammingWindow OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dwidth"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="29c3d94e-ae0f-4c4d-a526-d15223d96c2d"
+            name="ExtractOneFrame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="10611dda-f80d-4217-bba8-c983f7267e5d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractOneFrame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fc43564b-61cf-4989-a081-5e4e78304d22"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fb53df2-b2fd-464a-98af-a9f637bcc258">
+                    <propertyInstance
+                      Id="b2e160da-216a-4c51-9031-70b2778a3c0f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="287b5f2c-efe3-44e8-a49a-58b73ba15be7">
+                    <propertyInstance
+                      Id="aabd5bc2-78d5-4869-a852-bca4b14096f7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad7666c7-8cb4-4c3c-9a23-cfe5fcf6c7c5">
+                    <propertyInstance
+                      Id="5d555646-0f1e-4d82-94ed-c51510882a21"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d45b8f83-3677-442b-8640-2697209e50d6">
+                    <propertyInstance
+                      Id="e877cc2e-c46f-4f34-9bcc-eb5f400680a6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba84152d-2651-441a-b74a-ae2f26e3ab5a">
+                    <propertyInstance
+                      Id="5103362b-f621-499d-adc2-d7b30b10bb03"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcc325c9-d078-49e7-a140-12028388f8f8">
+                    <propertyInstance
+                      Id="c91b11d9-3697-4183-bf15-71bf880d0133"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08f814cc-4165-4562-acc8-89319082531a"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="39a93d88-5593-4672-997e-eb6bd6dc5d0f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7f5e3fdc-f733-4c42-9c57-450761122db2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cd542805-7d60-492a-82b3-97aa19ea0091"
+                  name="window"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="1b24da0f-c431-4997-a223-b3a7769c746d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractOneFrame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dwindow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d2602389-982b-4ac8-8b3a-196600d6a0b2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="01ad622d-19e3-4062-abfb-2a7db3bc607c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="713da73e-3b75-4b68-8f57-afebff657a44"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="d7a5e689-840d-4d87-9e87-7eb6fc74071c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractOneFrame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cad1578e-d758-4a3c-a450-7e89211f4068"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4be9b84e-456f-455d-907d-f50c73b81ce3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="457184c2-e74c-4b92-b807-215a5c1211fd"
+                  name="offset"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f98b1d71-7753-4b67-8354-80e372fb645f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractOneFrame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Doffset"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1314b6a6-ff9a-4418-b1af-78092062b846"
+            name="ExtractFrames"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f951b9ea-8f8e-45a1-a8b0-be22a5ec1cdc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractFrames OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="14065b09-7646-4583-ba3e-631ddbb0791c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe568309-d258-4140-8349-1bd83457dfc7">
+                    <propertyInstance
+                      Id="79c12a47-1d56-4f6a-a1f2-6448ac8e8d75"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fee4fec5-9e89-456e-84c3-fc0b2d0bec3a">
+                    <propertyInstance
+                      Id="693d9a44-4c6d-45e2-8280-ce2f26558cd9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfaa333b-f0f7-44d1-98ee-e934915c73ff">
+                    <propertyInstance
+                      Id="84c822e4-6f60-40af-8a45-7365208c5aca"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2b1fdd4-6fce-4b07-b5e1-7201564071aa">
+                    <propertyInstance
+                      Id="1933a83e-5e0a-4f7f-a9c7-56fda146ea7a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66fa3db7-828e-4ad9-9e92-c3ac6c725ccd">
+                    <propertyInstance
+                      Id="bfb2a205-e4c3-4432-9272-909f956595f4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3d60292-abd3-43bf-a7f0-b5cff76d7253">
+                    <propertyInstance
+                      Id="92f8497d-b584-41cc-b346-5c03eb1eb32d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="31876063-a6e5-4d6a-831b-2f816aabcfc5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="38498269-92c4-48e9-be27-7a7fda812d0b"
+                      LastKnownName="IEnumerable&lt;Single‎[]‎&gt;"
+                      LastKnownLocation="Package7_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a71918f8-0c48-4df2-a7e7-d655ec389d7b"
+                  name="window"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="2f100975-c384-4189-b918-5576e91dd1b8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractFrames OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dwindow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cd8a9ab6-9431-4843-a5dc-487115e8eb14"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7ff5992a-19e7-43c6-9a34-b588607a79b6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5896d649-02ec-4bc9-9351-6ff6efa41415"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="60f12487-2a39-4fea-a6cc-3df0034fe926"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractFrames OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1f0c3f9c-431d-45b5-b5a6-9e0dab6e6d8b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fa818568-4fbd-4631-b312-7059be57a1af"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7b703933-552c-45f3-aea4-25ed67c851fd"
+                  name="windowPeriod"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b48207e0-6738-453d-b0a2-f90c39c149af"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractFrames OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DwindowPeriod"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="66391cd9-ffa7-4a41-97b4-3ef30235c335"
+            name="ExtractFrames"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="461766e1-3507-48b2-98a6-77c21e653751"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractFrames OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6d0da8ba-2c27-4a96-ba1e-eb9468c3000a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1204bc58-3c20-44a6-9fd1-c9c71e3825b1">
+                    <propertyInstance
+                      Id="ea6cb61d-a022-4ae5-afa5-35851af37741"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="493bdc27-068a-4697-a17e-9d6adb73d851">
+                    <propertyInstance
+                      Id="4ad78617-8128-4086-8592-58e845d5b26c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b900612-7e33-4845-8fd0-b62d6f5132e2">
+                    <propertyInstance
+                      Id="1f29ffc5-4e75-4f7e-b207-39b684978483"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4aad5648-4524-4759-8b34-939463872b83">
+                    <propertyInstance
+                      Id="cae26509-7d1c-47a5-a2c8-0f98ee02dd5f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a5da795-c14c-4d46-b495-50f72ea50fe3">
+                    <propertyInstance
+                      Id="ad18844e-4939-4493-9978-d19982cda9ef"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d6d96dc-6026-4c1d-94ae-72447af99741">
+                    <propertyInstance
+                      Id="480d2856-ec5c-4997-a01b-134761c1e6b0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4894845b-fbb4-40a3-8dde-c63b3e0e994c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="38498269-92c4-48e9-be27-7a7fda812d0b"
+                      LastKnownName="IEnumerable&lt;Single‎[]‎&gt;"
+                      LastKnownLocation="Package7_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63f319c6-376f-4c88-890e-9f6f68d5ba2f"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="a108ec0a-58dd-415e-b579-9be1b5e90b13"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractFrames OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8e3d18aa-28f3-47ee-a352-b462dd3e326d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d465b834-f037-4939-bc96-61b4b292ae51"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70fc0da0-61b2-4a3d-804c-3d483547e2b9"
+                  name="windowPeriod"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bd2e4377-54d0-4e4b-81fe-69c0174d1b19"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D(Name%3DExtractFrames OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DwindowPeriod"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="10eace0d-dad4-42ed-a852-0335f72e09ca"
+            name="FrameExtractor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fa93f5cd-3847-4775-b560-b704140ebece"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FSpektrum%2Fbin%2FDebug%2FSpektrum.dll Namespace%3DSpektrum Type%3DFrameExtractor Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7efb27c5-4cfd-454e-bc03-db6f9550eaad"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87adbbd2-c8d1-4e5d-8fb4-aa3680721263">
+                    <propertyInstance
+                      Id="0471eb6b-084e-4fe8-bef8-6f631d723d15"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef7e4814-bec6-4a06-be73-c2cca0dd6559">
+                    <propertyInstance
+                      Id="3c77f50b-4dc3-40ce-9ee3-b181a3a76577"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7a3df41-39f0-42e7-a33e-a94a80436007">
+                    <propertyInstance
+                      Id="ef8ad240-557d-46ab-83a8-56d5f7f9f0a6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcfb4ec7-8d6c-4cd6-b903-c0c6a5a4d6d7">
+                    <propertyInstance
+                      Id="c05da452-77e6-4b7f-9d03-6a12230fcb65"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45ad020e-0451-4c97-8391-79d9e19f8066">
+                    <propertyInstance
+                      Id="a1c1ae06-cae4-4437-84b3-697b688ed081"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40715da6-e266-4e4b-b598-d171b2912d88">
+                    <propertyInstance
+                      Id="f5d0131b-d656-47d9-8478-b733a364e115"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

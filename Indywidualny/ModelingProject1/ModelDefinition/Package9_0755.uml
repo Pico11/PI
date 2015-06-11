@@ -1,0 +1,2485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0693842e-5e5b-46b8-85fa-b74b0e4cf944"
+  name="Nagrywanie"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="5fe08c77-f68f-4622-811b-901167fed0a1"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DNagrywanie"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="835c0341-6409-4e10-959b-b30f217fb93e">
+      <profileInstance
+        Id="264f92d0-76aa-4c18-a622-f4fa07c6bdea"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7a697792-9b81-4694-a075-db247ed9b06c"
+        name="Recorder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e671a711-e535-4442-a2d4-32a589485268"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0fa0c905-ca6f-4d20-8cb6-daf67cc94370"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ec71a24-0f5d-4529-9d80-a5d2145fab4b">
+                <propertyInstance
+                  Id="107c6ed1-8034-4918-91cc-6c422182d881"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="46ef4f15-70ee-4fd2-82b3-6b8225bd7e36">
+                <propertyInstance
+                  Id="35a4c6c3-6172-4d68-bcc5-3eb474f367e2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="00e35c49-c748-4c7e-a3f1-1def24bbeab0">
+                <propertyInstance
+                  Id="0fda089b-2eb6-45e3-8caa-eb7189a2bc67"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8431f6a6-cc65-400d-9db2-e9311593e0e4">
+                <propertyInstance
+                  Id="d130271b-0286-4202-bafd-67e458da7009"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="48c07bb3-79e6-46c6-9631-5345aa3a4468">
+                <propertyInstance
+                  Id="d839bbc3-3ad7-46ca-bd43-2f545744377e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="113ac182-d6ba-4d77-a6e0-ecb516468160">
+            <interfaceMoniker
+              Id="bc80f16e-8149-40fe-9349-3366eb83d206"
+              LastKnownName="INotifyPropertyChanged"
+              LastKnownLocation="Package13_0755.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="0b7c6d63-daf1-4053-91e6-ce4b0b48197c"
+            isDerived="false"
+            sourceEndRoleName="Recorder"
+            targetEndRoleName="Samples"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+              LastKnownName="Single"
+              LastKnownLocation="Package1_0755.uml" />
+            <description>Property Samples references type Single.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8db46203-7a05-4667-b44c-8bfcf4c5bc6e"
+                  name="Recorder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d98a15cf-74d2-4c87-85ed-e860eb17a473"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="73067759-ae11-4e56-b484-25d8b9a934c6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90bff490-9852-4281-b6c6-b63051f85dbd"
+                  name="Samples"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isOrdered="true"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f9629579-c04d-4ef1-9881-7714bc41f8d7"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7d1ce6a8-815b-4a72-b281-afe692a1feb5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5db95600-1d43-4ffb-a147-dcc710251467"
+            isDerived="false"
+            sourceEndRoleName="Recorder"
+            targetEndRoleName="Format"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="66263d4a-e7f8-447f-8418-672cf9884b47"
+              LastKnownName="WaveFormat"
+              LastKnownLocation="Package11_0755.uml" />
+            <description>Property Format references type WaveFormat.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="679d4c5c-939b-49e9-8473-f8b564b9fb18"
+                  name="Recorder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cd860a75-ca31-46f2-bca4-ff1e32e338b2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3d754ecc-9da8-4eac-944c-1164a33278af"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4639ecd5-c364-41b1-8c51-66035c730996"
+                  name="Format"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2a7bda44-8692-4ffe-8daa-aa4f1546bd71"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="73e63d50-69b2-488e-ab59-aa7ba40f2988"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="7b422a0b-6d80-49cd-a0f1-458a7e375041"
+            name="Path"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="df8fd4b9-69b1-4261-a600-259546b0be3a"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DPath"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0f59fe0d-d9ec-4eba-b644-22bbf3f68343"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74bbfb91-81fa-451d-bb05-2c4f41fe1c01">
+                    <propertyInstance
+                      Id="9a9fd905-146f-43ab-bbf6-21b1ed3d4749"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed4b7c60-8598-42e5-9a2e-e03e976a358b">
+                    <propertyInstance
+                      Id="9bd03de6-a648-47f0-b492-fbf54921dce8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd876c2c-7bf5-413b-9b94-9dd24cd20e19">
+                    <propertyInstance
+                      Id="ff134d2d-0b3b-4b80-8d8e-922277d57a33"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58112428-acc0-485d-88f1-35f0392359ed">
+                    <propertyInstance
+                      Id="830b6c94-c1e8-4b4a-a22d-8fe0e93a7796"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4de414b8-4494-46bd-b17a-9ae27a20c245">
+                    <propertyInstance
+                      Id="dfef4e73-1185-44b1-a28a-b3c7014fe8cf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1191bf28-7ca2-4a1a-8d78-0f9db1193006">
+                    <propertyInstance
+                      Id="b6574944-b718-44e3-a499-4f73db06a06c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db4202f1-5e32-4890-a3a3-4feca25d3eb5">
+                    <propertyInstance
+                      Id="599d7cec-b8bd-45a0-9c00-8ac437d40b45"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a77c1c7b-760c-4a93-a3e3-c7a4f36c9977"
+            name="Status"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c6fe93c4-49ab-46b3-a0db-a78cca1c089e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45d9dfbd-2705-4207-bd04-4e2e13f84dda"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd207e9f-36a3-4adf-bb84-1a5dec983e33">
+                    <propertyInstance
+                      Id="6fa20f12-295a-4860-a712-0daaa1ac400f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="193c7ce1-a642-460b-bf4a-c7e3f9462395">
+                    <propertyInstance
+                      Id="6789d848-0154-472e-91ae-43bca8cca3e1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f581a9f4-fa28-4922-a857-5d7278167666">
+                    <propertyInstance
+                      Id="b5e747bb-dc68-449c-80aa-d889653dc3ae"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b936ff2f-437a-455f-a5fb-5c0eba10d1f9">
+                    <propertyInstance
+                      Id="1ec7bd25-7a60-49b3-83e2-960dd7a00a07"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16fc6fd9-094b-4aa2-bd21-78870ac7b3a3">
+                    <propertyInstance
+                      Id="f6f1caeb-4ac7-428f-950a-459149958a23"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cc4c9ea-c492-4be0-9a42-d49db6f8496b">
+                    <propertyInstance
+                      Id="3ea7c3f9-f11e-4014-aeec-320e5169541b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9f1a8f3-aa3f-4096-aaca-341809f14d04">
+                    <propertyInstance
+                      Id="51a18a27-3984-4555-bc5f-7e5840d6170e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="73112c66-8e88-4f8c-b612-a62d3baa2c43"
+            name="Samples"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="faaa91b6-1153-4f93-96b0-2a451334e33f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DSamples"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1b81070d-82b1-413b-a648-38933a02b745"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3775fa1-f282-4af6-b775-c359ca39a92d">
+                    <propertyInstance
+                      Id="6c8de119-db55-4f4e-b58a-9e82d3a5eadf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54306f48-a5f4-463f-a55b-deef47e0b53d">
+                    <propertyInstance
+                      Id="fa5de026-f851-41ae-9384-d04950f1ee22"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0ca6a27-d0f5-490d-b2cf-09740fbed4f0">
+                    <propertyInstance
+                      Id="3cadb96d-e24f-411b-8ba7-38bd7866d3d5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb89dca1-243c-4846-a85a-dd29d8d77cf1">
+                    <propertyInstance
+                      Id="87f353d1-a07e-4bfe-bfca-36423182cb35"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d048a4f9-0312-4fe8-aa3a-c3fedade83c9">
+                    <propertyInstance
+                      Id="749de814-b9bf-4e37-94f2-b416fd292be3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82c08d50-c15a-4f61-b2c4-d3b5ee7c4eca">
+                    <propertyInstance
+                      Id="5d2b544b-7916-43af-8c82-775c97677a69"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5651bf3c-7e71-40f9-be31-70bf6e4827ba">
+                    <propertyInstance
+                      Id="25895744-7170-49d5-8ad2-46b63765161a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="0a6106b2-08f0-491c-bb87-2a6ef093e67d"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="ba8240e3-62fb-4bff-b003-7ee33724de52"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                LastKnownName="Single"
+                LastKnownLocation="Package1_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="575b2b10-df80-49b2-ab42-74a266ce7334"
+            name="GetSamples"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a2044350-f166-463e-85bd-08bdfe4b412b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DGetSamples"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="372d4b73-f273-4590-ad72-0fb013a834f1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fc1efbb-8593-4810-978d-196499b49f3f">
+                    <propertyInstance
+                      Id="0739f401-4737-48db-bec8-e042139b8990"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a04cc1c-1624-4b17-a493-3bdde513f72e">
+                    <propertyInstance
+                      Id="63cd7d12-8905-4f07-a544-03a1ffc9f3fa"
+                      name="Get"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ba6bdac-90a6-425d-a695-6f5d6faeb04b">
+                    <propertyInstance
+                      Id="38ea63cd-85b7-4ed3-b3a7-4d599e83806e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ba15bbf-0e69-4f81-952c-12e20f514ada">
+                    <propertyInstance
+                      Id="ec0bb2f8-9404-45c8-8262-32a23694decf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9571559e-f5fd-43d0-9be5-3b49cdf640d8">
+                    <propertyInstance
+                      Id="a1962d0a-d29c-48e4-811f-57f2451c6a44"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebb409eb-5fd7-45b9-b931-773895204bfb">
+                    <propertyInstance
+                      Id="38a073b2-1dee-49f1-9eab-8fdc2c075ec8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c87abcf0-b293-46a9-8440-42ab49be2e06">
+                    <propertyInstance
+                      Id="86fe3048-d3d1-4c4a-9e4b-8184ab5473ea"
+                      name="Set"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="67e12678-8aaa-4a62-83c1-69054bd5667a"
+            name="Format"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="707ab4a5-431b-4ee5-ac0d-e217fd83edb7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DFormat"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eeee4cad-dd4a-49f6-98bc-f50cb8a8beaa"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6238a87c-d394-4973-bb29-54933eacea71">
+                    <propertyInstance
+                      Id="afd92817-ab91-47e2-a185-14538a6b9bc5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c12fa243-9db8-4469-a6ba-5d62496b1e5a">
+                    <propertyInstance
+                      Id="1da2d4c4-f25f-4fe6-b8d6-af48bd27d15b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d40e6dac-9fae-4671-b9a2-edf39ca34a6b">
+                    <propertyInstance
+                      Id="08519e9e-103b-40e5-a893-3ad51f6932d9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b13ac50-f8d7-4831-9258-19d5fee3f8dc">
+                    <propertyInstance
+                      Id="f033894e-a8ef-475c-bc8c-e95c882c0cbb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b92b357d-22f7-411f-a4b8-cd2b08774313">
+                    <propertyInstance
+                      Id="b4b2982d-8727-450f-818c-5efe3f584105"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a967c45d-ad89-4c1a-9d70-89af3492c284">
+                    <propertyInstance
+                      Id="e7b6b3be-fbfa-4af0-bd79-6dffdb3caad5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be0ed7b6-7d01-41e6-85b3-d9aa9a85a493">
+                    <propertyInstance
+                      Id="dfece9ec-e482-439d-a03b-aca5a64626a6"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="66263d4a-e7f8-447f-8418-672cf9884b47"
+                LastKnownName="WaveFormat"
+                LastKnownLocation="Package11_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fe45eedc-ad49-4178-958d-39cd1877828a"
+            name="_status"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3de6f275-3263-4a21-9e34-1e55cc9034b6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_status"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0fdb4ad1-8954-4411-8f36-a1266adf5f06"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06cca1f3-a821-4a72-8394-2fe4e37fc40c">
+                    <propertyInstance
+                      Id="5ec689c6-c570-4b1a-9c88-4b8cc8323e32"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fb14c08-fd0e-45ba-928c-1f4b89c7572d">
+                    <propertyInstance
+                      Id="c50c2448-33f1-4f3b-93d0-d0fe37d50e5f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5a412bc-f4b9-4ef7-9165-23a62ffcf314">
+                    <propertyInstance
+                      Id="a5961f83-e6d2-484f-9107-72ededac2ae6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="643078d7-d40a-4ab8-b21f-47d4496f69a3">
+                    <propertyInstance
+                      Id="3b2f38da-7ba1-4bfa-9536-da774f3c2103"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="556b1d0e-1b02-49cb-b6e6-40f40b4407d2">
+                    <propertyInstance
+                      Id="38b22d37-c165-4f1b-97aa-98e68e148a43"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="39baafb6-6eef-42af-896f-616a2b9613a4"
+            name="_waveSource"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c0359a8f-9292-4e56-8008-9c5ed13a0e5a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_waveSource"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e649d0dc-9b89-436f-9d7b-a0f926ed543c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a33f9998-1c54-48e7-9960-2641eb35868d">
+                    <propertyInstance
+                      Id="b52f69a2-460b-434e-8cb0-028cfaa9c122"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c19bb21-8eb5-4e0a-a507-0b38ed3793b0">
+                    <propertyInstance
+                      Id="7849fc11-ee9e-4ee1-a1ba-a1ca8e758b0c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd9ff5b5-fee3-485a-8d37-d08a7c861f5d">
+                    <propertyInstance
+                      Id="052ec3e7-6c00-46da-92a4-21a96e540306"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf32db5a-3254-4122-9c9c-c28ee9d0ab32">
+                    <propertyInstance
+                      Id="abd17ecd-e3ba-4017-aa81-1bdb166eafe6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31300f96-27e3-4a8c-b23e-a707541c4650">
+                    <propertyInstance
+                      Id="7fbe39e4-5e32-4700-9c0f-bdd41cdfb133"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f0733a62-5b24-4ed7-9458-0f5853cb9f82"
+                LastKnownName="WaveIn"
+                LastKnownLocation="Package11_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4fe1a7e3-6be4-47bc-8c27-ff2e7353eac7"
+            name="_waveOut"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fb3b8760-6bc1-44c3-87a6-6b1347b5f2a3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_waveOut"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ff0bb1d8-d8e2-41fa-ba0e-d1761d13d976"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcfe3f75-5f82-4c43-8050-3eb19b8b9d92">
+                    <propertyInstance
+                      Id="2dcb4d9e-b9c0-4ca6-8959-95d3408211e9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40db29fa-c4a2-454b-8052-09d523d30be2">
+                    <propertyInstance
+                      Id="0a22e9e8-e886-4597-bd83-36fa0af0b919"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93041050-4fe9-4933-8b16-32346321dd9f">
+                    <propertyInstance
+                      Id="440b23fa-2e6e-4e41-8a56-d7516f613280"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b94f3ce-c086-4f1b-abdf-90dff2210c27">
+                    <propertyInstance
+                      Id="342fea2e-dc83-473a-800c-d054b98f3817"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cd38ce8-14e2-422a-9cf3-ca2af25a6db1">
+                    <propertyInstance
+                      Id="3ff3ac5a-2ad8-45d5-9ad1-34217245d251"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6d47965f-0670-4e88-877a-6ea25c8275ed"
+                LastKnownName="WaveOut"
+                LastKnownLocation="Package11_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="44f45602-8fe0-47a8-ae09-348523671dbd"
+            name="_waveFileWriter"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="41ea3d10-ca52-41d0-ae5e-9ab106b8937a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_waveFileWriter"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="93e6d5f6-fcd2-477e-bbb5-b29b1c22f077"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53c0e298-eccc-4c2d-9586-4d39d64aa93a">
+                    <propertyInstance
+                      Id="d651bfe1-d79c-4f92-91cc-f6457a38e2e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b006afe-0555-43d3-95c8-2d5ba1c3b0ca">
+                    <propertyInstance
+                      Id="09e6bd69-233f-407c-9c83-3d26d003bd24"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f56a425f-696f-4adc-87b0-ecd804f1988a">
+                    <propertyInstance
+                      Id="2462aa0b-0d93-4a9e-af2a-b19e5d2c713f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cc98781-5102-4ae4-979a-9d79411662f6">
+                    <propertyInstance
+                      Id="2bf06641-fbfa-4f77-bcb5-1583b63a25d1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cf9a07f-2876-4224-9f64-3fee06fcecf8">
+                    <propertyInstance
+                      Id="fd4dd3d3-74e1-4a1e-967e-c23ba3d7f693"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a2c09639-d0f8-4f44-92ae-37b0a805af33"
+                LastKnownName="WaveFileWriter"
+                LastKnownLocation="Package11_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c083a132-b5d9-4c5b-8449-565c4ce2eef8"
+            name="_waveFileReader"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d6c0d82a-0db6-42d7-a0bc-880652eb7d61"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_waveFileReader"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b6de153b-5865-44eb-bf3e-727205db6e22"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="184710a8-e2da-4b7b-9f41-a6e722b9594b">
+                    <propertyInstance
+                      Id="23d61a3f-31a0-4537-b8be-3526962dafde"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6dfd668-703a-403f-a198-62fd0baecfc1">
+                    <propertyInstance
+                      Id="99b39b77-2e8e-4e0a-9e28-be85e09038ce"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e831a087-fb6b-434f-aa1f-3f5b282bbd14">
+                    <propertyInstance
+                      Id="8e8a0ece-0b24-465b-9eb2-cc6b965f4ae4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5399284-a0e1-4eea-a2a0-477573e64bdb">
+                    <propertyInstance
+                      Id="e09aee61-3112-4aa9-ac1a-f070e19f59d9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7829e8ff-efdb-4669-b955-0e3fde905815">
+                    <propertyInstance
+                      Id="fb1ebaae-5141-46e3-8f7c-838f3661f685"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9c34fb7f-3f2b-465c-8011-b3c08457d419"
+                LastKnownName="WaveFileReader"
+                LastKnownLocation="Package11_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="62032ca3-1859-429a-abd0-144356d51ec0"
+            name="_memoryStream"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3c9d49da-6db2-4d7d-be7c-0594df1f00fb"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_memoryStream"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="806cc4a9-e146-4119-915e-8444bc747389"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="454bc964-537f-480c-913f-191a8392524e">
+                    <propertyInstance
+                      Id="0caa4b4f-31dc-4e27-9d59-3de35eb6cddd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e2ec554-c4bd-4bb9-89db-6ed4a36e3232">
+                    <propertyInstance
+                      Id="52d43cdf-8ad6-49c6-981f-cfca4e5712e5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fa702ba-ed01-4e3c-a78e-a5a43af6cbba">
+                    <propertyInstance
+                      Id="c5c0ef34-c990-4f95-8fae-99d8f00e260f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b046b1d-6f3d-4b6f-be46-6e8b338664bc">
+                    <propertyInstance
+                      Id="5da57a8a-03f1-4d8a-bfff-5d07c196d621"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a86209f-db60-4121-9b32-66aadea383c5">
+                    <propertyInstance
+                      Id="a5ef2f5c-5e8a-4f44-a595-8ab0f790e95a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="91930418-47a7-4c00-8fce-a287df0a2775"
+                LastKnownName="MemoryStream"
+                LastKnownLocation="Package12_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b131a1d1-7cd6-4851-93c4-f9632057d335"
+            name="WaveFormat"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ed01a7e8-5562-46a3-857c-c82131829a7c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DWaveFormat"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2de221eb-99cb-4493-86cd-28cee659cae3"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c3d57e1-5cb5-41e9-9ddb-1943be9e5e54">
+                    <propertyInstance
+                      Id="1a5800ae-385d-4e9e-8e1e-589283ae309f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81ce02d0-9255-4992-b31f-a1a06dac589d">
+                    <propertyInstance
+                      Id="9dfa4df1-fb1f-4654-8af0-1f317515bae3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db659f5d-a948-43a5-959d-fecbe8cc2301">
+                    <propertyInstance
+                      Id="b6c2ebff-227e-4dcc-849e-18a1f9153a37"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9c6c385-7c1f-40a9-a658-a62d2f63e9cb">
+                    <propertyInstance
+                      Id="18c1be73-ff1b-43a8-a176-ff2c3bcb6619"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14afe684-5657-4757-b47a-a639105dec7a">
+                    <propertyInstance
+                      Id="5a93f524-28a8-4f77-890b-0dc80b2e8d1c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="66263d4a-e7f8-447f-8418-672cf9884b47"
+                LastKnownName="WaveFormat"
+                LastKnownLocation="Package11_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="daba7f8c-66dd-44cf-a1a0-4b1b7498df4e"
+            name="_samples"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="18e6b0b0-d34c-42c5-a354-de494ed1826d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_samples"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3c10c41e-0d98-48a4-85b1-34100f19836e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92c328e8-289d-4ab7-b5f3-ac4fca928c82">
+                    <propertyInstance
+                      Id="ad6bb200-f26c-454c-9322-be66fdfb209f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33cdf606-f69f-49b2-8502-f4362118af78">
+                    <propertyInstance
+                      Id="014bdfb9-910f-4bb4-9ab6-e61de394663c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="338b185c-5051-441e-834f-a82a6a0d9e7b">
+                    <propertyInstance
+                      Id="8f359ced-3f33-40eb-9fca-01462ea2a136"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b1b5f3a-984d-44b7-8d4c-66ca6391c567">
+                    <propertyInstance
+                      Id="18d10509-de60-4e5c-bb0b-6d734e664cc9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3862d5f2-ec06-42d2-b6cc-bdc7ab17572e">
+                    <propertyInstance
+                      Id="5b5f5442-ce1f-4971-aac5-2782afed7dd8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="89c7ed1e-e968-49df-9145-c1745dccd88e"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="c59ebfa8-6d53-4f57-9536-290ecee4ec21"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                LastKnownName="Single"
+                LastKnownLocation="Package1_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d03d4576-2e09-455b-9abc-523afaa64ee9"
+            name="_recordedBytes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f4a43a73-b7ce-41a1-bc94-f4518b6312e3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_recordedBytes"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1023ab72-54dd-47f6-820e-c3deecc649ac"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c4a0105-f9b7-40fd-aeaa-e569989494aa">
+                    <propertyInstance
+                      Id="88537f48-ab88-445f-9d2e-8812e4f43c2b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ff5cd92-baa6-4ce2-a119-7130beda0aa8">
+                    <propertyInstance
+                      Id="b20be5e4-ce30-4f04-98a5-57ad95453373"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9eec0541-e62c-4f3c-a290-85e030dc30de">
+                    <propertyInstance
+                      Id="d771d59f-ae60-4e6e-8020-9d0badd249dc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a06703fb-21c4-4eaf-aec0-e8c96d575e5e">
+                    <propertyInstance
+                      Id="9ba1d444-2633-4d4a-a08c-b2825fb23637"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a352f218-1247-451f-877f-5f722bce2488">
+                    <propertyInstance
+                      Id="b57e06a5-1087-4f54-8fad-9591a64cbce1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a4e07e11-9fa2-44f2-afb2-aa9ec58f8b01"
+            name="_desiredBytes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="511aa0a2-4f85-4912-9732-21505499ca71"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D_desiredBytes"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f55eed1a-289e-4df1-acf6-2fde4eba73da"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="124a3516-f2b7-4010-aaac-19ae2bc342a7">
+                    <propertyInstance
+                      Id="006da499-7b59-43d8-bdc5-52061ce8e61b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ced674c-e04d-4961-a695-af8d73c5a972">
+                    <propertyInstance
+                      Id="3c9f3310-93ed-4a4c-b6c7-2d5b4e6e5fc5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a0bf909-1a36-4cc2-8b44-fd2597a895dc">
+                    <propertyInstance
+                      Id="25f9522b-7ec7-4b12-a215-8c506a3dda51"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2aedc2a2-da30-495a-b2a3-2f1c1db6d715">
+                    <propertyInstance
+                      Id="cafd16a8-0e0b-4ad7-ac5a-30074020a727"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05e00b11-bdb1-4550-8728-069254bfc4b1">
+                    <propertyInstance
+                      Id="557ae78b-3f85-4415-bd63-f4741c34ba7d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4496ba1a-c9a6-46a5-bcc5-af41bedaff58"
+            name="PropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="779040e9-8a15-4843-a28a-375839607f8f"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DPropertyChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3f371f22-fb14-417c-9bbf-b651669519ca"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c905431d-6835-4289-852a-3d48af68957e">
+                    <propertyInstance
+                      Id="d89ca4ce-dedd-4bce-ae99-0cc3ce53c0ac"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55e4bd10-dfba-4fbe-bdef-82d829a8ca68">
+                    <propertyInstance
+                      Id="4c01316c-944b-4ab4-9308-fdcd0647b658"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac236c49-ed56-4a14-a931-6d2db7554b8b">
+                    <propertyInstance
+                      Id="423587c9-8c66-4531-9f19-1a2217b10373"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aea6bac0-eb5a-4a7b-ac4c-609f80b61d5d">
+                    <propertyInstance
+                      Id="f2622228-c587-4e74-a406-0ac603adfd63"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77da9b51-3d8e-4b4d-92cc-c791204ce2a4">
+                    <propertyInstance
+                      Id="7a17f743-fcfb-4d2a-ba24-06040434c04a"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6512d844-a247-49f6-9906-6f167503ad07"
+                LastKnownName="PropertyChangedEventHandler"
+                LastKnownLocation="Package13_0755.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="136dc984-0cf5-4880-81c2-1cece9420237"
+            name="StartRecording"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1ea3b7ee-4746-4523-8550-ae16ba439833"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DStartRecording"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3e337653-6a8d-4780-a447-dce282921182"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f76cc08-7ef8-4554-b519-a15c136c49a8">
+                    <propertyInstance
+                      Id="018e2787-9319-4ce3-af2a-e7eedfb99b3d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb7ad45f-2718-4aa3-b261-34b84eab4ebf">
+                    <propertyInstance
+                      Id="64b07b90-9093-458d-af41-44d6101d83e0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e33c2bdd-3409-4206-bdab-5637ba75fbc7">
+                    <propertyInstance
+                      Id="6d69f678-f6ba-43d8-9a57-58d9b448bd53"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b9ad3f7-152d-4a47-b55d-c72d4b06bcbc">
+                    <propertyInstance
+                      Id="96776653-b81f-49d7-913c-99f6503325a9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="083a674a-2c24-48b3-9ea4-35c12524499a">
+                    <propertyInstance
+                      Id="71cbbb77-1562-42ee-b811-7204a8e984c2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9027010-ca90-4912-b5f1-f682e851dca2">
+                    <propertyInstance
+                      Id="687f0a34-c9e8-45d5-8ac2-d6d8e9cd6cb2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="d43e6110-e075-4e31-8167-869a8e444c20"
+            name="StartRecording"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ddaac291-548e-4ecc-9548-a8250ac57885"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DStartRecording OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6952ac7f-25e0-4816-805d-f0a36f2fa482"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f09e0c7d-8ede-4a89-aeee-a2c2da9fcaef">
+                    <propertyInstance
+                      Id="0904d817-ad2d-45e7-8564-7d423c944fbc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e94ee191-3ff3-40f4-b818-8482c54cb442">
+                    <propertyInstance
+                      Id="881c5d0d-cb0e-46f4-9d6f-94fe36f691f8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6d48fd6-23df-484a-952d-96b1d2289d06">
+                    <propertyInstance
+                      Id="6b83b526-8159-4700-8225-ecb3f9a37037"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae24680b-8ec3-4ea2-aa9c-452e9c31dcfd">
+                    <propertyInstance
+                      Id="c475db3e-24e7-4de0-bc83-e19b5a317c68"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8442ba13-0c94-4edb-8c89-cbeed5f06454">
+                    <propertyInstance
+                      Id="2a5ffb11-20dd-4f47-bc69-2a1b0f09f522"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01d45785-c120-473c-948d-a5ee1ccda659">
+                    <propertyInstance
+                      Id="364b515f-0f9f-45dc-84e1-a82d7b50cee4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c04c0920-d23c-4dbc-9997-44295cfab750"
+                  name="sampleCount"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1093f1d2-75c4-447a-8dca-3531e17c949d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DStartRecording OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DsampleCount"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="63c4437f-df1f-4fa4-905f-65358966c0c7"
+            name="StartRecording"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29389a67-19f3-4a63-ae65-52512dd31105"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DStartRecording OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="abd7ca3f-0ef7-48e9-83e8-943849b76e56"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85e9f842-91ca-4beb-9439-32625df15f8a">
+                    <propertyInstance
+                      Id="e00e0969-f67b-4950-ba86-44396e636e71"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="705379d5-56f7-407f-8600-ebcc3a8c3244">
+                    <propertyInstance
+                      Id="02b19565-eff5-4592-b03f-4a03657ad545"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="294bd6a2-071e-44a9-a1f9-ef1ac2b49f9c">
+                    <propertyInstance
+                      Id="54004f98-5f4c-4766-a1da-a12f6be97d99"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21bd6abb-0151-47c3-b86c-3801a773c60f">
+                    <propertyInstance
+                      Id="a5061e6e-b6b1-4f8f-925b-5562f41f62fc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95da84ac-9de2-4fb2-b4a9-0bb592b31d30">
+                    <propertyInstance
+                      Id="9d9c1410-9d22-4c7d-8f34-2a4c42352f85"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f0ee6b2-95dc-4ca0-b44c-1e6afd2d4e39">
+                    <propertyInstance
+                      Id="48821b59-67c2-44ef-842c-e7e7fdbd0264"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="627b9436-cf53-42d6-9789-085b955546b1"
+                  name="file"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5b030087-b366-4275-8a22-d10a5a3b98fc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DStartRecording OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dfile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c73982fc-2257-4b5d-b217-855b17b83f57"
+            name="StopRecording"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6a5debb5-85af-4b28-8241-1c4b629212a9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DStopRecording"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2614e92c-6dc0-416c-8073-b9c37855b623"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5f407e7-ba4c-4bed-a196-e07f60df03f9">
+                    <propertyInstance
+                      Id="454cf757-59b3-4d4f-be49-30991fec8fcd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccd54db6-b376-4b47-93a2-764fa3494350">
+                    <propertyInstance
+                      Id="c058a349-0574-4810-98a4-bc889addb698"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c67b6852-ffa0-44f4-8822-30d06ff529bc">
+                    <propertyInstance
+                      Id="2e96ae20-5fee-458f-9a44-33ff629a0177"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a1725ed-4512-4bfa-a68b-aed7e7f915bd">
+                    <propertyInstance
+                      Id="7610962c-2038-4366-bfd2-f07c1d0895f7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73988caf-cb5f-4988-8035-af706e481d1a">
+                    <propertyInstance
+                      Id="026faa56-8d66-4301-88e3-cb150686faa6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="789e1b1d-27d9-41ee-944a-e709d55e5c70">
+                    <propertyInstance
+                      Id="73f89725-1d72-4872-aba5-f12d36b5ae65"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="22cfbab0-40e6-4b4c-a444-e4362ed82921"
+            name="StopRecordingPrepareSamples"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29f91ae6-d6ca-48be-b088-f91b0df546e4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DStopRecordingPrepareSamples"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0abc7379-a66b-4e33-bc29-6d1631936190"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="948f8193-5d82-4725-85a3-df7736c08677">
+                    <propertyInstance
+                      Id="b188dbdc-0a46-41a3-9f08-4a4f1a182467"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1435a05a-2540-41cc-98e5-05ced24e2312">
+                    <propertyInstance
+                      Id="4d330ed4-181b-49ec-8945-9241773a9870"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9c1ee87-f11c-4594-8829-8395aa12f11b">
+                    <propertyInstance
+                      Id="80abff54-39b7-4455-9f93-b69127270d33"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91f35666-9ab5-462a-bf0b-98fbfb9a4e22">
+                    <propertyInstance
+                      Id="82f671cc-fd6d-4376-8a56-b3227518c148"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57111d98-2207-4beb-aa3e-b7748c9258a8">
+                    <propertyInstance
+                      Id="7706e728-6a60-4c63-9f66-f80bc00300e6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46fa7e12-7cb5-4713-bf82-47d37f857e10">
+                    <propertyInstance
+                      Id="ce0622bc-eb46-44de-9bdb-cbc50bb8424d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ae5392ca-862a-446a-ae4a-cf9789fd0fa8"
+            name="Play"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="26a10d52-26c1-42e7-8f4b-39bc9da94478"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DPlay OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3a0db3e4-7449-4ac0-9ef1-9bce695c6a67"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="736af59f-50d9-4838-84c5-9f0298686e18">
+                    <propertyInstance
+                      Id="2d536ddd-ef1f-41f3-b5b0-62656dae776e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de1f4f33-cd1f-4092-9a07-c793cfcfdaba">
+                    <propertyInstance
+                      Id="cc8bb46b-7904-4342-a903-1c124fb1e36b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bff38ff5-91ac-4e35-bb07-1ef697920ae4">
+                    <propertyInstance
+                      Id="dc3b521e-3724-4e21-8e13-66abfa86bd1a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="020372e3-a15f-4061-8163-890c7836160b">
+                    <propertyInstance
+                      Id="5fa811f4-1098-42d4-bc44-1052e2c833a1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04a2a066-7497-40c5-aa6e-094d5d61d5d2">
+                    <propertyInstance
+                      Id="58c07a9a-68a8-4c66-ab04-dfad0a695080"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9aee2253-ae3e-4263-9307-d496fecc089e">
+                    <propertyInstance
+                      Id="460493af-3f6d-4320-8764-20d103c9208f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c23361a-8b06-4dd2-ba23-de543d52f378"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="40838e88-6646-4f95-abf8-09df89114101"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DPlay OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1319b8c2-44b0-4156-aa7d-af9a2d593c13"
+            name="waveSource_DataAvailable"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e1273555-c8a5-4105-a51a-ea9332371539"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_DataAvailable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DWaveInEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9a0a0d04-05bd-4325-bcd6-3206eff7abc4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22010aab-5436-410c-bc00-9bff0e0ea10b">
+                    <propertyInstance
+                      Id="d25417f0-2c6e-46a7-9ff5-78bd380d72c2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08b0de7f-899e-4609-8359-00f7399e589f">
+                    <propertyInstance
+                      Id="54eac678-ddb0-4c4a-b063-2c6d7f13603f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d16559a7-a4a8-4afe-a51e-238d719baaed">
+                    <propertyInstance
+                      Id="c280bc0d-846e-4170-8dd9-5ee1efd8ead4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1367cafb-e4d7-4ad4-927d-861657638493">
+                    <propertyInstance
+                      Id="f685c28d-ae83-435c-8785-7ea0c2b40596"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba0d0604-36a5-4eeb-9a67-263c1cd74d4c">
+                    <propertyInstance
+                      Id="f5f304fa-1259-4136-b8a2-b34964fe0479"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4e7c348-e689-46c6-80bc-d663ed7a88f4">
+                    <propertyInstance
+                      Id="283d1c6c-cb11-4145-ab68-1a3a2f98c6d3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9aee615b-7cc6-49f3-86a3-ee377c73974d"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="23d23df2-5709-4b4e-bff0-127f4652c968"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_DataAvailable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DWaveInEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="add591a8-8f57-4fa3-ab1e-7d8c79274997"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a593fcb7-0383-49b0-b6a6-9f2dedcbbd5d"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e30be60a-0e89-4404-91a2-e50791cfb5ab"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_DataAvailable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DWaveInEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="66127ce3-c3d9-48f9-85c6-ecc7872ca771"
+                      LastKnownName="WaveInEventArgs"
+                      LastKnownLocation="Package11_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d33e20b5-c78c-4ddb-adc0-8b8767621bbd"
+            name="waveSource_MemoryDataAvailable"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="df9696ea-d7f4-491e-9bd3-bf9a2d4adf8b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_MemoryDataAvailable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DWaveInEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94dfe754-86aa-45fe-b4d0-78bf00f4db62"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32892a9b-dbb2-46aa-bfae-c9e679abb4d8">
+                    <propertyInstance
+                      Id="21bc62e9-4d47-4819-ab68-5719d84c28c7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be85c6eb-2032-4d77-b10f-ce1e0c063bd5">
+                    <propertyInstance
+                      Id="aa9a5502-093f-42d2-bedd-a5c14cf273a7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4467d41c-423c-43bf-b6d7-72146f37453c">
+                    <propertyInstance
+                      Id="4b69c698-dd19-4c62-a848-102678ea0916"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29f8516e-f3ef-4454-9ace-3a9e577ec95d">
+                    <propertyInstance
+                      Id="33225887-8776-4d7d-8699-3845cccd28b1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaa2ddb6-e9af-41b9-b367-efee25d6219c">
+                    <propertyInstance
+                      Id="fd561de9-c246-455b-a4e6-febc1b4f8b4c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ef3c005-0968-4bf4-9a86-e14743ae940c">
+                    <propertyInstance
+                      Id="52da24d7-f64b-47ae-9ade-9ec5a36eb97f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9f32f11d-82c8-4713-bd76-d1878a7d40f3"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dda69816-8108-487a-ae04-d2a1a7b8a45b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_MemoryDataAvailable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DWaveInEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="add591a8-8f57-4fa3-ab1e-7d8c79274997"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4217f159-62c1-41dd-8f09-150c3162426e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="21b20a15-c49c-44b4-ad5a-ea3697512193"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_MemoryDataAvailable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DWaveInEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="66127ce3-c3d9-48f9-85c6-ecc7872ca771"
+                      LastKnownName="WaveInEventArgs"
+                      LastKnownLocation="Package11_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b8991ba4-9699-4486-99b1-9980cd346d37"
+            name="waveSource_RecordingStopped"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3219f352-b4d0-4097-8dfa-1aa2b08cb312"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_RecordingStopped OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DStoppedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e718d04f-7f32-428f-8fea-554590f61d84"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e6e2322-d95f-42fc-bf8c-c9bd6b81e11c">
+                    <propertyInstance
+                      Id="98226a9c-84c2-4a4d-8d4a-6eb65941adb3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b64cba5-b3cf-4b00-904c-d9139a988390">
+                    <propertyInstance
+                      Id="7ec969d0-4f7d-41c4-8745-d294f7cc8f66"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e826e2c7-1d4e-4ddd-8fd8-84de4c15bc5e">
+                    <propertyInstance
+                      Id="8a5e24e3-aa90-4b92-bab6-02ef744aacd7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f2c8950-3108-4607-abeb-01009b75e8f2">
+                    <propertyInstance
+                      Id="2723cd4a-adc1-4426-9149-e8185fd29005"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="920abadf-95e9-4046-be05-5d79221926aa">
+                    <propertyInstance
+                      Id="a34c9a14-3245-4af2-b7c7-dc9dfe608363"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="184e05b8-7183-4d67-9c8f-79a472f4d9a4">
+                    <propertyInstance
+                      Id="cb00aa33-64f6-481f-a8f0-b44e7ac6bcc3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e39dd7a-cfc4-4bd4-b929-2762cf5222f9"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4045feed-079a-43d5-8e8a-8a8a49ae98a3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_RecordingStopped OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DStoppedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="add591a8-8f57-4fa3-ab1e-7d8c79274997"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a51aa35-ff7d-49a5-b9f5-67a0fbbf8580"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="64131edf-5b49-4a84-8d95-61b4cd620d04"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_RecordingStopped OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DStoppedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bf5f81f8-d61c-4acf-be49-be54aad9ee77"
+                      LastKnownName="StoppedEventArgs"
+                      LastKnownLocation="Package11_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6469b2f9-8e01-41cd-8d7b-e2e1bceb1427"
+            name="waveSource_MemoryRecordingStopped"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d311ac33-4c39-458f-b5cd-af7fb2b3ced1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_MemoryRecordingStopped OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DStoppedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ef0d09d1-c64f-475e-a05e-ceabb549210e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d5495e3-6a6d-41ad-912a-5c7e228a39d9">
+                    <propertyInstance
+                      Id="b1b20111-303f-460a-877d-c8644956409e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d71381b-28fd-4d93-adb8-25410a90e81d">
+                    <propertyInstance
+                      Id="36ec8a33-220a-4c5a-99d4-fd7947b0e169"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="019db0f5-4571-4dfa-b944-ab4ab28cbfd6">
+                    <propertyInstance
+                      Id="7155b76f-e32a-4c62-bd79-cf545bb22c82"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4de986c3-7dd9-4b75-8433-165806d6c404">
+                    <propertyInstance
+                      Id="7fde772c-5c3e-4fe5-aba5-cf6657fda1f1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bb52cae-a8aa-407c-9954-ea35761720d7">
+                    <propertyInstance
+                      Id="10cbb129-3b1b-495f-81f3-006bf17984a5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86e84c87-8fa0-46a2-ad34-d28cedac5db0">
+                    <propertyInstance
+                      Id="c2f3fa02-074b-4d9e-83e9-45d147fafdfb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="abdb0ccd-3815-4ecc-9c7b-21c002bee92f"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9992ba74-aa6d-4362-92d1-4d923069e7a3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_MemoryRecordingStopped OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DStoppedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="add591a8-8f57-4fa3-ab1e-7d8c79274997"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4358ff5d-2086-4ea4-ac5c-bfd13a1fe48f"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3f6597ca-8de4-4e90-ad04-3af6cbb07d6a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DwaveSource_MemoryRecordingStopped OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2FNAudio.dll Namespace%3DNAudio.Wave Type%3DStoppedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bf5f81f8-d61c-4acf-be49-be54aad9ee77"
+                      LastKnownName="StoppedEventArgs"
+                      LastKnownLocation="Package11_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="225bd6f8-c723-4b33-892e-79b658cb4996"
+            name="ForceGetSamples"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5d43cecc-7571-429f-beda-9789f04b1473"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3DForceGetSamples"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b90ac63e-aec8-4ac7-8e6b-52e68e9e8fb2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5be2456-77a8-4f03-8334-ea9dfd7d6614">
+                    <propertyInstance
+                      Id="ec21d1bc-58c1-4cf9-b0af-4ecdd9766428"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7e25953-a080-420a-b456-51b2928b8d89">
+                    <propertyInstance
+                      Id="cad9d740-0e00-425d-8d17-9e881b315aff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33a4e3a5-cdcb-4aa1-b8c9-03432b64a449">
+                    <propertyInstance
+                      Id="dd48f70d-7965-4453-88d6-b5d5cff65ced"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14cf81cf-fd32-4161-9104-5b135e46c696">
+                    <propertyInstance
+                      Id="4ff1bf46-9be5-48a1-8d9d-6455353dd1e6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e1075db-8da8-4d6c-97a3-0a19e404c001">
+                    <propertyInstance
+                      Id="f5455c88-8283-4739-99ff-d6f50d671b8e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7796a4ab-9b9b-4fa1-8b69-40d333980af6">
+                    <propertyInstance
+                      Id="2055551b-4db3-461f-93ef-a79df959aceb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="614a96e1-c00c-4ef2-a14b-7f31d5c6ddf5"
+            name="OnPropertyChanged"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d60d42b5-0091-45b9-9428-28251c15e2d3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DOnPropertyChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="149ba90e-3312-464f-a87c-031486e8c271"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a6660ab-574b-4723-847d-da5520c1875f">
+                    <propertyInstance
+                      Id="a42735cd-bff4-46c9-bab4-82c5f592d9a1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d81f7437-3081-49fb-afb2-37fc12a206ee">
+                    <propertyInstance
+                      Id="a9f2cee5-b196-4873-8552-b06b288c785e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0de4ac51-7c0a-4a84-8489-90ff699f904a">
+                    <propertyInstance
+                      Id="9221665d-ce1a-4365-8727-9ee4e73a9088"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34a2dadf-7bd6-420e-a7c2-c778fb5a0f15">
+                    <propertyInstance
+                      Id="28cd6063-6677-4ae8-ae65-9dcf3dee20b3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e0e3bad-5a23-43d8-a9cf-7d53ea12806c">
+                    <propertyInstance
+                      Id="7a568f09-0ebe-4c64-98a3-35aa80839fe8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf05f08e-e263-4bd4-b157-6ce2219e2446">
+                    <propertyInstance
+                      Id="1bb8857c-b2b6-4e1a-8dd7-4156a2c7fe30"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24e2f3ca-7ae7-4779-a4ad-9f55b80b6eae"
+                  name="propertyName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3519d5e3-3f9f-4fda-8437-d9b1c60fdae3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D(Name%3DOnPropertyChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DpropertyName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="854c123f-a136-4a19-ba4c-3a2531cf6c32"
+            name="Recorder"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d6543a31-c65e-43d2-9c9b-15c5658b241e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FNagrywanie%2Fbin%2FDebug%2FNagrywanie.dll Namespace%3DNagrywanie Type%3DRecorder Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="61151ff5-11b3-48ef-b4f1-55f7f884b21c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9904c4d7-267c-475e-908d-c07b9a1c35a7">
+                    <propertyInstance
+                      Id="4a464ef8-56e3-4f90-a7f2-661769feaf7b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75855dd5-f325-4144-ba08-33f4d2a16f3e">
+                    <propertyInstance
+                      Id="dc14d51c-7491-4bc6-adf6-c7a36f45acc3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49484eb0-62c6-43a0-a042-5baf56c48014">
+                    <propertyInstance
+                      Id="7bde6a43-8a21-4d8c-9ab1-6c07d524677b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46e3718b-4ad8-4d4e-a7c0-a9269133d28c">
+                    <propertyInstance
+                      Id="ed82ca39-7f9b-454b-941a-6838fef2a33e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91ba215d-6436-46e5-90f9-27b907d58e29">
+                    <propertyInstance
+                      Id="ce5cfd7c-7961-478c-8869-e2cd088297ca"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15cbae2f-ff23-404c-a486-ad72ae45538a">
+                    <propertyInstance
+                      Id="55cdf58c-5117-478d-ab9e-7a8819af5589"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

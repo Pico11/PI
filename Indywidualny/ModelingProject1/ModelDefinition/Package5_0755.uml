@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ce05baf5-9551-4ab9-aa06-55f3cfcad7ba"
+  name="IntegralTransforms"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="32b22e31-e9e5-4619-8eb3-71c67e6ba11a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMathNet.Numerics.IntegralTransforms"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="730fb2ff-4b8e-465e-8cee-81e4164d3e9b">
+      <profileInstance
+        Id="5f722952-13d8-4071-b08d-1ef926ee28a8"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="024ce0d1-bb9a-4b5b-82ae-b3825a8f6db8"
+        name="FourierOptions"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="bf5053c4-3878-4a92-acc2-78dd2d4acc5e"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2Fpackages%2FMathNet.Numerics.3.6.0%2Flib%2Fnet40%2FMathNet.Numerics.dll Namespace%3DMathNet.Numerics.IntegralTransforms Type%3DFourierOptions"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8ff26f94-8a04-4ff5-a817-df6ebb4e8dd0"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8e81e15-9cf5-45a2-bbae-d381384b70c0">
+                <propertyInstance
+                  Id="14ea51f8-219f-43b9-ba10-b3d16ff4451b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d0e43d1-9b9d-40fe-ae00-8c90103266b2">
+                <propertyInstance
+                  Id="942997b8-86d6-4f1d-ae74-9f95ce722a5d"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb0bc6d6-1d9d-46d5-9a44-b40f37c45ff2">
+                <propertyInstance
+                  Id="a8da645f-af4a-4d09-96ac-474549735ed7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="85ceb6c9-8ad0-4584-940b-5c9a68305e6e"
+  name="Numerics"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="c8fda846-0797-4498-b40b-8e1becc73789"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Numerics"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="323209c2-b44b-488f-b721-e3c26810dace">
+      <profileInstance
+        Id="f9a07163-80a1-4c8e-a8df-4d6d66ef412b"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b4c103a8-f004-486c-b4fc-9d86a8003524"
+        name="Complex"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d4ea96a9-cd29-4578-84f6-6da8d66a8601"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Numerics.dll&quot; Namespace%3DSystem.Numerics Type%3D(Name%3DComplex ArrayRank%3D1 ParentType%3DComplex)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2e148a65-7b7c-498b-afc4-d7878c1c929f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af80fee1-bd4c-4979-afa2-b8f3423221dd">
+                <propertyInstance
+                  Id="8c3b4262-fd83-4733-aeba-0d363153441a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a34e047a-974f-4ad5-addc-0a9c0c67f251">
+                <propertyInstance
+                  Id="ea8643e0-7b82-4879-907a-9367e075acf6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5d34cf46-5a2f-46e3-981c-13387a4e5d1e">
+                <propertyInstance
+                  Id="ed48daf5-f0b6-464b-b6c7-0340bed4e687"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1cc29627-ba61-4fa9-b7d6-05d37d806ea0">
+                <propertyInstance
+                  Id="19ff430a-9892-4adc-8bfc-5953be77e465"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="27f67512-3281-4513-b846-f6fa2af7604c">
+                <propertyInstance
+                  Id="48ac2702-153a-4a8c-826f-9c5d21f4ee0b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

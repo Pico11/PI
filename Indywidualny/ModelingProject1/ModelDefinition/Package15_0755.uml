@@ -1,0 +1,3359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7aca2a13-448d-4d4c-a457-4c9fb5db843c"
+  name="Cechy"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="8bd87bbb-de40-4a95-996d-5291dba0c345"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DCechy"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="28694d8c-4a6c-4e4e-a4de-54d9c3b72971">
+      <profileInstance
+        Id="6145a842-b48c-4bd9-bf36-141e6c897b57"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a3ffb6ca-de11-4c93-a463-fd8321205fdb"
+        name="FrequencyFilter"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d8a2d566-e148-4ff3-81eb-9a660601de49"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3D(Name%3DFrequencyFilter ArrayRank%3D1 ParentType%3DFrequencyFilter)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4aa06547-c554-408a-8471-dd7553701242"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba8cbaf3-e8aa-4358-8a4c-b60d92ba4297">
+                <propertyInstance
+                  Id="94b47193-fc2b-4235-a5a1-6effd13403de"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0c30698-6d60-464e-a5f4-5b83a0bc05af">
+                <propertyInstance
+                  Id="d7546e78-f55b-407f-a540-5314392fd29c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a38b3c2-959b-4b47-ba20-2f2ee1257293">
+                <propertyInstance
+                  Id="59998e86-46fc-4f14-8b5a-f30c6561078f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bdeb22c4-96c9-40d3-8bff-86005e4eb49f">
+                <propertyInstance
+                  Id="9b15e159-4535-4ec7-a4f3-d3534f7105ec"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6860032a-d804-4200-a1dd-2abed807536d">
+                <propertyInstance
+                  Id="1ddfdb08-aa96-4b47-856b-5d4824616b44"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="72e6e302-7f67-4ea2-8a92-7b031d71cb09"
+            isDerived="false"
+            sourceEndRoleName="FrequencyFilter"
+            targetEndRoleName="Center"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+              LastKnownName="Single"
+              LastKnownLocation="Package1_0755.uml" />
+            <description>Property Center references type Single.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d216cfc1-7da4-48b6-87ef-fb4607c62a62"
+                  name="FrequencyFilter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="35a97131-06cf-4645-b762-09a53b291f92"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ecfcacfd-fc9c-4e3e-98d6-04c8483934fd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94a45de4-106c-4c73-b18c-e40ca03dfd57"
+                  name="Center"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a9b732ca-db59-4dec-b763-5de843a9f611"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="35a49577-bfb9-44eb-88ae-cd5b01b00f00"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="086e3b8c-da69-48a7-addc-b2ff376d42cf"
+            isDerived="false"
+            sourceEndRoleName="FrequencyFilter"
+            targetEndRoleName="Range"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+              LastKnownName="Single"
+              LastKnownLocation="Package1_0755.uml" />
+            <description>Property Range references type Single.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8f69b60-3c48-4056-a64c-286ac687998f"
+                  name="FrequencyFilter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8817edba-c072-4bac-a01d-19582330cd53"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6ba0f590-a753-48d3-a174-f50ae61511ff"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eeb16887-06a4-478c-b0e1-a50e1994c213"
+                  name="Range"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d5636762-c9e7-4709-b6d6-65f961153b96"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="56433ce6-1103-4b90-88b4-d2e199bad00e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2621c33a-7bf1-40c4-a632-e0935d0ae759"
+            name="Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b5db8ff0-c560-4edb-a328-dde4e9aaa1e8"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3DCenter"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="02e981bc-c970-4fb2-9a0c-6f1af01f85fe"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99fe8d33-4131-43d7-a625-f73879a42b89">
+                    <propertyInstance
+                      Id="f5597c18-d021-4af8-8f33-3488ae3d2cd8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b07dfd3-8de3-494b-8cb7-81d400f45119">
+                    <propertyInstance
+                      Id="78e33e6f-0a76-46c2-8075-4772a9e5a20b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07f591c9-e701-48b1-92f3-31cf45d5d35a">
+                    <propertyInstance
+                      Id="eba5e602-c509-4125-b674-0bae1cea3701"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76f8f85e-72be-4c4e-a5f3-75125be1bf2a">
+                    <propertyInstance
+                      Id="9b0451a2-d72f-4b07-9298-5830856ded02"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2184bbb-ae0a-4540-bcee-113ccfe7f607">
+                    <propertyInstance
+                      Id="f1b23920-203c-4f57-8f83-a0413397c852"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="943f64d7-0c93-49a6-9c4e-51a7385d52f3">
+                    <propertyInstance
+                      Id="b1190dd0-24d1-40a4-b605-7ba767f865e1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f6be766-73cf-4059-bc60-18772bdd3c64">
+                    <propertyInstance
+                      Id="5a7f271c-fa84-4d7e-ac2f-ae9795494021"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                LastKnownName="Single"
+                LastKnownLocation="Package1_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b14ff234-6d25-499c-9d74-d48c35641c72"
+            name="Range"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="21b5c2e2-b912-4e12-93e6-74265a9173a6"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3DRange"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="080a98ac-a1e8-454f-b71f-4701c694ea72"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c192c33a-34b3-468a-a991-aba012e2faf7">
+                    <propertyInstance
+                      Id="2cb00a3f-486f-4a9f-85e1-6af6dd98ae3c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19fc235a-f16e-4cb1-9073-e40e96c10c09">
+                    <propertyInstance
+                      Id="60353997-e746-4ef0-99c4-9af1242e7c25"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="489adc57-25a1-43c4-9794-e7b063232732">
+                    <propertyInstance
+                      Id="1dc39836-32e5-48f8-8d8b-ebc398cf6cbc"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="866aedea-7f3d-4170-901e-2b0b6b7b030d">
+                    <propertyInstance
+                      Id="48f4cd72-88c3-474f-bfb6-b9de9f89b1b5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01db7177-cec1-4c81-85b9-6901b3eb8c52">
+                    <propertyInstance
+                      Id="9499b370-d185-4b55-ab19-16b20b876e12"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a767a7d2-8550-4904-834f-94c5452eb1c5">
+                    <propertyInstance
+                      Id="43bbbfd3-4fb1-409a-a3c9-b627bdb21bd2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40ae9a4f-1923-46ea-85da-0a1957324145">
+                    <propertyInstance
+                      Id="dad6b4f0-ed87-449f-8427-a0f2ab12582f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                LastKnownName="Single"
+                LastKnownLocation="Package1_0755.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="09c715c3-6e4d-4afd-b602-8c22ac70ee4d"
+            name="CreateFrequencyFilters"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29b38694-9816-4dea-8e54-da340b76e00d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DCreateFrequencyFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ea6df1a3-77c6-473a-b054-a571ab52dc1f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8065a769-890f-4627-9e78-c3ff8c641562">
+                    <propertyInstance
+                      Id="21436f0b-a073-426a-b074-8252b6eb18f1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4662aad-91b4-4f37-88d5-3438209cc1ac">
+                    <propertyInstance
+                      Id="79f1ed23-4c62-4f04-9318-610694c5c23d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85a2ff5d-6e4a-43a0-a0d3-b19a73420080">
+                    <propertyInstance
+                      Id="b5d67ee4-fcb6-4570-8cd0-320673903a60"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e4c9ce3-99f8-41b2-b55a-9a0f179446ea">
+                    <propertyInstance
+                      Id="c8f44f17-d269-4a19-a671-63efb2bac3eb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55658873-214d-48c8-90a5-f159fa2c925a">
+                    <propertyInstance
+                      Id="0f20a95b-c5ea-486c-865f-bcfbf6ad9a14"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b88f68d9-adfc-4d23-a021-7c61c7b9c6e1">
+                    <propertyInstance
+                      Id="f7747981-8865-4441-86b7-32f3c3db6ec2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="104ff18c-9f9a-4304-8507-6428aa8b7eb1"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1dcd60e7-5a84-425a-900d-81d55d1dbb01"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ec8ea1a6-d85a-4f1f-919c-eced4a54bf74"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a3ffb6ca-de11-4c93-a463-fd8321205fdb"
+                      LastKnownName="FrequencyFilter"
+                      LastKnownLocation="Package15_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="677c01f6-a644-4e6d-8949-19c4e80527a3"
+                  name="filterCount"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d291e3c6-2425-4727-946a-31b5898933a0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DCreateFrequencyFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DfilterCount"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="667a1597-a9d8-4331-9154-4c849a847cc2"
+                  name="borderFrequency"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="70776aeb-8e17-49b2-aed9-05d888e7169c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DCreateFrequencyFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DborderFrequency"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="699add97-8573-45f7-b13b-c235f1cc20cb"
+            name="RealFrequency"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4a2e8b39-01c1-48a6-83ea-54cd0d8ceb41"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DRealFrequency OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e10bfbb-b954-441d-a65c-0f520d90c4ae"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31af6e0d-2a1f-4391-805a-b153039d563c">
+                    <propertyInstance
+                      Id="841a25c6-02ac-4dcd-9778-c26d4f8f1863"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c6292d7-e7bd-4859-a3ca-331daea785d4">
+                    <propertyInstance
+                      Id="4c83f5da-efef-49f5-ac30-17792e50e4d3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9125b9f-307d-4ebb-89f6-7f3eb8d96f9f">
+                    <propertyInstance
+                      Id="d8d0cf47-c223-4542-8c91-c8f8e1a9dc0c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef2adc55-3fe0-4f0d-a4a9-51af438f68c3">
+                    <propertyInstance
+                      Id="2c408e64-d9b0-4a54-aeef-d5aefe88bcd1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8437d7f-cfe7-4894-adf9-904739a0e031">
+                    <propertyInstance
+                      Id="95aff799-6cc9-4e40-9ddc-4dc46140cd86"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="949b0934-c798-4c9b-9431-285e16a0e74b">
+                    <propertyInstance
+                      Id="b46b618b-3fe3-4352-a461-a9fd54dba7e5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9aac0811-30aa-48dc-a0d5-c42118dc3443"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4221ea68-d34f-43cf-8b0a-2fb202c7b199"
+                  name="index"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="575c575e-21aa-40ec-9641-21c1a8ee0511"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DRealFrequency OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Dindex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e767fe0e-43c6-4d7c-9e0c-c8c7a3c4378b"
+                  name="ratio"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e05f4801-980e-434c-914f-b9295939d537"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DRealFrequency OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Dratio"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ed0450b1-5aae-4800-9a75-7fb437021830"
+            name="ApplyFilter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="13c5a8d2-4ae7-496b-9e0f-671eef01e98f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DApplyFilter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1406960c-fbd8-4d55-9f08-67e5285594d4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="313a8f7c-9f03-4189-ab72-5187cf0ba6a7">
+                    <propertyInstance
+                      Id="b1c15fbb-9f17-4934-a0a6-2903d24656b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c910da95-8e75-4de6-aa1b-1f93d2fa6cfc">
+                    <propertyInstance
+                      Id="4c1b4808-4101-47d4-ac2b-08b8bdaf1629"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bf04420-1121-4f11-86f7-753a16893329">
+                    <propertyInstance
+                      Id="3124c85b-3d90-41ec-982b-fb8c48bdc4f7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1b42156-cee8-46d0-90c2-d0ea1f0c3df1">
+                    <propertyInstance
+                      Id="1d1ca544-205e-4421-a028-51ff2fae0a88"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23fcaa35-7005-4372-bc86-1927a21773d9">
+                    <propertyInstance
+                      Id="4918b131-c970-4418-a8ef-42c119b7db77"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="524f5f1e-a1a3-4550-b1e1-6938b4162176">
+                    <propertyInstance
+                      Id="83257c51-3dfc-4a20-80e3-accb1191926f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f6da171-2008-4e10-83f7-9f18945e3280"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b9002a8f-bda2-4600-af08-76ed52493713"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e66128c2-78de-46e8-b1b7-099850219fa8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3c8eb4cd-3774-4c51-8215-b90827909a34"
+                  name="frequencies"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="8afd4439-e3d8-433b-a399-e57ce3364a20"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DApplyFilter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Dfrequencies"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8b142680-a0dc-4362-93d6-a7d0670e5d64"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3aebfca3-41f4-4569-9103-72393a48eded"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49b5ed3f-9cb9-4bad-b9c9-730ebe708489"
+                  name="ratio"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fa670bfa-21dc-4066-b1a3-592af3591748"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DApplyFilter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Dratio"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e0d31733-f7a0-432f-8af8-3bd6dfa7cc5c"
+            name="ApplyFilters"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7401cfaf-33ba-428c-a516-ca63edd6f4da"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DApplyFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3D(Name%3DFrequencyFilter ArrayRank%3D1 ParentType%3DFrequencyFilter))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aa52101d-c87e-4498-bd6d-29169abf527f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f49ceaba-1854-41c7-b7e7-f879789d8c79">
+                    <propertyInstance
+                      Id="1dc8b070-2708-43bc-9d0f-f78ee35f345a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9a6f2d5-e9df-4b25-8582-faf69ac2dc56">
+                    <propertyInstance
+                      Id="330e2a26-38f9-4456-8192-13dcf48f5d86"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ea95bdf-4fb2-44ac-98b6-6d97111a9580">
+                    <propertyInstance
+                      Id="64894724-18e2-45de-85c8-29126f4b42e9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4113c81-4b4a-4569-8f1a-1dd76645095a">
+                    <propertyInstance
+                      Id="1293dee8-ca74-42fc-a641-c430240cc1ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c77ee8f8-ae73-4b99-9054-5131ae9cbe21">
+                    <propertyInstance
+                      Id="7e207b99-627f-49ba-b902-415ba875eff9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e6fb403-aae6-4786-af9e-64f14dd47fc3">
+                    <propertyInstance
+                      Id="e9cd9d00-0e78-4568-9609-ccd7a92c20e8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6e1ae62-6696-4135-8ef6-c2ebf5ae25e1"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="94caeb05-d1af-403e-ae43-a04be432b6a4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="22c18168-384f-46ba-9726-ac5d9eecd115"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="40514c50-72e9-469c-8a80-c9e1bcff5d91"
+                  name="frequencies"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="5462a6e0-7748-425a-a1d6-3468bddc3a8d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DApplyFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3D(Name%3DFrequencyFilter ArrayRank%3D1 ParentType%3DFrequencyFilter))]) ParameterIdentifier%3Dfrequencies"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8220063e-96b0-4750-9d7f-047c152daebd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1374ce5b-388f-4009-bd67-358cae11a7f1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fa8dd3d7-3381-44c1-97dd-066183308864"
+                  name="ratio"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1ede4dca-158e-4e7a-82c1-c6cb93a41f3b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DApplyFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3D(Name%3DFrequencyFilter ArrayRank%3D1 ParentType%3DFrequencyFilter))]) ParameterIdentifier%3Dratio"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f303da0-7394-406a-9fb2-649e3582ca20"
+                  name="filters"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="b2cc2398-52fa-4d61-a8a4-62a805d4d9ef"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DApplyFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3D(Name%3DFrequencyFilter ArrayRank%3D1 ParentType%3DFrequencyFilter))]) ParameterIdentifier%3Dfilters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bcad2af8-ac95-4677-a28c-c8a3cc1ff8c6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b38acced-1e6b-48bd-8be5-3009367ac4b2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a3ffb6ca-de11-4c93-a463-fd8321205fdb"
+                      LastKnownName="FrequencyFilter"
+                      LastKnownLocation="Package15_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2a6ccf6b-0da9-42d9-9904-e4db6dfca879"
+            name="GetMeans"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f24dcae3-303e-486a-a106-e7bb476770ef"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DGetMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a927edf4-d2d9-4bfb-b26e-3c909db75ccf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="874e84d2-b2d9-4a23-956d-ef6b5787ed4f">
+                    <propertyInstance
+                      Id="6cc91504-dd60-4c57-9c61-7e3cf04266a0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4817e3b-4fc9-4592-a683-c723f5619aec">
+                    <propertyInstance
+                      Id="74146411-f2ee-4d65-a7ab-67fdb84b7b87"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="504a5045-e856-450b-a67f-db03d47757e6">
+                    <propertyInstance
+                      Id="5b971826-4fe6-4dd2-8d50-842cdcaa1fc6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="136f118f-93ee-4820-ab40-3d6f95019a8e">
+                    <propertyInstance
+                      Id="805ae020-3fd7-42fb-b75f-4e4ba15bd178"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6f04722-db37-4835-81bf-2d25cbd60d19">
+                    <propertyInstance
+                      Id="750550c5-804e-4b22-8faa-a152efac4af8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d59db009-f875-4b0f-a8f7-f3018ddf114d">
+                    <propertyInstance
+                      Id="f922a401-e99f-4357-8026-0f27325e4e78"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="779c2cf0-d0b6-4e7b-b5a6-10a774106b81"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="024c7d13-2377-4610-8e9c-f2bd7108bd59"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cc143981-ebca-4459-bb9b-5edcaf29234b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49f6a13a-d699-430c-a9ea-1e45e69f80c6"
+                  name="filteredFrequencies"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="17f9132d-0198-42c7-a4fe-a635aa0314e3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D(Name%3DGetMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))]) ParameterIdentifier%3DfilteredFrequencies"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b4074809-e152-4a28-a30b-33c94ea990dc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0e8aa0f4-5228-45a7-b4d2-ce7e1b0ddaa7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="96660023-eaec-46b5-a216-91df7d99292e"
+            name="FrequencyFilter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="94c0b718-fbd8-4e1e-a27e-088a9bf8b860"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DFrequencyFilter Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="862d6df5-939b-48b6-bb0a-a2317b39acfe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ccebbd2-0c3d-47d7-9c1b-7a6bbbbd5deb">
+                    <propertyInstance
+                      Id="e51fe118-f560-47f7-b1d7-10cfecca71d3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8ec7063-ede9-45cb-ab7e-ca932b7f4c8d">
+                    <propertyInstance
+                      Id="5928b3d2-c1cf-4ed2-8f81-2d326f0dcc19"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="753b7768-eb8d-4500-be63-7a4f28270b44">
+                    <propertyInstance
+                      Id="62c8affa-79c8-4089-aa1e-aeccc522b45c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="949c8ae4-1ec1-47f8-ac96-941f4eadfe97">
+                    <propertyInstance
+                      Id="9fb8f746-ec20-4405-82ea-6d644d252874"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f452d9c-8afb-4890-9b75-d664d9beea20">
+                    <propertyInstance
+                      Id="ef348935-0c20-46bf-86d7-fa7afd442c97"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45ccb87f-94c3-4d6e-8394-8c64ea697f3b">
+                    <propertyInstance
+                      Id="a63bc33a-f82f-4f3f-b4d4-dd64be083b32"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="722ce9eb-2279-47f5-a2a9-c6bbe184be4f"
+        name="KMeans"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5e736476-9014-423a-9de8-83e979c9f2b7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3655f350-e957-43bb-bd2c-6f685f3f6c22"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6b915fc3-4fc9-4fe0-b333-10c93d4a57fc">
+                <propertyInstance
+                  Id="88e732c8-f0b9-466c-a363-23b9706053ae"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce6569e2-0d2c-4fe5-b443-67e1e5f400cf">
+                <propertyInstance
+                  Id="22a7dcf9-0142-40b4-8d33-7e08cfa6954c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="550b51b3-bca5-4969-b99a-13efe1bed40d">
+                <propertyInstance
+                  Id="f4637c14-e315-4a29-91ba-92d46f0f3613"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="69c8cfcc-8c22-427a-bd00-b39b8dcf6afe">
+                <propertyInstance
+                  Id="58a43de6-bf19-46a6-9428-1c462911490c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dbda44d1-8121-4a8d-a07e-d696b9238ee5">
+                <propertyInstance
+                  Id="a8e65801-c5df-4afc-9690-fbdb1b9c1f18"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9b7a7774-4556-4633-86b3-624c1bbf073c"
+            name="InitClustering"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c2cefd1c-4a14-48f1-b7c8-dab677479e85"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DInitClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8a2bb0fc-e653-4b6b-9b86-5af72ab6e115"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a095520d-18b9-44a7-8219-476ff5824538">
+                    <propertyInstance
+                      Id="d198684f-4063-409e-9885-668ad7a01ee9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed335d45-916f-4f10-997c-5e07422986bf">
+                    <propertyInstance
+                      Id="843110cb-9880-4878-8944-629e3d2f4bee"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9adefbaa-06a2-4365-84c0-aa1e78001ffe">
+                    <propertyInstance
+                      Id="05434a22-c2af-472a-ba77-71b75a70bc60"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4ecf2b3-5c5c-482b-9ecb-2bba075e9b2d">
+                    <propertyInstance
+                      Id="b8ba65cb-bcbd-42b9-8cb6-65a767a2c4b6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c8eb2e9-cc95-4562-8e26-d3e52b854297">
+                    <propertyInstance
+                      Id="1fb11b98-c070-4903-8146-ca493e8e0af9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96b24440-134b-48d6-8432-827bee396f26">
+                    <propertyInstance
+                      Id="1817af8b-17fc-46b9-b987-72e41d7f592f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="46e5b92e-5bed-4f24-b66d-75122634cf6b"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4cb5312e-420d-421c-a490-6279bb58153b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dcbe7103-e3b4-466d-b03c-f686d0295264"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70d234ec-7494-4198-b688-947f6da40b8d"
+                  name="numTuples"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="51e0b6d7-829c-4a6c-bcef-d27fd3b19651"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DInitClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumTuples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a04cf044-cd6c-4a57-b079-7f4ffad19e80"
+                  name="numClusters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0f18feb5-9424-486d-be2d-771af86f434c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DInitClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumClusters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="918d2d4f-a201-4269-b77c-a5e0d5d32bf5"
+                  name="seed"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="843975e9-f458-4467-8893-92793cfcab79"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DInitClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dseed"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c3a884e9-6809-4751-afa7-7fa9a2e0ece5"
+            name="Cluster"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="595973cb-26b4-44be-bd27-8e87e463fc01"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DCluster OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b69bcad9-8394-42d7-95ca-bba95237992e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f74a645a-b74d-49f2-be3e-d292a6fa76c2">
+                    <propertyInstance
+                      Id="0f0fc996-75da-4054-8a10-431d14426a85"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e1293e3-3bfc-48ad-9f83-327ed64e3ca1">
+                    <propertyInstance
+                      Id="8efe89e5-ad32-4368-b23f-070b99b32b00"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bd1f08c-4be1-4b8f-83e9-32e27774292b">
+                    <propertyInstance
+                      Id="0d28770b-116c-46aa-b428-cc0c07153dae"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04d837a1-8011-471f-9059-2568ecd808d8">
+                    <propertyInstance
+                      Id="cfb9e615-ac10-4513-b007-8927734dd0e5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fca1bc2f-0495-4511-b76d-64456a91949c">
+                    <propertyInstance
+                      Id="89a6430e-df77-4cd0-b8ec-1316a1325361"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3c22d87-2c7c-4804-9d5f-f47639adaee6">
+                    <propertyInstance
+                      Id="079bd26f-9944-49e9-9dcf-c086122342f4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c56f87a1-346d-4d34-bb00-8f31522f78df"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9c139dd6-3bff-4ce9-bdba-4c7ee84e67da"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8bbc1af2-a66b-4477-9c3e-10f23f174237"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8f90c8d9-8b8c-462a-8af0-72313126b605"
+                  name="rawData"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="c226dbfb-e4d8-4d2d-b713-5e6d241ce3a8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DCluster OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DrawData"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c553eeea-6835-44cb-b5b1-ca0508bbcd1b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="13e3ce6a-0f5e-491a-bc23-5b5fd1640c64"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1e4d278d-fa32-4036-a9e9-70bef7e4e174"
+                  name="numClusters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c5466fde-c5fc-4922-9597-161724563aeb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DCluster OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumClusters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="138c28e1-f1c5-41a2-a796-417975b79a7d"
+            name="Normalized"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cfedd9f3-5266-4804-a063-2e8f49d6675f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DNormalized OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8f99e28d-01fa-44f2-9ebe-6356e3d671ae"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3883576-6505-4b70-b77f-beb9f097f366">
+                    <propertyInstance
+                      Id="9f4d3da6-29e9-4632-97af-0137aa2397a0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8274dfb-381d-4be7-86f5-07509ac5254d">
+                    <propertyInstance
+                      Id="15596147-b2ee-4b1f-9c24-172cfd6d3b8f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ddb7e47-e2fa-4296-ae16-4c21361b0071">
+                    <propertyInstance
+                      Id="0230bbb5-c718-4896-86ee-4e17cdc98aa8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b400ebc-3a2d-4f66-9caf-16b0d225373e">
+                    <propertyInstance
+                      Id="e3ff36a4-bafa-4164-a16f-45cc72ad98fa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c685490-b5a9-4984-be50-1fb9fa79954b">
+                    <propertyInstance
+                      Id="aab6e1b9-7664-47ff-b020-f4ad8392d74a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e45d097b-955c-4893-9b3d-44bd4e2f3360">
+                    <propertyInstance
+                      Id="7ed6aea2-9848-41bb-9996-178a1a6b4d8b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9350744e-e045-4202-b192-3a151447fa60"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9545a85d-4aeb-4027-a0b0-336cee86eb46"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b3b18324-04a5-4553-b358-3d0a07e1a67e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1c5ab54-7c44-48fe-af23-9bd1972a645a"
+                  name="rawData"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="9a790ab1-6ba5-4f6c-95ff-6542b48b69fe"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DNormalized OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))]) ParameterIdentifier%3DrawData"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b961ae79-c73f-4ad5-b14e-4cf404b1bf7a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="31427d2e-7cb9-4650-a07d-a6bc29e04e30"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f80cbaa7-1731-4a4a-91a0-88fae880e152"
+            name="UpdateMeans"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a219835d-52d0-44c7-b1d1-ab63b7364db7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b7ddcf8b-202e-4ea5-9949-719ea8e0b065"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="175d63e0-9757-491f-b63e-eccea9e705d8">
+                    <propertyInstance
+                      Id="ab667de3-12a6-4978-92f9-89e5ef7ba42d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4800456-9273-42e3-b788-5dd8eac57b67">
+                    <propertyInstance
+                      Id="3aa8d2fd-1d8f-492d-9fda-de33019ef7f1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5b3acba-f97f-4f00-b5c8-6351009e1f92">
+                    <propertyInstance
+                      Id="f09c771d-dde7-4f91-8467-8b3627fb144f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcac77ba-3ded-49c9-8a4b-e5211d92dc2a">
+                    <propertyInstance
+                      Id="127ffb05-aa55-40ce-ad2a-ecb4844a8098"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01c21272-031e-45c4-9fca-28181b58a543">
+                    <propertyInstance
+                      Id="fcf24d8f-8bc0-40e6-9286-bb3e647df7d7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28669487-7a18-47fd-b04f-e13382a487b1">
+                    <propertyInstance
+                      Id="987cbad7-8e9a-4c89-9243-e0fa3228bad4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="670a0626-58a5-465e-93a8-b054878b0b2b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7189d130-fcb4-407b-91e3-14d071eb74c8"
+                  name="data"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="15fc4a74-8dfc-4bcb-b6f5-78b684dd97a2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3a14bc3f-6a34-4007-917f-f07ac7c97f55"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f8633e8f-5ecc-4672-b222-fbe914596002"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b2168a2-cfc0-4e7f-9ebc-5e150b03a343"
+                  name="clustering"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="030ed973-2ca5-442b-aea3-f048c4cb5f07"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))]) ParameterIdentifier%3Dclustering"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="97532b54-54b7-4cf9-a976-f713b4f9b652"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="50a14ca5-96f5-4fd2-8c79-0f2623549fa1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44c15f3e-c6b0-42ed-8751-b7cbbe874715"
+                  name="means"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="d73c7e70-8e6a-4fd2-bca7-5c0dc2146015"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))]) ParameterIdentifier%3Dmeans"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="af24d91d-124a-4a64-bf70-600fb6a5aaf5"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="43c6a4a5-1d14-4781-b19f-effd90f3977b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="283fef97-8250-486f-a9dd-74bdca7a7584"
+            name="AllocateFloat"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b894891d-722d-4047-b4ed-8fe39686804d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DAllocateFloat OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c8276e78-bf2f-4222-bd8d-58b0a6eb9edf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fe59ee0-7bbf-4885-9839-39839576a468">
+                    <propertyInstance
+                      Id="5cba243f-1544-4bc5-a0f9-f5776d9864b4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82b4c45f-cf1a-4661-885e-3ab968eee096">
+                    <propertyInstance
+                      Id="b152c35d-9e8a-4ae1-84c4-2a5617e28bfc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89349034-a60a-4bc9-b5c5-5afb554c0784">
+                    <propertyInstance
+                      Id="75286556-9faa-4cee-9483-92679d80e00c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fd41248-27ae-40be-a906-bc6e10b7f4a1">
+                    <propertyInstance
+                      Id="9c6f6a2e-8b30-4664-9470-86483c9f4c2e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14fc3b06-1feb-4361-be5d-912ec8958968">
+                    <propertyInstance
+                      Id="454daf44-5561-4806-8b28-faf0c08c5855"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9362a342-3599-4302-9020-70520a11c1f2">
+                    <propertyInstance
+                      Id="87d20206-3359-457c-878f-b79d32f8d31a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7f51020a-cd53-4040-a458-cc1b6b5f4221"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="40689ed2-de88-4114-8848-feabcc00aa64"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c9e674db-6856-45e9-8b00-2e4726127bb6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c9136aa4-2645-4166-a953-328e670e2652"
+                  name="numClusters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1de5e566-652e-43df-9609-cb79388ad1c1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DAllocateFloat OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumClusters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="78a2a339-8d3b-43e9-b1a7-589cd4b9d313"
+                  name="numColumns"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3572ad98-46f7-4f02-a29f-541b9b395b92"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DAllocateFloat OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumColumns"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9774ef03-1487-4082-9cea-ef35c83f3e0a"
+            name="UpdateClustering"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="af57f784-e070-4417-9716-d1e95c7a8203"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="38119a97-d071-4b97-8600-9b26cf4b2f96"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75c714e9-ad9e-48dd-ab72-e0456e202fde">
+                    <propertyInstance
+                      Id="52245819-1c41-4f68-bd34-c4aa9c709c49"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05962a1e-1199-4194-9605-278b54e5c570">
+                    <propertyInstance
+                      Id="b478ecfd-9fde-4ea4-b3fe-db3e4be96276"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7683a287-c891-46fe-a7a4-7e2eae472774">
+                    <propertyInstance
+                      Id="a1556cbf-1ca3-4a5c-85ca-e8d36f51c234"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e95361a7-a7da-4a41-90f0-2fe8ad31dc67">
+                    <propertyInstance
+                      Id="bb057ff3-2197-4b5f-a87a-6ad0249162dc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20c4cc9d-87ea-4d2f-8f14-6968216b5d8f">
+                    <propertyInstance
+                      Id="9ce6b65c-00c0-45b0-a272-d04e7c12f645"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e94a682a-3004-44e6-8db8-94ca0f90ce9b">
+                    <propertyInstance
+                      Id="42c094d8-7ea5-4a2d-920b-8cb23a4a1237"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b4ccdabe-9575-4c9a-9433-0a76a65c7f57"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="28b31bbb-dc92-4e32-b662-7d9c198459f5"
+                  name="data"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="b0fc9e9e-fed2-4f97-a1b7-36871e2cd682"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8024c6fa-549c-4ff7-bc9c-e48fab060f8d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="411a35f2-d4e3-4f48-bf6d-a4044e4ba1a1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8c6581a-1232-415c-b1ee-a8aa1ff06ab4"
+                  name="clustering"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="51517555-af1f-4497-bcd1-c4e2ee78c4b2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))]) ParameterIdentifier%3Dclustering"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="365173bf-295f-47fc-a9c2-edd0e4bd1266"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a8fec349-7576-4cb9-9dfe-98d7f1fad3ea"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0d88b2a1-32a9-4d34-b15b-6d5f8a3b5623"
+                  name="means"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="ff541959-53e0-4ac8-9702-d21627c9800a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle)))]) ParameterIdentifier%3Dmeans"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a57e754c-764e-4084-a031-5795fdb975d1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3bad51db-f01e-4cea-984f-167d9342295d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2d74b203-b8ea-4c6a-93a0-4b3a45a11110"
+            name="Distance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0500dd51-287f-460e-a799-49e309c5c1ae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c70eaed3-8141-4e59-a80b-a77ed4ff6549"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1c1711d-693b-42bd-aba3-e296b0674d60">
+                    <propertyInstance
+                      Id="69f1193b-f43c-44dd-b8ce-2fcb6640df61"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0d7e0f6-a102-4b1c-9bf8-9af55906302e">
+                    <propertyInstance
+                      Id="b5d25442-7f23-4995-80e6-2fa61c867fce"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bf89fe7-b131-436c-9ad4-9c7c1f6d16e8">
+                    <propertyInstance
+                      Id="b9ddf93e-6db0-4ac2-863a-25c29f686b12"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2825b9b1-4330-4a67-9873-42d4d227f993">
+                    <propertyInstance
+                      Id="774c3443-ea04-4eab-b6be-a55c8d1335ee"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dbceee4-a70b-45f2-a9e9-8affd01e469b">
+                    <propertyInstance
+                      Id="8443b0e0-ce16-49be-9f31-0d90053644c8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9198bd9-9a2d-4044-ab2e-d81e374891c7">
+                    <propertyInstance
+                      Id="237518ce-a53b-457e-8187-e3f0f0fff75b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f65e163-255b-44cf-8836-082513f5bd7d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="283a4fd4-6c5f-4e04-95d2-e04ccadd588a"
+                  name="tuple"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="c0202d3b-781b-410a-801d-bf439c5501de"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dtuple"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6f790718-ac3a-444b-addd-adb797a15e97"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="31d76e7e-3d9a-4367-9481-e10e0c19cd8f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dfb87ff8-c940-4269-9989-a90fc82c845d"
+                  name="mean"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="13322fe1-e222-4a55-81a7-675fd35d4d03"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dmean"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cc4da3ab-20c0-4268-afaa-dc0d3d4629cd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="555ff50e-8cf3-42b0-999f-dc484217b890"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c19f3e3e-6ff6-40f0-94f5-fd101f70caaa"
+            name="MinIndex"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="149a4ee6-64de-4d72-937e-601a0fe3270a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DMinIndex OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="393e6327-3705-438a-b5b4-af498cf3243e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5edcf8d-f532-4cd6-9031-0590b7764c54">
+                    <propertyInstance
+                      Id="630c65ca-2add-4f3e-ba12-902789a512f6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="612ad673-9b7c-49bc-99ca-44981aa98e77">
+                    <propertyInstance
+                      Id="7ae4a8b2-af12-42d1-a2ae-2757d0b53e93"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9847d494-5c97-472c-ac55-c0de9963c5bf">
+                    <propertyInstance
+                      Id="fe8a7d87-d303-4c5a-b1ed-a7de019f5914"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb35fcce-e1de-4eb7-bd93-594b4038a683">
+                    <propertyInstance
+                      Id="237195c5-f28a-41f8-bf2d-0d1a3c7e2f32"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb2d07e4-47bd-48ce-bc8e-8f1a08bd85f4">
+                    <propertyInstance
+                      Id="5914e0f5-06a1-4ae9-9b07-53cd92001bab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="967ac9ba-55cf-4c79-a755-22f3c7166b21">
+                    <propertyInstance
+                      Id="74e5445b-783a-4eaf-a18b-81e8b9134964"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0f9fac01-9255-4331-9630-8c5a21a30901"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82a33788-72f9-4505-8f7b-b473cc6fcf03"
+                  name="distances"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="5fb6e22c-e226-4f23-8778-cbd8209c8219"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DMinIndex OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Ddistances"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="82f8cb1e-1d4f-4a2c-9f8c-af1fa887f85b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="090920c8-32ac-4552-80e1-21e95a13eb01"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e0bcd4a9-52d8-4968-a223-6ce8181ef9d6"
+            name="Cluster"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c8f4ddf9-0658-412d-addf-2cd79ff5790d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DCluster OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d4133c6b-e0a8-4cc8-a7ea-1319ca5fe5cf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ee98b33-541c-4ea2-bddf-5258ff89a66c">
+                    <propertyInstance
+                      Id="7475d2dd-ed12-4684-b000-396cda84d5e5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d24bc14b-1c03-4cad-8273-c092fc71ac1c">
+                    <propertyInstance
+                      Id="dce71215-79fd-4a17-a082-a547d7c4f8ad"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="800e1119-a52a-461b-9e72-439e51b2670e">
+                    <propertyInstance
+                      Id="e91af46c-ba3e-4221-b40a-25cf087ef813"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="249ce5e1-8bcc-45c0-900a-be20bcd6c927">
+                    <propertyInstance
+                      Id="b78cdde5-3549-417c-a625-38bd9b2866a1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="154f505e-1e68-499b-a592-5afcfb9d48fd">
+                    <propertyInstance
+                      Id="c04c0642-509d-4db7-813d-d5ced11cc120"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ada16f59-0a71-4b96-befa-751127abdf80">
+                    <propertyInstance
+                      Id="3f3b7d66-40aa-4fae-8682-4535e29da5d3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="25132e18-d697-4731-b4b5-8eb9f1ea5fe2"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ab7d6b24-a79a-444d-95ed-4348c174f4eb"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c2d71888-cef3-4e0e-8a50-ad419df4b0f9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ca3d98dc-75e0-4cee-b05a-e00577c51dfe"
+                  name="rawData"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="97132842-7599-4ea0-afb6-565e778f8db2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DCluster OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DrawData"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="80cefd68-023c-4217-8319-b8701c502394"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="459960dd-b6a7-47b9-bbdd-1a028ccde62e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="589b6194-e693-499c-ad52-1ee947213b65"
+                  name="numClusters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="256ef670-3d53-40e3-bdef-b9786fe5089b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DCluster OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumClusters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a55a8f89-500d-4f72-8b19-a1952db83793"
+            name="Normalized"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0dd251b1-8f94-4ad7-b960-cd46d3bb19b2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DNormalized OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d1659edb-46e6-49c9-be12-a0d6f653b2a2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="254b7772-5751-4133-8a93-700d26b05361">
+                    <propertyInstance
+                      Id="7a1e3001-158d-45ef-93f7-12f11bace2a3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db3b464d-cda0-4d9d-8ad7-1c1ef3594269">
+                    <propertyInstance
+                      Id="e0186a2f-94ac-4b10-bfcf-d118711412c5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a43e2d8-7768-462c-96fa-6172299b332c">
+                    <propertyInstance
+                      Id="1e0bed9e-e66f-4f7f-9b19-f2d94ec07227"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8baa4d7-8d4d-484d-9999-0fe78d69d3c9">
+                    <propertyInstance
+                      Id="1029aa23-b920-4309-a60f-c3da5aa97e58"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5f3c471-153f-4ddc-b1c3-327ff1dc2de4">
+                    <propertyInstance
+                      Id="662e9eba-f6d7-494d-91cf-5df094d54b67"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c686af4c-9f5c-4759-9276-8f2a294d51d6">
+                    <propertyInstance
+                      Id="0d6d1669-69d2-4155-88a3-5b9aa145db3f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e98a69b0-ba1c-41b6-a341-5f49a180b72b"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7fecfe39-e0a1-4318-a07c-fb30c46d6ae9"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fca741e7-ec28-495e-9d24-f631f51c3ca1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d13fff3b-602b-4d68-a8f7-9f22d261a041"
+                  name="rawData"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="b77e6ffd-b31a-4c33-8704-dc4bb6278df0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DNormalized OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))]) ParameterIdentifier%3DrawData"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0bbc1892-5c89-47c1-bc61-7e4ce3fc31c3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="065c8bd7-2765-4ccb-97dd-930ed52b9f5c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ef98789e-23f6-407a-97d1-7b412c23e9b0"
+            name="UpdateMeans"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="df082c91-bb23-4410-ad99-756a5231c6b8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e03edb1c-0a3a-47de-8613-763248daecc2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed648500-2675-4c0c-ac50-532083f7a227">
+                    <propertyInstance
+                      Id="bd35e98b-9993-4bbe-b3e3-c961c215acfe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04bb58fe-cc1f-448c-9e8f-8fb912241c50">
+                    <propertyInstance
+                      Id="432ce97d-ea5c-4961-ac6c-eadf1dc72eba"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9906779-1e4d-4177-87ec-f8b04e3b6216">
+                    <propertyInstance
+                      Id="200692b1-cca5-4f42-8f93-6871cabd88a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35e21258-5df5-43cd-bfb2-43e53cc74290">
+                    <propertyInstance
+                      Id="d9032128-09b2-494c-adb2-c7f49c43040e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed95ab05-3ab9-4fec-b08e-12d6466dd50f">
+                    <propertyInstance
+                      Id="e1d99376-0742-4ffb-a019-be01ef5ac4eb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce25c01d-bf26-4523-b416-0f647758ffe8">
+                    <propertyInstance
+                      Id="b79b06e0-c0df-42c3-ae92-c9eb4d50804a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dd15c7eb-87d1-403e-adbf-ee3f5b535aa1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="50ce9c0f-939b-4207-8d5a-acc38f0e4651"
+                  name="data"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="d5b8563a-60ae-44f8-866d-e7d03fac572f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="59514596-7cf2-4fcc-b12b-cb7ddaad79d4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bb947464-6687-4a78-a81e-5ce760efcce8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2660649c-8dee-4b10-90e2-a62840d16d71"
+                  name="clustering"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="ed5c8a1a-425e-4672-be95-d672161c29f3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))]) ParameterIdentifier%3Dclustering"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="45940dd5-37ef-499e-aebb-504188b81cab"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="52326f03-868a-4b55-ace0-7bb065d707c9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e132cba9-7e4d-4afb-9f0b-5d668d9aefff"
+                  name="means"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="de27bd54-daa0-4215-8da7-5fba35970ee9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateMeans OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))]) ParameterIdentifier%3Dmeans"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="558ad642-c6a2-48c3-925f-61b47c9764a2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0159b0a2-7a0a-462e-ad7e-6cb82baab6d9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bf2ef184-187d-4033-84e7-4d7bad864005"
+            name="AllocateDouble"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1a290da3-8702-4896-9134-a8da9cf9f56c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DAllocateDouble OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b650a336-2992-4276-ba9e-bb4a2ae07ac8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a809648-20a8-409a-8ee9-c681a539ba6d">
+                    <propertyInstance
+                      Id="36b55e8c-a3aa-4fae-a30b-7653592b772c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f74948d-a3a0-45f4-a770-204b3080a92c">
+                    <propertyInstance
+                      Id="546b31aa-2026-4131-82ec-3414492d852d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5fc4850-7733-40c1-9731-e9199c10ca0d">
+                    <propertyInstance
+                      Id="eba18135-2183-448d-8885-ac907947673b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e765a8fe-683d-421b-8df6-de12aa8eac07">
+                    <propertyInstance
+                      Id="8521f6d0-518d-47a9-8059-9ad5b4274e1f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81bdb734-bb58-4a50-b4a4-75b6f1afbceb">
+                    <propertyInstance
+                      Id="95eac459-697f-4503-9386-d32a788558c3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c2fcd87-88ce-452d-b921-ed850f60a53f">
+                    <propertyInstance
+                      Id="6f044114-7aa1-4185-bf51-acce649eb068"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80801385-fa20-4593-b1af-a4337c89f8fd"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="821f3607-2c98-412a-8e82-7daa6c03af64"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="81fd29d2-5dac-47e2-84d5-e3112459181d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="724e2d90-4cb6-4d37-9ceb-1fab63f99b49"
+                  name="numClusters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5faa9e5c-3278-4274-b257-3831bdc8e279"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DAllocateDouble OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumClusters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6fa1d38f-4ef7-4d64-b9e5-b757294dc9b4"
+                  name="numColumns"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="80f6fe8a-f25f-4a37-ae03-f28d6d8154bc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DAllocateDouble OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumColumns"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0b561e4e-09a3-4ed0-a7e8-e91c4b4c60c7"
+            name="UpdateClustering"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5d2b60e2-b24c-4f78-b99a-5ee2973f08bd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6282dc71-3a7e-44cc-aff8-c445d34b9b2b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="784aef99-a6f1-4632-bfe2-2ea84db997bd">
+                    <propertyInstance
+                      Id="08f6b6bd-1ca9-4429-aa76-05eec98d601e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4060f85-0417-4512-a45d-1b4c25fa273a">
+                    <propertyInstance
+                      Id="3baff487-b0a8-40f9-8e04-cf5c4634a983"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df68ee46-db2c-4132-9f18-52698a3337a1">
+                    <propertyInstance
+                      Id="a2b5d645-0aff-4d45-8703-3c98d59fb484"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc41d389-81da-4a09-9d0b-90863baa1b60">
+                    <propertyInstance
+                      Id="cd8fe401-c69e-48d5-86f4-a51d5695ddaa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e8a5da5-ef28-4b8d-b4d4-85f99e469008">
+                    <propertyInstance
+                      Id="f56e9d6a-ec9a-4616-940c-e41b0f839a9e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e93dc45e-c518-4013-8bca-64288c5b50e5">
+                    <propertyInstance
+                      Id="846c5336-d4f7-4dfb-8265-17eae8b4fc98"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="231c473d-a4ae-4c20-88c2-b81af7f0f3b8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9867638f-a68c-458f-8422-8e3bf3baf45a"
+                  name="data"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="e23189cd-5bad-4934-851a-d412b0bb27f1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))]) ParameterIdentifier%3Ddata"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="210d4cc8-3039-4947-8e57-b34d80c9259d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f4fb49e3-c815-4e3d-8f99-036394ee79e5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="15f2832e-5b84-479b-a78c-48f9ab0cd51b"
+                  name="clustering"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="d7405463-2187-4a4b-b2c9-3f029c5ac98f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))]) ParameterIdentifier%3Dclustering"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6a863e62-5fc1-40c9-af34-389fa5aae834"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d8030c40-e205-46f8-8544-af3898023d45"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d0ab28e9-0544-40e4-9e0e-91c32c93bc9c"
+                  name="means"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="17d7bb3f-a341-4640-8e13-a1b004e9061f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DUpdateClustering OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))]) ParameterIdentifier%3Dmeans"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="33aa6ad1-dff4-43fb-878e-eda68a571513"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="07e0138e-71b7-4374-8aa1-e807c13d4f4f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1f159810-b9e0-4bd4-ade2-113beeb8c355"
+            name="Distance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29f24dcc-1b31-4c03-bd33-20e71ba75707"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9a3c0f59-a9ed-46e2-adbe-4c9ddec1aeeb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="355cc959-9969-41fa-a887-ae1f29bea9c5">
+                    <propertyInstance
+                      Id="76315703-bf78-41d0-a9b3-625e1078650c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35c37c6a-4700-4362-afd2-fa746779b63a">
+                    <propertyInstance
+                      Id="71dc2993-82be-41d3-bcd3-76d99f031b82"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3362e2e0-7760-4859-bf58-64806212602f">
+                    <propertyInstance
+                      Id="6f4c3ca9-3706-4703-9770-a7077bb95613"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be270e1d-96db-4148-bd14-510b80bd79db">
+                    <propertyInstance
+                      Id="d136cd2f-6a50-4ad3-8193-1f281e9a4d33"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7eac0623-ef59-489f-b223-66bb433e7fef">
+                    <propertyInstance
+                      Id="70e49d20-848f-4a31-b28b-3a39708d7d05"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb192582-8018-41a4-9931-cb6e39215da2">
+                    <propertyInstance
+                      Id="3f94b320-7979-4ca9-82a9-23273c59ab4f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44a8a982-da53-41db-9d28-59f0a32784a8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ecddb540-7b4a-478f-bc59-63f51e597d55"
+                  name="tuple"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="e8ce3d77-c79d-4d5c-b67b-4be3a590f0b2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))]) ParameterIdentifier%3Dtuple"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="81a440c0-3016-4ca7-8963-f837520b0311"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="efabe8e3-40a3-459b-add1-b9ef8e11fc2b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9fbc12fa-f77f-4fcf-b76e-65c2d13bfb39"
+                  name="mean"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="781c9e91-7ce0-4042-9711-b7b0c9b92806"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))]) ParameterIdentifier%3Dmean"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="87111035-f5a0-439b-aa08-0e33afe91340"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="372f8954-d7c9-45ff-a2bf-098151731af2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6dbad3bc-7314-47ff-a6bb-7f63fe8d9cb4"
+            name="MinIndex"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2f77539d-1317-489a-a81c-50994b5b6773"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DMinIndex OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="58f876a1-4b19-4aa5-9570-810846d27e3c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2de2e25-fe6d-42e5-95f6-271d4dc90869">
+                    <propertyInstance
+                      Id="8a887a0a-8f46-43b6-87ae-a4838e0fe888"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bce7d76-f5c2-4390-bc85-652d862547cd">
+                    <propertyInstance
+                      Id="44c1d306-9b4f-474d-8e12-4ddf5718455e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5779edbc-7a5d-48c5-bbb5-9a696048e041">
+                    <propertyInstance
+                      Id="c64d0776-789c-4814-938a-bb45e0b06b02"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d01cde2-e67d-44e2-864f-226b8742bbc5">
+                    <propertyInstance
+                      Id="1500f400-795d-44e7-b543-f3f151594e89"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56bae94d-29a3-4d24-ac53-c2718ae621e5">
+                    <propertyInstance
+                      Id="fa66da4e-8419-4660-931e-ad3bf0bcc154"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68eeac7e-5ab5-4fe8-ac15-c66544d85b4f">
+                    <propertyInstance
+                      Id="343dd284-0ce0-44e6-9a23-95dc68237d88"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6c0ec1c9-8215-4ea3-a31d-e623c5d181ef"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1c46ca7c-a75f-4075-93cc-186b019bc385"
+                  name="distances"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="a69f53fc-e061-48fc-98b0-a923bf50fd33"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FCechy%2Fbin%2FDebug%2FCechy.dll Namespace%3DCechy Type%3DKMeans Member%3D(Name%3DMinIndex OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))]) ParameterIdentifier%3Ddistances"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="34dbbbfe-0f65-4ea9-b14a-61231a6fb42b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b904a6d5-c5af-439b-a913-8fb2f0f03acc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="396d45e8-fecc-4097-b050-3cf772a6d474"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

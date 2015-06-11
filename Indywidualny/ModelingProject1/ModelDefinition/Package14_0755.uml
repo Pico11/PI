@@ -1,0 +1,2476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b036ec60-a2a3-46a5-82f6-8327da772261"
+  name="ExtractionModule"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="66964e4c-d715-4ef8-a985-3b97d665a259"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DExtractionModule"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0b162cfd-0167-4d95-914e-800c8880d91e">
+      <profileInstance
+        Id="7b4028dc-ff15-4987-9fff-f24d15b4819d"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="90e06026-5773-4ca0-96d7-f73e4d1bfa6a"
+        name="Extractor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1728cb60-2762-40d6-bef7-1e0fd1559e03"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3f8c561a-e489-4feb-9463-3f413c201db3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b774df3-463a-4f82-81d2-8bdbe63f37b1">
+                <propertyInstance
+                  Id="4808a8b3-5372-4bf8-8d5c-cc3cd7489faf"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="72838598-0b67-4798-88e8-f7b9de39b6c7">
+                <propertyInstance
+                  Id="8904eccb-8158-4621-bc26-4439d2d729eb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ef51681-4773-4372-8de1-f3ce9619b545">
+                <propertyInstance
+                  Id="c4fe02a5-84b0-4c2f-81ac-a6dc9388ac3a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e8fee3f-1ba8-46c0-b20c-72b04cdd4549">
+                <propertyInstance
+                  Id="c36ab2e4-d883-4558-b54b-0778443d2959"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="342a8f35-31e6-48d5-8eeb-054ce9371ed6">
+                <propertyInstance
+                  Id="204db638-2d35-468d-aeb0-a1406880c579"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="32851e44-6bb6-4abc-9526-6f2a8ca90c35"
+            name="RecordingTimeElapsed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="738f4e6f-71b0-4915-855a-a12e1dc01d38"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DRecordingTimeElapsed"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="38a77670-f894-4c4b-af5d-8451f6523372"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f12d66b-316e-4153-a0f7-4f63ae4d8f36">
+                    <propertyInstance
+                      Id="4e78897d-03c1-413b-9a60-1818a5a30cae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e7158b0-1d6a-45a7-86d3-c0002314f9b9">
+                    <propertyInstance
+                      Id="8c7cea3d-bd9d-4101-a384-da3b0e184d85"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88472919-7a5e-42a7-843b-8e3abf3c9085">
+                    <propertyInstance
+                      Id="7b567bf6-9fc7-44ae-9419-678771b843a4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="426b59ba-b4ea-493d-bf7d-a021f7e84ced">
+                    <propertyInstance
+                      Id="b992630c-3c3f-4428-a207-06695a317395"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f390484-b9b8-44b1-80bd-e5fd24910d29">
+                    <propertyInstance
+                      Id="e490de66-7e26-4889-837d-2efbdf460a9c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a7beadf-d973-4b43-ba88-e5d19a4b4139">
+                    <propertyInstance
+                      Id="535e34d0-c8c6-4075-9c2f-346ac893844e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28b51613-5438-4b8c-ad7f-1d0bd4d29ea5">
+                    <propertyInstance
+                      Id="52833912-a5b0-4453-9288-1b1dd19dea3b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3f8a062e-6a35-403e-8005-b4369cf3decc"
+            name="_recorder"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e659b236-8d67-4341-93d3-cc257570c876"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D_recorder"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eea7c0ac-8657-4a81-8a10-5f9690d5ba5e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="732fc69d-28d8-46cf-8679-96ba27c77d97">
+                    <propertyInstance
+                      Id="946c9088-6290-494c-80cf-857ba0ac03f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0596f1f-f83e-46c7-b627-a3912388e348">
+                    <propertyInstance
+                      Id="6185149b-661c-48af-a3d6-68f43ddbb24f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1acaf515-0aab-4cb2-8edc-5573eed1b477">
+                    <propertyInstance
+                      Id="5bbe1cd6-6fa0-4995-8ccd-71f3ca1ebdc4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ef8d504-63fc-45c4-9157-5918c4b006fc">
+                    <propertyInstance
+                      Id="2a85c9fa-6849-4b57-a351-a4261ed9319f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b562462-2f06-4e29-8167-beb9c17ce4d6">
+                    <propertyInstance
+                      Id="9a87ce1f-bb8f-4778-8201-c6f2a88e16d6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7a697792-9b81-4694-a075-db247ed9b06c"
+                LastKnownName="Recorder"
+                LastKnownLocation="Package9_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c2120294-f286-4419-8b11-ed6062d69023"
+            name="TransformedWindowLength"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9c90b145-ab02-4400-97f4-61c762383356"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DTransformedWindowLength"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="41dd42f3-70e9-4898-a566-3ccd8c5b3f97"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a046fd5-8de6-444a-88f1-ab5fd0673d4d">
+                    <propertyInstance
+                      Id="79c6dfe9-f86e-42ad-8134-c93d3d26e68f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d361374-8dc2-41b0-968d-73bdf59def98">
+                    <propertyInstance
+                      Id="7a237087-9f4f-407d-bc29-5e73bb692397"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09301359-4e21-4e36-907c-d3c1a8f17003">
+                    <propertyInstance
+                      Id="6345709b-6c73-4d46-96d4-f610090ac09f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ce68985-4a00-486e-8266-387c9566efe9">
+                    <propertyInstance
+                      Id="2c366020-a48b-410e-b3de-1fb8c231dd38"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5dbc06ce-bdd5-43f2-bbc2-3528d93e1f08">
+                    <propertyInstance
+                      Id="08a190ac-f1a0-4a1d-889c-5951d2f48b3e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="9616f87d-6b5a-45cd-9008-5164cf73fed7"
+            name="WindowExtractionPeriod"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="04f019bc-ccae-4a06-9d6a-320be2daf314"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DWindowExtractionPeriod"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ff6c5331-5ba6-49ab-b5e4-ba0638d1ea1d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3543b1ac-33f7-4ec3-a115-9cc9b8010c1a">
+                    <propertyInstance
+                      Id="89e0cd85-d29b-436d-a133-2b4a889c98d9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="127df439-eeff-420e-97cb-4522a78153b6">
+                    <propertyInstance
+                      Id="424bc152-0cbc-4742-bece-8a78ee7a5991"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="270edd8b-fd3a-4724-a5fa-5f53a49ca598">
+                    <propertyInstance
+                      Id="0944edee-3f48-4c2b-80c9-3d8dc03d94e9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="687aab1b-550d-42c6-b1ba-4261c954b498">
+                    <propertyInstance
+                      Id="51f602c9-9e09-45ff-9cba-c42d0ce3ee65"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b333eea-597f-4f97-b29f-6ff7f29ef171">
+                    <propertyInstance
+                      Id="00aaa5c5-1345-4c3b-9e85-3aba16fe0d6c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="a1e767a2-2419-4ef2-ada2-197b25c9084f"
+            name="MaxDFTFreq"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="10280923-283f-4920-a96f-3445d9b7d6d1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DMaxDFTFreq"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e399b314-f48b-4962-a49c-a44e5f18a073"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d96c5743-98a1-4813-a0a7-4188f2a28a21">
+                    <propertyInstance
+                      Id="946b8d79-81d4-46f8-bd8f-b3868cfd9351"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5831d962-a41a-4cce-8ffd-ed722c8cce3a">
+                    <propertyInstance
+                      Id="2c5f9896-7a3d-4c95-bed5-221ba336973a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8db027a-5ace-44b7-9515-f0812e141110">
+                    <propertyInstance
+                      Id="d2c14eb6-978b-41c8-b060-c038e1ae153b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da3b86ec-99c4-4f62-a5bc-1f491ad79c15">
+                    <propertyInstance
+                      Id="711d3f06-7b70-4899-b91e-8bcaf0a88ee2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd1b6e5f-c6d9-4fd1-b277-32f3fa4eb27d">
+                    <propertyInstance
+                      Id="865da1f8-346c-4c61-9052-e89aaf69d2c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="5c51fc9a-e382-4f5d-88a4-01058f5a0f59"
+            name="FilterCount"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="957e9e96-b710-4162-8fb6-ec4dd54361c2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DFilterCount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="86362582-adae-44e2-b3c8-1ee91b16551e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f5f32a7-45b2-4fe3-adca-c17e20d369bf">
+                    <propertyInstance
+                      Id="59be84a7-a19e-4e46-9036-a75790959b2a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdb4df8c-d8c4-4339-890e-2e8a16ad4467">
+                    <propertyInstance
+                      Id="c9856322-2dbd-4f5e-bda6-33b9ca95d144"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9572bb9-0386-4605-8f6e-4360b568a831">
+                    <propertyInstance
+                      Id="94e4c747-dc0f-4a83-8934-651b5b0509bb"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa4503ca-b526-4b31-ada5-b9d561261288">
+                    <propertyInstance
+                      Id="80b0c0fb-e02d-4a42-bcb6-b1e97601875b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="944f64b8-c074-4c74-9357-b29d42b77849">
+                    <propertyInstance
+                      Id="7e8c9c20-ac85-49ea-a243-2f83e1efb395"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="4319bb95-680a-4eaf-a272-edec667d279b"
+            name="DataDirectory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4e187a2d-4241-48c8-9d10-e49d478c3e3f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DDataDirectory"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e99354a0-3af2-443e-b706-0bbcfad11cad"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73225f5b-9c48-4dfc-a4c5-bbb6ac28dd57">
+                    <propertyInstance
+                      Id="171d8021-3c0a-42f0-bafb-a9ff0e869d17"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cafd2b8-a583-48a2-a1f9-377bd46f4316">
+                    <propertyInstance
+                      Id="23b6f805-ee5a-48bd-8959-b502962816ec"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8681ac3c-ba71-46de-bbc1-e6bca96de1b7">
+                    <propertyInstance
+                      Id="3f11b225-9277-4a05-8a8b-18a22a43497d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e72cd52-ba69-45bb-b7be-d21d3bfb48de">
+                    <propertyInstance
+                      Id="fffcbd46-38ed-4e52-8e3b-57a2b2896b5c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8d48c7d-1db1-4b37-99f8-be2d7c4eb948">
+                    <propertyInstance
+                      Id="5ccdcd43-b534-4b83-ae8b-2fd6b1ecc750"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9e7924b5-4440-4df7-8192-008ce6586899"
+            name="StartRecordingSamples"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1ab99b41-e872-4a67-988f-e32df3d26dca"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DStartRecordingSamples OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DTimeSpan)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="22d117ce-b7d0-442f-a354-38dc6fd93526"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d8402b9-4d13-4e37-b153-933306400c07">
+                    <propertyInstance
+                      Id="06e741a3-e364-4e39-a35d-28b869a2e529"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="978762b5-2931-4b77-a231-2e458e978b7e">
+                    <propertyInstance
+                      Id="715b4891-5ab5-4629-922f-1e275289e48c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b79e9a85-0f72-4297-97e4-7d15bf13bad9">
+                    <propertyInstance
+                      Id="b0b1b5df-9733-4b56-b215-bc7570608346"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d905a3e-eed9-464a-b0f0-22b22fa515e6">
+                    <propertyInstance
+                      Id="cbdd6b8b-ed76-45a8-b5f7-884ab3a530cc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14787d72-e5b7-426e-92ef-2e7523ee183f">
+                    <propertyInstance
+                      Id="4a791b56-143b-4b38-a264-2aa82bcb66ff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91aee4eb-327f-46e5-9658-a933f07f2e95">
+                    <propertyInstance
+                      Id="03372f50-8b7b-40e0-93fd-bac8518576e7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f5c252f0-7e15-4066-92f2-a6f8fce7995a"
+                  name="recordingTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b70f9e71-51d0-431e-8507-0446e93bf4cf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DStartRecordingSamples OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DTimeSpan)]) ParameterIdentifier%3DrecordingTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="86244ca1-fed9-40d0-a44a-8f925990fbfb"
+                      LastKnownName="TimeSpan"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="990fa848-43ec-4642-a011-a371d73635e3"
+            name="StartRecordingSamples"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="be71de89-da6f-40c4-8af1-d4e18cbb7712"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DStartRecordingSamples OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d0ceef14-91ab-43dd-af64-8fb460c49173"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49314b46-7831-4788-9f96-3594052562d4">
+                    <propertyInstance
+                      Id="00952834-9ae5-401e-854a-81b688e76196"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb7795e2-ecc1-4202-ab8d-e8f64d904f8b">
+                    <propertyInstance
+                      Id="96470311-cc0d-4917-bfc0-08d9cc082018"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2dd32cc9-ab32-4baa-9715-689403c91af0">
+                    <propertyInstance
+                      Id="d2ad4e0c-126e-433d-a914-3b9cf318aa32"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29e3f896-6165-45cf-96a2-4bbaa74dd195">
+                    <propertyInstance
+                      Id="0d1cf8e4-4380-4265-8944-af8cc1738471"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7d4c2a9-f0f8-421b-b1fd-9338e396cf9e">
+                    <propertyInstance
+                      Id="6b3a6908-02d4-4c00-ab6a-c9fbdbabbcf0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f82830ce-a58f-4d2d-b815-48909e2704a4">
+                    <propertyInstance
+                      Id="3c3e86ca-5b12-4177-b316-da9e9b3cc00e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="398182f0-3336-4ba3-88d0-ed2a923b14a7"
+                  name="numberOfSamples"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ee593199-5918-4f54-b216-ebad0e863799"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DStartRecordingSamples OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnumberOfSamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ef31a4b-9c52-4633-9dd8-45abd69f8da9"
+                  name="sampleRate"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0fd597a2-dfbf-44ab-873a-2873c70b1195"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DStartRecordingSamples OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DsampleRate"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a1ce5700-2f47-425e-8300-3f142ee3a195"
+            name="AreSamplesReady"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="23d4b07b-b37c-45bf-a8af-7cf6a4576c3c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DAreSamplesReady"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a503a80f-3f9f-48bc-8da8-a2b5d67f6dd2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d7c5d85-c77d-4b13-a9eb-67886369c8a7">
+                    <propertyInstance
+                      Id="a8c0c055-883c-4f9f-a3b8-3630cb45b1f5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45a07474-a409-4e5d-a712-591356ee2ef7">
+                    <propertyInstance
+                      Id="83799eb7-0845-4eae-8261-bf9ab07eaf8a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="941403c5-0c9a-4769-92fe-78d69326aedc">
+                    <propertyInstance
+                      Id="168cb06f-c705-4b90-8049-cb0044511019"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fa15761-a6c8-4775-9da8-9021a91e586b">
+                    <propertyInstance
+                      Id="98bda20d-ce29-4ed1-9a0b-2493cf927192"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94e0f169-79fc-4d56-a206-646f33acb98b">
+                    <propertyInstance
+                      Id="d5565de4-47d9-44b5-9ac0-275249f6fa10"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="addfcc0f-1092-4c56-bcf1-fba3304589a7">
+                    <propertyInstance
+                      Id="fc78b171-e8fd-4de7-b677-0c9e81d82be1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e1f0e64e-0449-4a1f-9aef-cc1ae6f840b8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2f266f07-3321-441d-bc9a-ca42f3b8fbf4"
+            name="GetRecordedSamples"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3963f7c9-32df-4786-9e6f-530f2fdc9a47"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DGetRecordedSamples"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3d548d29-5e48-48c1-ae48-983877523881"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd345cc4-e9cd-4652-8eb1-5ecd3d50d1ab">
+                    <propertyInstance
+                      Id="ab79bf85-849d-49f5-a9fa-d0ccce281c42"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b8bded3-fc58-421e-9df1-ad6929d6d588">
+                    <propertyInstance
+                      Id="87d660b7-eb20-4515-8f7a-5a9727a6e0d6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9f31aa0-f4d9-4a69-ab48-0745443d9d73">
+                    <propertyInstance
+                      Id="29761667-b79d-46df-9010-bb87c259d9a6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5ae7586-5931-449b-9d6a-88804a1dfef2">
+                    <propertyInstance
+                      Id="568d30fb-53cc-411f-bf5e-95b3bb0e999c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0324609-369a-4a4c-ac00-391a051a0cc0">
+                    <propertyInstance
+                      Id="e8099b5f-7f69-4ff4-862c-48bf048f2a6b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12d191f6-3c1e-4729-8932-b846019b0d8b">
+                    <propertyInstance
+                      Id="dd8aa8f4-8fd4-47e0-a827-21b224538bcd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f017f31-d9bc-44ff-8946-703a875e7c41"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9089e810-270c-4e13-ba65-dc79da8cd32f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="db48c34f-6c88-4077-82da-d111c88e46db"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bc56c8f5-9e78-4dac-b498-b0be3c3efd85"
+            name="ForceGetRecordedSamples"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a9e8882d-9672-40d4-98e6-7e25ed7d46d0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3DForceGetRecordedSamples"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8b9b77ed-353a-478f-b2d7-49c567f152df"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3acfa0c-0da4-4519-9015-b12ee637d440">
+                    <propertyInstance
+                      Id="65402346-4e47-4f66-976e-1983a1b65927"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bc7d41b-cd23-446a-aaac-79e7016fd27a">
+                    <propertyInstance
+                      Id="8b39fea8-4151-42a7-9dc7-301ed3b0aea5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f37e83cf-ec78-48dc-84b3-7e62741b6c17">
+                    <propertyInstance
+                      Id="810f0fb0-bdca-456e-adda-da22b06ae817"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1a2f544-0478-4e88-b3ef-ea3af6e7edfc">
+                    <propertyInstance
+                      Id="0869f1e4-c268-4f67-9639-965a3f1feb5f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1f74f3e-b877-4fc1-949d-42a76258931d">
+                    <propertyInstance
+                      Id="77c9663f-b809-4718-bbd1-355db70e068e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11c6db67-3863-474a-b833-5e7210e67cba">
+                    <propertyInstance
+                      Id="73b3337b-7dc4-44e2-b998-1ac6ede7047c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c5e653fc-e20d-47fc-91b9-3caac9026058"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c17b27aa-8f74-4202-90ed-b6787c3fa40e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="369c2da3-bde0-4066-a9e1-05060ca92dfb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6dfb42fa-638b-4345-bbdd-c251d30cce02"
+            name="ProcessSamples"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5399abf0-c313-4088-b5f1-4c1a9c504ed1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DProcessSamples OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6df6cd2-00ea-45f1-aaba-2df289acfdd5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0c22563-6f47-4eba-ae36-d1cee5957679">
+                    <propertyInstance
+                      Id="6c536022-d5f0-4f3b-9b0c-e935eddce819"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93ef4f3e-f65c-45ba-9fa7-b9651e30ddc1">
+                    <propertyInstance
+                      Id="782bea5f-ebb9-4e73-a292-850dd1e2d08a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6a660ed-ef1c-4231-946e-ea2773feb86d">
+                    <propertyInstance
+                      Id="db9139b3-0982-4270-b14c-8c3d01d7015a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1f2b6dd-9e8a-4b69-82af-171de2e19edc">
+                    <propertyInstance
+                      Id="a1358894-b817-4b9d-aec8-7a1334eedf01"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f6fbdcb-72fc-4192-951b-2dbd7a8e0030">
+                    <propertyInstance
+                      Id="693298f8-fde8-40c8-af52-81b3f4678ba6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6b9dce7-dc80-4f83-a0dd-149c21be5ac3">
+                    <propertyInstance
+                      Id="a1fbd358-eced-4b47-9bd8-a75ff2c11e03"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bdbd7f1e-bdf2-4a04-a133-76c7da231692"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="390e1ba2-9e50-4469-8bdf-b7c7d26c3d86"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="214651c9-c148-43a8-b2e5-c31175682fa9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8677448c-b156-4eb5-bb1c-53c8e8a86f91"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="b3953c5d-4c43-439e-81f5-7a29fe1f0657"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DProcessSamples OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="839f9bb1-3e64-408d-83d6-9ca63c625bfe"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="16ea0279-5546-48c4-9613-b13ae113a217"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0871e5b6-b4e5-4ff5-abc1-61181148b279"
+            name="ExtendWindowForDFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bfd18e4f-3cc5-47a2-92e1-de108ef8f6cd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DExtendWindowForDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="db0ca221-7d8d-45e1-87ce-7bed2e266a6e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac75fca8-85ee-4689-8d9b-f480d489ea6c">
+                    <propertyInstance
+                      Id="a1794373-590a-4e69-be1a-48167d73d9f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cf9c209-c899-46d5-ac92-b58545dfa815">
+                    <propertyInstance
+                      Id="765c79f2-a4de-4e32-9630-c873172b320f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40767a40-9e51-43ad-8378-d6c42ec5aac2">
+                    <propertyInstance
+                      Id="31b6cb00-b23f-4270-94e6-5e562700e983"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42b16141-057c-4032-b0c6-cce89ae6ee2e">
+                    <propertyInstance
+                      Id="05965943-d953-4513-986e-90a4018ec398"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1df070e-6a8c-4f62-8553-e4581c2b7abe">
+                    <propertyInstance
+                      Id="7bacfbb4-2883-411e-85a3-d0ec1a38b3b0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e74eae5-adc7-4aa9-be5e-a3a5c3fc13c6">
+                    <propertyInstance
+                      Id="aac4e5c6-ac2f-4dbd-a5d1-964597cfec11"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ac30ab9e-c775-4bf1-ac2d-035f8bac21cf"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="44e62989-854d-4a6f-81b0-a0f3443cca75"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="63c4324e-baa8-49ef-866d-634ffb8cbcae"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44a26c90-1329-4398-9be6-91b62cb3f512"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="d4be880e-d34e-4786-8518-3b40cda94fe8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DExtendWindowForDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="69decd41-247d-47aa-b814-99f67113b832"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="327937cf-1343-48cf-91ea-7f57429ffad3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="24402fe3-1bcd-48ab-b1f6-dee320569913"
+            name="ExtractWindows"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="db8e5a7c-ccb6-4217-95d3-92367febb8b8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DExtractWindows OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9db60b0-0059-4497-b470-9cb778637717"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2f40921-2c89-4540-a59e-c9e0e9e4f69e">
+                    <propertyInstance
+                      Id="8abec11c-cca2-4e7c-a418-34597db180fc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b88df8e8-c86c-475e-b823-c7ad6d9ae2fe">
+                    <propertyInstance
+                      Id="56b83521-5e98-4476-98c2-127a9d1ea56e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71e94ec3-447d-4513-b1c8-46d131158138">
+                    <propertyInstance
+                      Id="ba6e3042-dd41-46e9-bef1-97f84bb45d70"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee57094e-3664-4fdc-a7ca-d63b79540965">
+                    <propertyInstance
+                      Id="0fb1a076-1f85-4ef4-925b-b5122512cbb9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="770a6a36-f9c2-423a-ad46-dc083aebec5c">
+                    <propertyInstance
+                      Id="7cbcd893-15e4-43b2-b459-a67012c2e85b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6dc0a13f-6429-4765-bbe5-547b900e6dd4">
+                    <propertyInstance
+                      Id="db4fe467-d4f6-440c-ae74-b18bb0d1fd49"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8af862b6-4ad3-49bc-a1e0-5d6e844854f1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="ba127f64-73c7-457f-86ec-84fa9ef294f0"
+                      LastKnownName="IEnumerable&lt;Single‎[]‎&gt;"
+                      LastKnownLocation="Package7_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d132673b-3220-4684-a063-7418dd6806a9"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="b8502578-fc87-43b7-9932-aa0d6c273dc3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DExtractWindows OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1858cfc6-2866-44f6-8f9f-4cb1aade4160"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="24406c49-d0bc-4e14-a5be-73ec3a0b58a7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="788bc9e2-7743-4ce0-a478-e11af51b5807"
+                  name="extractionPeriod"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="54e889cf-a33c-44ae-acc4-daf986d199e0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DExtractWindows OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DextractionPeriod"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f57901a2-c462-4290-9e3d-f1c649d27470"
+            name="GetFrequencies"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0871c4fe-fc74-494e-a641-0ed2e8e09329"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DGetFrequencies OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d5c15db1-00a9-4f7b-8a1f-36a725d2fd2a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b169cc3e-1515-43f5-b774-7287f8c62ee2">
+                    <propertyInstance
+                      Id="163d11b9-19b4-41cd-aa82-6f0e200a2ae9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46d52425-72d8-47f0-a43e-49f24bde1d90">
+                    <propertyInstance
+                      Id="ca5f1771-5809-4124-b8be-ca47b2f718a2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bb91bb3-a161-4951-bb2d-d6f817611c6e">
+                    <propertyInstance
+                      Id="9e4e5977-4d96-4d59-a9b7-476a703dc155"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c0705c2-2065-490e-bbf0-b2ee51f3e8e1">
+                    <propertyInstance
+                      Id="acfb8414-592d-4004-a37a-dd01d55cc46b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e56e501d-2a4c-410c-aa1b-c1cd10cf6da0">
+                    <propertyInstance
+                      Id="4ef5b5a2-78c3-40ac-a5f4-420a34ad1cdf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4455cd81-fb8e-44a6-ab54-0e5c287dcde5">
+                    <propertyInstance
+                      Id="87e4ad7b-a517-4a90-a039-1bbb516c1f74"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="26edf0e4-56d6-4d5c-8a51-164198041002"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6cf0d0dd-7672-4b31-95ab-b2837b1c48ec"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a4e86387-c4e7-43fd-9598-ad75b9b840c0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1eeb9d53-e6f0-4ec0-b615-c8c2846a17e0"
+                  name="frame"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="721dfa06-322e-49d5-80e3-b04840f26d63"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DGetFrequencies OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dframe"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cbe80ff2-68de-4e4c-8089-30d2c7d76444"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="95443546-0e8f-4485-98ff-749f7960e4a6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="02bc4eda-5ad7-4dd0-9295-dd9038d1585f"
+            name="CalculateDFT"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c64f0d40-ff1c-4f0d-a0c0-ae0d842cfd62"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DCalculateDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="31ff87f2-dc82-4631-bca4-ded900f1ab50"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc74a250-7d7f-4b7c-90ab-5eb5dc9b6835">
+                    <propertyInstance
+                      Id="84d1741e-98ea-4868-b234-10b61da29f9a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b020162a-422f-4468-9dfe-4226b77f40b8">
+                    <propertyInstance
+                      Id="6d00846e-476f-420b-90bc-e78a076712da"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f8bb8f3-a8e8-4be1-9c43-3911e6a2a48a">
+                    <propertyInstance
+                      Id="4e302bfa-994b-48b7-ab12-b5c2d10d94a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61972daf-b284-443c-8b1f-519cb80a4473">
+                    <propertyInstance
+                      Id="fa385f5d-ceb1-441a-927b-260b670b8306"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56423733-1e17-4ae1-8d62-d3c69859c265">
+                    <propertyInstance
+                      Id="108dc3f3-9703-493f-91e7-be737e1b39c0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48a5bfbc-ceb3-4610-8ee6-0c168851f2d3">
+                    <propertyInstance
+                      Id="bdecbbfa-f384-4ecf-b26f-513c7227bf04"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d9d6190-5da1-4e98-a20b-29a860fd0076"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="ba127f64-73c7-457f-86ec-84fa9ef294f0"
+                      LastKnownName="IEnumerable&lt;Single‎[]‎&gt;"
+                      LastKnownLocation="Package7_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1360503f-052f-4407-bc11-ea8cdbfc764b"
+                  name="samples"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="b4809650-73a8-405a-b43f-d8ab38ca4691"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DCalculateDFT OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dsamples"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f75ff621-b514-48d5-ae04-b70bbeeb65f7"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="60a55690-66e6-4df4-ad24-37a0177bf203"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f8bcef79-c6df-4f1e-ae0b-fe7879e758f9"
+            name="GetRangesEnergy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f05b22dd-0b0f-418f-9b30-ea22f62b8359"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DGetRangesEnergy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e3092052-af0d-4a86-b7c0-e93615e4ee2e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d30cd06d-38fc-4882-a9d1-c6d517ae1a5e">
+                    <propertyInstance
+                      Id="65f0ce5d-d8a2-489c-b2f6-c3bbf3a2b6a0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67033112-c1ad-48af-8248-5caf6f47fb0c">
+                    <propertyInstance
+                      Id="a3260f08-2873-4b78-aa60-6f4610616042"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0307dfca-aca2-4c53-b670-2b7414143387">
+                    <propertyInstance
+                      Id="23165a3a-8a2c-49a5-8365-2df3a3fcb523"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64f75b23-f50e-4278-9710-b2a514a7c298">
+                    <propertyInstance
+                      Id="1b9d6deb-c845-4b26-9f0c-0dfecdc15ce9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b478e8bd-3fd1-4174-a8e0-bfd1d7034ca9">
+                    <propertyInstance
+                      Id="3620e864-d434-4252-a697-c0a042484214"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d4ce667-24a1-4f02-a00f-71ea81c22154">
+                    <propertyInstance
+                      Id="a1ec6560-c5e2-4f9e-9dc0-a9eca5e0ccfd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20289ebc-98db-46b9-a0de-2f01230d353c"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3961cac2-c86a-4e8b-983e-5677795a9068"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="22832ffe-3692-4259-8882-922e93315046"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a1abe50d-27e1-43aa-a8f7-d87a3045c34b"
+                  name="frequencies"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="8ef2a2c7-e059-4c60-97b4-89bdd1321ca7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DGetRangesEnergy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]) ParameterIdentifier%3Dfrequencies"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="db61eb98-f767-47a4-819c-96ac4815b526"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7d9bb525-8500-4fa5-ad1c-faac40c991eb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7dd4e0ac-e822-4114-ab24-67e2ce80acff"
+            name="CreateUserTraitsFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="988c7eab-68c7-4c0b-b25e-ee1f412b727e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DCreateUserTraitsFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3ef7c469-1630-495e-9ebc-aa6c67aa84ce"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ff46c8e-98eb-42a2-97ec-a4defda693bd">
+                    <propertyInstance
+                      Id="100c4c29-21f1-46c4-a4e9-22219a656a76"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cdec512-14b9-4d9f-b352-22566db667e5">
+                    <propertyInstance
+                      Id="6901c823-dafa-43f0-b6b5-d6dc59754b4f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9303a067-d607-45ad-b5bf-9e163dd159b9">
+                    <propertyInstance
+                      Id="e9f6bf0d-26df-4736-94cf-6150c8143f46"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="727e9eab-a826-4437-a6f4-2328439ec0c5">
+                    <propertyInstance
+                      Id="2cbbdf49-ff86-48e4-9fe8-9ed307ea262c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7c67dd5-7f51-47bc-9455-6d447b55b4f9">
+                    <propertyInstance
+                      Id="20f798c3-cc8e-47a4-aae7-b3429b7da41f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67971dd1-acb2-4def-b1fe-c9f202f27136">
+                    <propertyInstance
+                      Id="7f65c772-fd40-41dd-98df-e0427721e4ca"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="74e1da17-d84c-4158-9fb6-4424dbe322da"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="521ac66d-c396-42d9-8ac6-9d3796e88477"
+                  name="user"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="44034f89-e185-4fda-bbc6-25b91b52f4a2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DCreateUserTraitsFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Duser"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="39a4277b-d25e-474a-8839-1eb060a33ec0"
+            name="GetFrequencies"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1412fb74-5985-4ce7-a37c-9541f8223cfc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DGetFrequencies OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="89099762-11e1-4858-a804-c57292e1d8d6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c2fa5ca-27c5-4d0f-aebf-a5dc449478bb">
+                    <propertyInstance
+                      Id="6715ecfd-6df3-40d3-961e-ee25556db754"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ee31a07-129a-4e17-b75b-63dcaeb19f1c">
+                    <propertyInstance
+                      Id="47cb30a2-255f-4823-99f6-03aa4f561029"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="926bd19e-3b08-4e5f-9d68-2b38656c619c">
+                    <propertyInstance
+                      Id="677764ea-f5fe-4e6f-a287-8a93a9a9f7d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6563ac1-6044-402f-938a-139eb872f181">
+                    <propertyInstance
+                      Id="3afaf3ee-b0c7-48b9-a2bc-90582654e07e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b49dd75-3d38-433b-8c04-15d80d941521">
+                    <propertyInstance
+                      Id="e7e16bb9-21d6-4637-869f-6312e7ccba35"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61ae212c-d590-4b08-a330-d6c3da5063c2">
+                    <propertyInstance
+                      Id="27aa8b64-993d-476e-8763-1e888c959066"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="773f2116-aeaf-46d0-a536-b19d715dcafd"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="ba127f64-73c7-457f-86ec-84fa9ef294f0"
+                      LastKnownName="IEnumerable&lt;Single‎[]‎&gt;"
+                      LastKnownLocation="Package7_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0729fa2-352c-4569-81e7-5b3c0fe94df8"
+                  name="frames"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f1079ba6-29b2-493c-8e43-f96dc6d49c6d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DGetFrequencies OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DSingle ArrayRank%3D1 ParentType%3DSingle))]))]) ParameterIdentifier%3Dframes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="ba127f64-73c7-457f-86ec-84fa9ef294f0"
+                      LastKnownName="IEnumerable&lt;Single‎[]‎&gt;"
+                      LastKnownLocation="Package7_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="18c86b72-a143-4da4-8d83-566a05e77086"
+            name="CreateUserTraitsFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d44ebc6c-8b14-4153-b0db-157d156eb0b4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DCreateUserTraitsFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DAction GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a0b2310e-9f73-453b-9f49-9fa138701608"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34a3b710-e993-48b6-953d-4aac453549eb">
+                    <propertyInstance
+                      Id="05425b75-1758-47ea-beb9-1a72bffdc7d8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dec14db-04f5-41f4-bb0d-06e4f6d2346a">
+                    <propertyInstance
+                      Id="792c1830-ad69-490e-b386-801a162d6fbf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf4ba905-3302-48ad-8001-a0ea6deac2d0">
+                    <propertyInstance
+                      Id="d3a3f943-8512-4876-a733-632fa524bc64"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51f4db15-c1a5-4dff-9215-267bf4a0bd53">
+                    <propertyInstance
+                      Id="6155b129-3ad3-4f5b-9681-1a8345d31ac9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0384afc8-d5a0-4990-93c2-02e11a973d54">
+                    <propertyInstance
+                      Id="2815089b-80fb-4861-8d25-07bd7816ce05"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5598a17-ce83-4d27-b109-f805dd727d4b">
+                    <propertyInstance
+                      Id="5631c2d8-0943-4f91-b7d7-e14886cd7166"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9fc6df26-faba-4511-b1db-f920cddf7e19"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="673c271a-4a4b-4e36-bc97-82aa3474b97e"
+                  name="user"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f1200f0f-9eff-4c15-929d-16a242ba54cb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DCreateUserTraitsFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DAction GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]))]) ParameterIdentifier%3Duser"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a4b12eba-2739-43a4-b006-a3a095842ca2"
+                  name="setStatusAction"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0bcd4219-5797-4911-8f7e-7b4e2cf1a6dc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D(Name%3DCreateUserTraitsFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DAction GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]))]) ParameterIdentifier%3DsetStatusAction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a417ee8f-ad01-4535-bc91-e610daf4baec"
+                      LastKnownName="Action&lt;String‎&gt;"
+                      LastKnownLocation="Package1_0755.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="67bab9c7-8c45-4938-9541-a04b8f9e3879"
+            name="Extractor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a67bed79-1a3d-4577-b452-c7707ccf828c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3DExtractor Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="96d0de37-aa3a-491f-bd6c-c017ea799da7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c578aee-c5bd-4ab8-841e-bd0e65f8737e">
+                    <propertyInstance
+                      Id="04f487a4-690a-44d0-9e79-1c8bbebb03ac"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27e42f96-d8a7-4b6a-b3d8-ae60a09d8981">
+                    <propertyInstance
+                      Id="68054f40-9b31-42f7-beb8-1964326cadc7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cbbae71-5274-4458-aa82-d8b574939be8">
+                    <propertyInstance
+                      Id="64dfec0a-2db0-4339-a0c9-6db3707b3ef0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e210a9e9-b427-4685-97b3-c89b93ab9425">
+                    <propertyInstance
+                      Id="9413444a-e71f-4f10-8696-50498494b2b3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c43ce5ee-6370-41cd-b399-f12adbdbc567">
+                    <propertyInstance
+                      Id="dec6494c-653f-437e-b7e2-8a28cd6d8550"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1369f324-c90d-4ae7-a100-4598d3768da9">
+                    <propertyInstance
+                      Id="e2c285e6-460e-4b2d-b4ab-2169ba6bd496"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0897de86-3ac4-4a70-91bb-da555b1ab86e"
+        name="Frame"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8fdd012e-28c1-4d74-b814-d75432964ea8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3D(Name%3DFrame ParentType%3DExtractor)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="172ee7ba-24e5-48fe-8fca-f9953d0571de"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bdd19291-ee5e-43d5-8150-714c79f802fb">
+                <propertyInstance
+                  Id="a1a0470f-d2a6-406d-9ace-970e1d3f75f8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b5c2e2eb-3df6-45fd-b80b-8ef20d0daa21">
+                <propertyInstance
+                  Id="0046cbf2-97da-438b-b217-b127beadd1c5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="33536f4d-89ee-4541-90f9-e0170b1002bd">
+                <propertyInstance
+                  Id="4989889c-8696-4703-8d86-b3aa5006b3ee"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1e1e683a-acb0-45ea-8dc6-dfde122294ab">
+                <propertyInstance
+                  Id="120208cd-23ad-4e8a-becf-7d352faa6f6f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b54f410-5c13-450a-be46-0e21da81d209">
+                <propertyInstance
+                  Id="fa8db145-d3ed-415d-b22f-c50a79a16b3d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="00280343-3921-4d5d-816e-b6827cebb4ed"
+            isDerived="false"
+            sourceEndRoleName="Frame"
+            targetEndRoleName="TraitVector"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+              LastKnownName="Single"
+              LastKnownLocation="Package1_0755.uml" />
+            <description>Property TraitVector references type Single.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e67d4735-15b0-4d49-9551-2a275cc19e0f"
+                  name="Frame"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9f1ec8be-061a-47e4-9470-64505b59f9fe"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a78a92e0-8f22-42d1-afee-515ba87075cb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56f25f60-b413-4869-8d65-82599f2f32d9"
+                  name="TraitVector"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isOrdered="true"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cd2f23a4-ccbe-4d46-94b7-514b6b030e0f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f9fad5d3-f1f4-4830-b3a8-a59fa7082098"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9da9bf3c-10e5-4e49-9fc0-57ebfa498e0b"
+            name="TraitVector"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0b9ae71a-5e29-4487-acde-8b32d7cb2ba7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3D(Name%3DFrame ParentType%3DExtractor) Member%3DTraitVector"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d62bd9f0-aa70-455b-a152-9ab26a484159"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="467cf543-87d0-47ac-a05e-9863cb86b0ad">
+                    <propertyInstance
+                      Id="aeea6209-1930-40cc-abd1-78ba28ca84c4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04403cb6-25e8-4062-bd3d-d2d6a7e964fb">
+                    <propertyInstance
+                      Id="b5949a69-2edf-467c-8788-733ea4592377"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c84ba3c7-83b9-4c61-956d-299a72b4893a">
+                    <propertyInstance
+                      Id="b4c7c9ed-ac3c-4be7-9d87-13bff69136b1"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="831b4307-9b37-4c21-9a6c-09c0d536d964">
+                    <propertyInstance
+                      Id="a11e2da4-de60-4a27-896d-e5e2359c9927"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5055f6f-0108-44d1-9505-95ee9c15001f">
+                    <propertyInstance
+                      Id="8c12060a-f5d6-4adb-881e-e5a0acd62e8f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0957f108-d6c1-48d6-ad48-0c830afaddb3">
+                    <propertyInstance
+                      Id="a78a3c4e-49dd-49b0-99da-6232d7c1072b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c0d3156-c516-4077-a637-99e2be7de9c7">
+                    <propertyInstance
+                      Id="e351e075-b366-441c-bf9d-084554ac63d9"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="2de97245-d075-4b73-b0f5-e9dc3eb1fbc0"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="d34b9628-a884-4b81-99b8-9fcd05eb4bae"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5ffb8c19-f38e-48f2-be3e-757819f9b44c"
+                LastKnownName="Single"
+                LastKnownLocation="Package1_0755.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="38db9cdc-314a-4ceb-ae56-c82e5d0c533a"
+            name="Cluster"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1f9d1733-81fb-40de-a596-3b8a5cfc40be"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3D(Name%3DFrame ParentType%3DExtractor) Member%3DCluster"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c265aa3a-4a4b-45f7-8a6c-880b8bc163c6"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00b9bfd7-ffc4-4813-8459-7dcd49c77159">
+                    <propertyInstance
+                      Id="40c788ca-408c-467b-8210-e218c3048464"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="454be060-f79b-4a1d-93eb-4533d6122540">
+                    <propertyInstance
+                      Id="e92841c8-27b6-4948-90ef-d9cbf18ead8b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="542b621f-cca7-4a00-8e80-797fdf602aa8">
+                    <propertyInstance
+                      Id="59d74581-90fd-4e2d-a4de-cb4582ca4b02"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31c75751-c0e9-44b7-abda-7a5b2e3ba8cb">
+                    <propertyInstance
+                      Id="a37d7b2f-1e31-48e5-a510-832d86281f70"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ba99394-b533-4a6e-b74a-7d78887434d2">
+                    <propertyInstance
+                      Id="212d7111-aaee-4d4f-9bd6-8095cc2cce26"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec83a8d5-567b-4937-b852-d666a2d050db">
+                    <propertyInstance
+                      Id="953a59e2-e1ab-4aeb-9f3b-0fdda413eeb1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7db8efb2-578c-4071-8d76-042a8c4e2d72">
+                    <propertyInstance
+                      Id="03b072c8-f7bb-4747-9635-86fb71d86985"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="835f1857-1c20-41ad-b5df-3382d20ed4bb"
+            name="Frame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="050a6714-2a0c-4f77-9e6a-b0a63b4cc75e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FPOLIBUDA%2Fsemestr6%2FProjekt%2FGIT%2FIndywidualny%2FExtractionModule%2Fbin%2FDebug%2FExtractionModule.dll Namespace%3DExtractionModule Type%3D(Name%3DFrame ParentType%3DExtractor) Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a350d0ba-9b79-4b86-a6ef-9b4893902a10"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b631c98-2bac-4c14-90ea-2adcb5b7ad35">
+                    <propertyInstance
+                      Id="83428bd3-5df6-497c-965e-24fd348c500f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94389bae-aafe-4eba-a5f5-3a9f455ec944">
+                    <propertyInstance
+                      Id="7319cf94-bd99-4522-86e6-2e9a3b462703"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="624a6ba7-d77c-45d1-b08d-184370554430">
+                    <propertyInstance
+                      Id="faa809d2-3d5f-4f2b-bba3-25491a452a43"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f12c7a94-3263-479d-af97-bcbed911a9ec">
+                    <propertyInstance
+                      Id="83e1982d-2a8c-448b-a1b0-fb5231c940c7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7886c67-5394-416e-be4e-04579e5c71cf">
+                    <propertyInstance
+                      Id="fc306205-6516-4d86-a235-80936aaca080"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0d0604e-3c29-4ad1-9770-56c9de409236">
+                    <propertyInstance
+                      Id="fcb186de-d54e-468f-950e-b4c5c90b4ed2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
